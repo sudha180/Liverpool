@@ -25,19 +25,19 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Breadcrum_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/Breadcrum_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductImage_pdp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/ProductImage_pdp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/AlternateImg_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/AlternateImg_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/AlternateImg_1_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/AlternateImg_1_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductName_pdp (1) (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/ProductName_pdp (1) (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductID_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/ProductID_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Rating_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/Rating_pdp'), 0)
 
 WebUI.closeBrowser()
 

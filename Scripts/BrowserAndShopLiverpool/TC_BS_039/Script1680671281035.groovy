@@ -38,17 +38,17 @@ for (int i = 0; i < 3500; i += 7) {
     js.executeScript(('window.scrollTo(0, ' + i) + ')')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour6_plp'), 0)
 
 WebUI.closeBrowser()
 

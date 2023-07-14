@@ -46,15 +46,15 @@ WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 WebUI.verifyElementPresent(findTestObject('HomePage/FavStore_hp'), 0)
 
 /*
- * if(WebUI.verifyElementPresent(findTestObject('0PLPPage/ExpressDelivery_plp'),
+ * if(WebUI.verifyElementPresent(findTestObject('PLPPage/ExpressDelivery_plp'),
  * 0) == true) {
- * WebUI.scrollToElement(findTestObject('0PLPPage/ExpressDelivery_plp'), 0)
+ * WebUI.scrollToElement(findTestObject('PLPPage/ExpressDelivery_plp'), 0)
  * 
- * WebUI.click(findTestObject('0PLPPage/ExpressDelivery_plp')) }
+ * WebUI.click(findTestObject('PLPPage/ExpressDelivery_plp')) }
  */
-not_run: WebUI.scrollToElement(findTestObject('0PLPPage/PickupExpress_plp'), 0)
+not_run: WebUI.scrollToElement(findTestObject('PLPPage/PickupExpress_plp'), 0)
 
-not_run: WebUI.click(findTestObject('0PLPPage/PickupExpress_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/PickupExpress_plp'))
 
 WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'))
 
@@ -68,7 +68,7 @@ WebUI.click(findTestObject('AccountManagement/SelectDefaultAddress_accounta'))
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'Vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Pickup_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Pickup_plp'), 0)
 
 WebUI.closeBrowser()
 

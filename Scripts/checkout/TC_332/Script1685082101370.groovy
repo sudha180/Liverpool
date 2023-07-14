@@ -25,35 +25,35 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/changeADDRESS_OPC'))
+WebUI.click(findTestObject('OPCPage/changeADDRESS_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/clickAndCollect_OPC'))
+WebUI.click(findTestObject('OPCPage/clickAndCollect_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/ClickAndCollect_option1_OPC'))
+WebUI.click(findTestObject('OPCPage/ClickAndCollect_option1_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/ScrollDown_event_address_CandC_OPC'))
+WebUI.click(findTestObject('OPCPage/ScrollDown_event_address_CandC_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/ScrollDown_event_address_CandC_option5_OPC'))
+WebUI.click(findTestObject('OPCPage/ScrollDown_event_address_CandC_option5_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/saveChanges_CandC_OPC'))
+WebUI.click(findTestObject('OPCPage/saveChanges_CandC_OPC'))
 
-WebUI.verifyElementNotPresent(findTestObject('0OPCPage/billingAddress_OPC'), 0)
+WebUI.verifyElementNotPresent(findTestObject('OPCPage/billingAddress_OPC'), 0)
 
 WebUI.closeBrowser()
 

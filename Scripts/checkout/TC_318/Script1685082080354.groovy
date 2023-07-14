@@ -25,25 +25,25 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bag'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/questionMark_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/questionMark_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0OPCPage/popUP_questionmark_OPC'), 'Son los tres números detrás de tu tarjeta')
+WebUI.verifyElementText(findTestObject('OPCPage/popUP_questionmark_OPC'), 'Son los tres números detrás de tu tarjeta')
 
 WebUI.closeBrowser()
 

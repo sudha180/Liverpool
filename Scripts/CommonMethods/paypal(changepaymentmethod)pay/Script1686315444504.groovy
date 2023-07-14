@@ -19,20 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('HomePage/paypalpayment'))
 
-WebUI.click(findTestObject('0OPCPage/button_Continuar_payment_opc (3)'))
+WebUI.click(findTestObject('OPCPage/button_Continuar_payment_opc (3)'))
 
 not_run: WebUI.switchToWindowTitle('Log in to your PayPal account')
 
-not_run: WebUI.click(findTestObject('0OPCPage/paypal_inputID_checkout'))
+not_run: WebUI.click(findTestObject('OPCPage/paypal_inputID_checkout'))
 
-not_run: WebUI.setText(findTestObject('0OPCPage/paypal_inputID_checkout'), 'liverpool@paypal.com')
+not_run: WebUI.setText(findTestObject('OPCPage/paypal_inputID_checkout'), 'liverpool@paypal.com')
 
-not_run: WebUI.click(findTestObject('0OPCPage/paypal_next_button_popup'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('OPCPage/paypal_next_button_popup'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('0OPCPage/paypal-password'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('OPCPage/paypal-password'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('0OPCPage/paypal-password'), 'cordoba213VKY', FailureHandling.OPTIONAL)
+not_run: WebUI.setText(findTestObject('OPCPage/paypal-password'), 'cordoba213VKY', FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('0OPCPage/loginbutton_paypal_cop'))
+not_run: WebUI.click(findTestObject('OPCPage/loginbutton_paypal_cop'))
 
-not_run: WebUI.click(findTestObject('0OPCPage/acceptAndContinue'))
+not_run: WebUI.click(findTestObject('OPCPage/acceptAndContinue'))

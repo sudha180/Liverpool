@@ -33,13 +33,13 @@ WebUI.delay(5)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.DigitalItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/LatestLineBuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/LatestLineBuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/ProductDescription_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/ProductDescription_Cart'), 0)
 
 WebUI.closeBrowser()
 

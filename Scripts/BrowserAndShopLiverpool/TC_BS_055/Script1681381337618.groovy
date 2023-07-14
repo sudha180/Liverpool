@@ -27,11 +27,11 @@ not_run: WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 not_run: WebUI.click(findTestObject('HomePage/L1_hp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/Product_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/Product_plp'))
 
 WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/div_Descuentos_col-auto'))
+WebUI.click(findTestObject('PLPPage/div_Descuentos_col-auto'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Arrow_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Arrow_plp'), 0)
 

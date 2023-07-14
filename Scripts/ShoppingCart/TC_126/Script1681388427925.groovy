@@ -33,21 +33,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Comprarahora_cart (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Comprarahora_cart (1)'), 0)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/productImage_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/productImage_opc'), 0)
 
 WebUI.closeBrowser()
 

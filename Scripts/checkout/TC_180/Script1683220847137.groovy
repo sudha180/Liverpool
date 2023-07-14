@@ -34,36 +34,36 @@ WebUI.mouseOver(findTestObject('HomePage/LoginButton_hp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/3DotButton2_Checkout'))
+WebUI.click(findTestObject('OPCPage/3DotButton2_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/EditAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/EditAddress_Checkout'))
 
-WebUI.setText(findTestObject('Object Repository/0OPCPage/shortName_addAddress_opc (1)'), GlobalVariable.ShortName)
+WebUI.setText(findTestObject('Object Repository/OPCPage/shortName_addAddress_opc (1)'), GlobalVariable.ShortName)
 
-WebUI.click(findTestObject('0OPCPage/ContinueButtonAddAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
 
 WebUI.navigateToUrl(GlobalVariable.URL2)
 
-WebUI.mouseOver(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.mouseOver(findTestObject('CLPPage/AfterLogin_hp'))
 
 WebUI.click(findTestObject('HomePage/myAccount_hp'))
 
-WebUI.click(findTestObject('0OPCPage/deliveryAddressHeading_address_opc'))
+WebUI.click(findTestObject('OPCPage/deliveryAddressHeading_address_opc'))
 
 addressBlockContainer = WebUI.getText(findTestObject('AccountManagement/addressBlockContainer_Account'))
 

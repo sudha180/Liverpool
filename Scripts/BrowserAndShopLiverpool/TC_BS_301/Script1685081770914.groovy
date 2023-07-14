@@ -23,9 +23,9 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/CurrentBreadcrumb_GID_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/CurrentBreadcrumb_GID_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/homeBreadCrumb_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/homeBreadCrumb_PDP'), 0)
 
 WebUI.closeBrowser()
 

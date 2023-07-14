@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'set sala'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/AssertGID_PDP'), [:], FailureHandling.STOP_ON_FAILURE)
 

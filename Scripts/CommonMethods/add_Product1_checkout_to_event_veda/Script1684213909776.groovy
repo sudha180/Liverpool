@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('0OPCPage/shop_For_Event_product1_OPC'))
+WebUI.click(findTestObject('OPCPage/shop_For_Event_product1_OPC'))
 
-WebUI.setText(findTestObject('0OPCPage/Enter_Event_Number_Eventpopup_OPC'), '56076579')
+WebUI.setText(findTestObject('OPCPage/Enter_Event_Number_Eventpopup_OPC'), '56076579')
 
-WebUI.click(findTestObject('0OPCPage/Find_Gift_by_Code_Event_POPUP'))
+WebUI.click(findTestObject('OPCPage/Find_Gift_by_Code_Event_POPUP'))
 
-WebUI.click(findTestObject('0OPCPage/event_select_ceremony_event_popUP_OPC'))
+WebUI.click(findTestObject('OPCPage/event_select_ceremony_event_popUP_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/select_Whom_To_Address_Event_popup'))
+WebUI.click(findTestObject('OPCPage/select_Whom_To_Address_Event_popup'))
 
-WebUI.click(findTestObject('0OPCPage/Event_whom_to_Address_Accept_button_Eventpopup_OPC'))
+WebUI.click(findTestObject('OPCPage/Event_whom_to_Address_Accept_button_Eventpopup_OPC'))
 

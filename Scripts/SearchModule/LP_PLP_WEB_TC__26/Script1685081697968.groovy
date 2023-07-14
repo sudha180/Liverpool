@@ -25,23 +25,23 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/mostviewed_recommendsection_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mostviewed_recommendsection_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_title_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_title_PLP'), 0)
 
-productName1 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_1_Title'), FailureHandling.STOP_ON_FAILURE)
+productName1 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_1_Title'), FailureHandling.STOP_ON_FAILURE)
 
 System.out.println(productName1)
 
-WebUI.click(findTestObject('0PLPPage/MostViewed_visible_product1_image_PLP'))
+WebUI.click(findTestObject('PLPPage/MostViewed_visible_product1_image_PLP'))
 
 productName2 = WebUI.getUrl()
 

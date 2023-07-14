@@ -25,31 +25,31 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 'need to go to footer to load most viewed\r\n'
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
 'load time\r\n'
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/mostviewed_recommendsection_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mostviewed_recommendsection_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_title_PLP'), 0)
-
-'visible tags \r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_visible_product1_image_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_title_PLP'), 0)
 
 'visible tags \r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_visible_product2_image_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_visible_product1_image_PLP'), 0)
 
 'visible tags \r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_visible_product3_image_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_visible_product2_image_PLP'), 0)
 
 'visible tags \r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_visible_product4_image_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_visible_product3_image_PLP'), 0)
+
+'visible tags \r\n'
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_visible_product4_image_PLP'), 0)
 
 WebUI.closeBrowser()
 

@@ -27,15 +27,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], Failur
 
 WebUI.callTestCase(findTestCase('CommonMethods/HP_to_veda_GR_detail_page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0GR/GR list page/Event_detail_page_GR/Event_GiftCard1_GR_detail'))
+WebUI.click(findTestObject('GR/GR list page/Event_detail_page_GR/Event_GiftCard1_GR_detail'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
+WebUI.verifyElementPresent(findTestObject('GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
     0)
 
-WebUI.click(findTestObject('0GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0GR/GR list page/Event_detail_page_GR/Error_notAdded_Personel_purchase'), 
+WebUI.verifyElementPresent(findTestObject('GR/GR list page/Event_detail_page_GR/Error_notAdded_Personel_purchase'), 
     0)
 

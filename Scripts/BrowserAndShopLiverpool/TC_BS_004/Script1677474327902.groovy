@@ -26,17 +26,17 @@ WebUI.click(findTestObject('HomePage/Categoras_hp'))
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
 'sub category left level menu (perfume) no L3 category \r\n'
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
 'top left bread crumb'
-WebUI.click(findTestObject('0PLPPage/BreadCrumb2Page_PLP'))
+WebUI.click(findTestObject('PLPPage/BreadCrumb2Page_PLP'))
 
-breadcrumb_PLP = WebUI.getText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), FailureHandling.STOP_ON_FAILURE)
+breadcrumb_PLP = WebUI.getText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 'current page verification'
-WebUI.verifyElementText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), breadcrumb_PLP)
+WebUI.verifyElementText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), breadcrumb_PLP)
 
-WebUI.verifyElementClickable(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'))
+WebUI.verifyElementClickable(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'))
 
 WebUI.closeBrowser()
 

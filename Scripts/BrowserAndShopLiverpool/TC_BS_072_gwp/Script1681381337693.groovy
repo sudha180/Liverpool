@@ -29,9 +29,9 @@ not_run: WebUI.setText(findTestObject('HomePage/MainSearchbar_hp (1)'), 'vaso')
 
 not_run: WebUI.click(findTestObject('HomePage/SearchButton_hp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Breadcrumb'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Breadcrumb'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Verify_Quantity_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Verify_Quantity_plp'), 0)
 
 WebUI.closeBrowser()
 

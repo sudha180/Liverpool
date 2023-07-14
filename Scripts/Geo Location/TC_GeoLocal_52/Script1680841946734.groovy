@@ -31,11 +31,11 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.BTSearchTerms], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/MoreDeliveryLink_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/MoreDeliveryLink_cart'), 0)
 
 WebUI.closeBrowser()
 

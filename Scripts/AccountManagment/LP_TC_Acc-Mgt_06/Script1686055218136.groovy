@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)

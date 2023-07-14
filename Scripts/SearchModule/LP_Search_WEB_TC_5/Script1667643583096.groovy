@@ -23,13 +23,13 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/Rating_SortBy_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/Rating_SortBy_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/ratingsOfFirstProduct_srp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/ratingsOfFirstProduct_srp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/secondProductRatings_srp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/secondProductRatings_srp'), 0)
 
 WebUI.closeBrowser()
 

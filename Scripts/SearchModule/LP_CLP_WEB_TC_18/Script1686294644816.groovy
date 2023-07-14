@@ -25,12 +25,12 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category2_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
 'most sold\r\n'
-WebUI.verifyElementPresent(findTestObject('0CLPPage/L2_CLP/mostsold_title_L2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/L2_CLP/mostsold_title_L2_CLP'), 0)
 
 WebUI.closeBrowser()
 

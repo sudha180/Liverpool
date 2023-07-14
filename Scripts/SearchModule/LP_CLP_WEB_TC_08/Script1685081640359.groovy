@@ -33,20 +33,20 @@ WebUI.mouseOver(findTestObject('HomePage/L1_Category1_HP'))
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
 'L2 category page'
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
 'use of sub category 2 for 1 because first is ver dos (all)'
-left1 = WebUI.getText(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+left1 = WebUI.getText(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-left2 = WebUI.getText(findTestObject('0CLPPage/SubCategory3_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+left2 = WebUI.getText(findTestObject('CLPPage/SubCategory3_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-left3 = WebUI.getText(findTestObject('0CLPPage/SubCategory4_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
+left3 = WebUI.getText(findTestObject('CLPPage/SubCategory4_leftmenu_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-banner1 = WebUI.getText(findTestObject('0CLPPage/L2_CLP/Category_img1_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
+banner1 = WebUI.getText(findTestObject('CLPPage/L2_CLP/Category_img1_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-banner2 = WebUI.getText(findTestObject('0CLPPage/L2_CLP/Category_img2_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
+banner2 = WebUI.getText(findTestObject('CLPPage/L2_CLP/Category_img2_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-banner3 = WebUI.getText(findTestObject('0CLPPage/L2_CLP/Category_img3_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
+banner3 = WebUI.getText(findTestObject('CLPPage/L2_CLP/Category_img3_L2_CLP'), FailureHandling.STOP_ON_FAILURE)
 
 if (left1 == banner1) {
     System.out.println('Checked 1')

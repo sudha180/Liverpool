@@ -26,45 +26,45 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpWithMultiVariantWith2Gifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpRegaloLabel_pdp'), 0)
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/colorSelectedOnLoad_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/colorSelectedOnLoad_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Size2_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/Size2_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Quantity(plus)_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/Quantity(plus)_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/QuantityUpdatedTo2_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/QuantityUpdatedTo2_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Size2_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/Size2_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
 

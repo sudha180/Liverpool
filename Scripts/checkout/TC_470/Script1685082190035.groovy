@@ -27,35 +27,35 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'sofa'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/SaveForLater_product1_CART(BAG)'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/SaveForLater_product1_CART(BAG)'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/SaveForLater_product2_CART(BAG)'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/SaveForLater_product2_CART(BAG)'), 0)
 
 WebUI.closeBrowser()
 

@@ -38,21 +38,21 @@ WebUI.click(findTestObject('HomePage/L2_hp'))
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/CheckoutButton_Cart'))
+WebUI.click(findTestObject('CLPPage/CheckoutButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/PaymentMethod_Checkout'))
+WebUI.click(findTestObject('OPCPage/PaymentMethod_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/PaymentPopupCashNTransfers_Checkout'))
+WebUI.click(findTestObject('OPCPage/PaymentPopupCashNTransfers_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/PaymentPopupContinueButton_checkout'))
+WebUI.click(findTestObject('OPCPage/PaymentPopupContinueButton_checkout'))
 
-WebUI.scrollToElement(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.scrollToElement(findTestObject('OPCPage/EDD_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

@@ -27,21 +27,21 @@ WebUI.setText(findTestObject('HomePage/MainSearchbar_HP'), 'bat')
 
 WebUI.click(findTestObject('HomePage/searchButtton_HP'))
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/LowPricetoHighSortBy_PLP'))
+WebUI.click(findTestObject('PLPPage/LowPricetoHighSortBy_PLP'))
 
-productDisprice1 = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+productDisprice1 = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-productDisprice2 = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+productDisprice2 = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-productDisprice3 = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+productDisprice3 = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
-productlistprice1 = WebUI.getText(findTestObject('0PLPPage/product1_cardPrice_PLP'))
+productlistprice1 = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
 
-productlistprice2 = WebUI.getText(findTestObject('0PLPPage/product2_cardPrice_PLP'))
+productlistprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'))
 
-productlistprice3 = WebUI.getText(findTestObject('0PLPPage/product3_cardPrice_PLP'))
+productlistprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'))
 
 if (productDisprice1 <= productDisprice2) {
     println('checked1')

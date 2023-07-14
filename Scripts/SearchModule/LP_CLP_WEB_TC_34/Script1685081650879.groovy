@@ -27,9 +27,9 @@ WebUI.click(findTestObject('HomePage/L1_category_18_HP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/assert_L1_CLP'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/ver_mas2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/ver_mas2_CLP'), 0)
 
-a = WebUI.getText(findTestObject('0CLPPage/ver_mas2_CLP'), FailureHandling.STOP_ON_FAILURE)
+a = WebUI.getText(findTestObject('CLPPage/ver_mas2_CLP'), FailureHandling.STOP_ON_FAILURE)
 
 a1 = a.toLowerCase()
 
@@ -39,11 +39,11 @@ def a2 = a1.replace(substringToRemove, '')
 
 System.out.println(a2)
 
-WebUI.click(findTestObject('0CLPPage/ver_masButton2_CLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CLPPage/ver_masButton2_CLP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-b = WebUI.getText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'))
+b = WebUI.getText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'))
 
 b1 = b.toLowerCase()
 

@@ -27,27 +27,27 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.delay(2)
 
-WebUI.enhancedClick(findTestObject('0OPCPage/card3Name_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/card3Name_OPC'))
 
 WebUI.setText(findTestObject('1vedant/Page_/card_expireDate_cardpopup'), '12/24')
 
@@ -56,7 +56,7 @@ WebUI.setText(findTestObject('1vedant/Page_/card_cvv_cardpopup'), '321')
 WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
 
 'error come when incorrect cvv inentered'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/CardIncorrectCVV_erroe_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/CardIncorrectCVV_erroe_OPC'), 0)
 
 WebUI.closeBrowser()
 

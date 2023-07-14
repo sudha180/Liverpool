@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/InformationCode_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/InformationCode_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product1_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/SoftLine_product1_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/ViewArticles_Button_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/ViewArticles_Button_PDP'), 0)
 

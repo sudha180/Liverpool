@@ -32,36 +32,36 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.softline2], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyForGiftTable_Cart'))
+WebUI.click(findTestObject('CartPage/BuyForGiftTable_Cart'))
 
-WebUI.click(findTestObject('0CartPage/EnterEventNumber_Cart'))
+WebUI.click(findTestObject('CartPage/EnterEventNumber_Cart'))
 
-WebUI.setText(findTestObject('0CartPage/EnterEventNumber_Cart'), GlobalVariable.EventNumber)
+WebUI.setText(findTestObject('CartPage/EnterEventNumber_Cart'), GlobalVariable.EventNumber)
 
-WebUI.click(findTestObject('0CartPage/FindTableButton_Cart'))
+WebUI.click(findTestObject('CartPage/FindTableButton_Cart'))
 
-WebUI.click(findTestObject('0CartPage/SelectEvent_Cart'))
+WebUI.click(findTestObject('CartPage/SelectEvent_Cart'))
 
-WebUI.click(findTestObject('0CartPage/SelectPartRadioButton_Cart'))
+WebUI.click(findTestObject('CartPage/SelectPartRadioButton_Cart'))
 
-WebUI.setText(findTestObject('0CartPage/SetTextMessage_Cart'), 'Test123')
+WebUI.setText(findTestObject('CartPage/SetTextMessage_Cart'), 'Test123')
 
-WebUI.click(findTestObject('0OPCPage/aceptar'))
+WebUI.click(findTestObject('OPCPage/aceptar'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressButton_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressButton_Checkout'), 0)
 
 WebUI.closeBrowser()
 

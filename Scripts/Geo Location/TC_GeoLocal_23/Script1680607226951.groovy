@@ -33,11 +33,11 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ClickNCollect_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/SelectStoreLink_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/SelectStoreLink_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/EnterZipCodePopup_pdp'), 0)
 
 WebUI.closeBrowser()
 

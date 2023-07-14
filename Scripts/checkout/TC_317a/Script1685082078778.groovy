@@ -25,29 +25,29 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '1019655941'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
-WebUI.setText(findTestObject('0OPCPage/enterCardExpire_OPC'), '122456')
+WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '122456')
 
-MMAA = WebUI.getText(findTestObject('0OPCPage/enterCardExpire_OPC'), FailureHandling.STOP_ON_FAILURE)
+MMAA = WebUI.getText(findTestObject('OPCPage/enterCardExpire_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('0OPCPage/enterCardCVV_OPC'), '12345')
+WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '12345')
 
-cvv = WebUI.getText(findTestObject('0OPCPage/enterCardCVV_OPC'), FailureHandling.STOP_ON_FAILURE)
+cvv = WebUI.getText(findTestObject('OPCPage/enterCardCVV_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 if (MMAA == (12 / 24)) {
     System.out.println('only taken MM/AA = 12/24')

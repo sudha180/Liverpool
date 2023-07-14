@@ -23,23 +23,23 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/1SRP page/a_Ordenar por'))
+WebUI.click(findTestObject('Object Repository/SRP page/a_Ordenar por'))
 
-WebUI.click(findTestObject('Object Repository/1SRP page/button_Menor precio_srp'))
+WebUI.click(findTestObject('Object Repository/SRP page/button_Menor precio_srp'))
 
-firstProductPrice_srp = WebUI.getText(findTestObject('Object Repository/1SRP page/firstProductPrice_srp'))
+firstProductPrice_srp = WebUI.getText(findTestObject('Object Repository/SRP page/firstProductPrice_srp'))
 
-secondProductPrice_srp = WebUI.getText(findTestObject('Object Repository/1SRP page/secondProductPrice_srp'))
+secondProductPrice_srp = WebUI.getText(findTestObject('Object Repository/SRP page/secondProductPrice_srp'))
 
 'secondProductPrice_srp' >= 'firstProductPrice_srp'
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/HighToLowPriceSortby_PLP'))
+WebUI.click(findTestObject('PLPPage/HighToLowPriceSortby_PLP'))
 
-firstProductPrice_srp = WebUI.getText(findTestObject('0PLPPage/product1_cardPrice_PLP'))
+firstProductPrice_srp = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
 
-secondProductPrice_srp = WebUI.getText(findTestObject('0PLPPage/product2_cardPrice_PLP'))
+secondProductPrice_srp = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'))
 
 'secondProductPrice_srp' <= 'firstProductPrice_srp'
 

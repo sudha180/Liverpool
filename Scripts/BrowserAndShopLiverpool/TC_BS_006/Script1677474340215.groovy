@@ -32,7 +32,7 @@ L3 = WebUI.getText(findTestObject('HomePage/L3_categoryMenu_HP'))
 
 WebUI.enhancedClick(findTestObject('HomePage/L3_categoryMenu_HP'))
 
-WebUI.verifyElementText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), L3)
+WebUI.verifyElementText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), L3)
 
 WebUI.closeBrowser()
 

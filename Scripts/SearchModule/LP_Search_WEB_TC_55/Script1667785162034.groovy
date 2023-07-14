@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertSearchTypeahead'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-categoryNameInTypeahead = WebUI.getText(findTestObject('1SRP page/categoryNameInTypeahead'))
+categoryNameInTypeahead = WebUI.getText(findTestObject('SRP page/categoryNameInTypeahead'))
 
 WebUI.click(findTestObject('HomePage/Departamentos'))
 

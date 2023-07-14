@@ -29,7 +29,7 @@ WebUI.mouseOver(findTestObject('HomePage/L1_Category1_HP'))
 
 WebUI.enhancedClick(findTestObject('HomePage/L3_categoryMenu_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 

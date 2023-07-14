@@ -30,7 +30,7 @@ WebUI.delay(5)
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.click(findTestObject('CLPPage/AfterLogin_hp'))
 
 WebUI.click(findTestObject('HomePage/myAccount_hp'))
 
@@ -47,19 +47,19 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/MoreDeliveryLink_cart'))
+WebUI.click(findTestObject('CLPPage/MoreDeliveryLink_cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/MoreDeliveryLinkPopup_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/MoreDeliveryLinkPopup_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/ReceviceAtHome_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/ReceviceAtHome_Cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PDPPage/ClickNCollect_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EDD_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/EDD_pdp'), 0)
 
 WebUI.closeBrowser()
 

@@ -25,18 +25,18 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandli
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLpSlgift], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
 WebUI.scrollToPosition(19, 400)
 
-WebUI.enhancedClick(findTestObject('0PDPPage/StickyBar_Comprar_Ahora_PDP'))
+WebUI.enhancedClick(findTestObject('PDPPage/StickyBar_Comprar_Ahora_PDP'))
 
 WebUI.delay(5)
 

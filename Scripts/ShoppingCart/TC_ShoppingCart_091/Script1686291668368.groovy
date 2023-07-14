@@ -30,49 +30,49 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-not_run: WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('0PDPPage/Size2_PDP'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('PDPPage/Size2_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/gift_dropDown_PDP'))
+WebUI.click(findTestObject('PDPPage/gift_dropDown_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/gift_option2_giftdropdown_PDP'))
+WebUI.click(findTestObject('PDPPage/gift_option2_giftdropdown_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/gift_popup_submitButton_PDP'))
+WebUI.click(findTestObject('PDPPage/gift_popup_submitButton_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product1_img_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product1_img_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product1_quantity_Add_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product1_quantity_Add_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/product2_quantity_Add_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/product2_quantity_Add_cart'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/Product2_remove_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/Product2_remove_cart'), 0)
 
-WebUI.verifyElementText(findTestObject('0CartPage/giftPrice1_cart'), '$001')
+WebUI.verifyElementText(findTestObject('CartPage/giftPrice1_cart'), '$001')
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_name_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_name_cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_product1_cart'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_product1_cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_product2_cart'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_product2_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_Name_Mybag_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_Name_Mybag_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Gift_quantity_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Gift_quantity_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_pricePerProduct_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_pricePerProduct_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_Subtotal_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_Subtotal_cart'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/Product2_remove_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/Product2_remove_cart'), 0)
 
 WebUI.closeBrowser()
 

@@ -30,13 +30,13 @@ WebUI.mouseOver(findTestObject('HomePage/L1_Category1_HP'))
 WebUI.enhancedClick(findTestObject('HomePage/L3_categoryMenu_HP'))
 
 'L4 category page\r\n'
-L4 = WebUI.getText(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+L4 = WebUI.getText(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), L4)
+WebUI.verifyElementText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), L4)
 
 WebUI.closeBrowser()
 

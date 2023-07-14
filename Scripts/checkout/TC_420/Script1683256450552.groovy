@@ -31,21 +31,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLSearchTerm], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/SecondProduct_plp'))
+WebUI.click(findTestObject('PLPPage/SecondProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(4)
 
-ActualTextAlign = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'text-align')
+ActualTextAlign = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc'), 'text-align')
 
-ActualJustifyContent = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'justify-content')
+ActualJustifyContent = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc'), 'justify-content')
 
-Actualposition = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'position')
+Actualposition = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc'), 'position')
 
 def textalign = 'left'
 

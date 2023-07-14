@@ -28,49 +28,49 @@ WebUI.delay(5)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLpSlgift], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/Colour1_PDP'), 0)
+WebUI.scrollToElement(findTestObject('PDPPage/Colour1_PDP'), 0)
 
-boolean a = WebUI.verifyElementPresent(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
+boolean a = WebUI.verifyElementPresent(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 if (a) {
-    WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.STOP_ON_FAILURE)
 }
 
-boolean b = WebUI.verifyElementPresent(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
+boolean b = WebUI.verifyElementPresent(findTestObject('PDPPage/Size1_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 if (b) {
-    WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.STOP_ON_FAILURE)
 }
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product1_quantity_Add_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product1_quantity_Add_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product1_img_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product1_img_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/product2_quantity_Add_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/product2_quantity_Add_cart'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/Product2_remove_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/Product2_remove_cart'), 0)
 
-WebUI.verifyElementText(findTestObject('0CartPage/giftPrice1_cart'), '$001')
+WebUI.verifyElementText(findTestObject('CartPage/giftPrice1_cart'), '$001')
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_name_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_name_cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_product1_cart'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_product1_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/SlGift_regaloFlag_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/SlGift_regaloFlag_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_Name_Mybag_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_Name_Mybag_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Gift_quantity_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Gift_quantity_cart'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/Product2_remove_cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/Product2_remove_cart'), 0)
 
 WebUI.closeBrowser()
 

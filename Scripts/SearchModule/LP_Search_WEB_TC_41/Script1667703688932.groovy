@@ -23,17 +23,17 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-noOfProd_srp = WebUI.getText(findTestObject('1SRP page/noOfProd_srp'))
+noOfProd_srp = WebUI.getText(findTestObject('SRP page/noOfProd_srp'))
 
-WebUI.click(findTestObject('1SRP page/selectFacet_srp'))
+WebUI.click(findTestObject('SRP page/selectFacet_srp'))
 
-noOfProductsAfterFilterSelection = WebUI.getText(findTestObject('1SRP page/noOfProductsAfterFilterSelection'))
+noOfProductsAfterFilterSelection = WebUI.getText(findTestObject('SRP page/noOfProductsAfterFilterSelection'))
 
 'noOfProductsAfterFilterSelection' <= 'noOfProd_srp'
 
-WebUI.click(findTestObject('1SRP page/Limpiar Filtros'))
+WebUI.click(findTestObject('SRP page/Limpiar Filtros'))
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/noOfprodRetainedAfterRemoveFilter_sr p'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/noOfprodRetainedAfterRemoveFilter_sr p'), 0)
 
 WebUI.closeBrowser()
 

@@ -23,16 +23,16 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product1_selectButton_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product1_selectButton_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product1_SelectionTick(Pink)_PDP - Copy'), 
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/SoftLine_product1_SelectionTick(Pink)_PDP - Copy'), 
     0)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/StickyBar_product1_close_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/StickyBar_product1_close_PDP'))
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/GID collection/SoftLine_product1_SelectionTick(Pink)_PDP - Copy'), 
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/GID collection/SoftLine_product1_SelectionTick(Pink)_PDP - Copy'), 
     0)
 
 WebUI.closeBrowser()

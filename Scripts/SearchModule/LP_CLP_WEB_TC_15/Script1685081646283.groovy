@@ -30,7 +30,7 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 WebUI.scrollToPosition(0, 500)
 
 'most viewed(lo msa visto)'
-WebUI.verifyElementPresent(findTestObject('0CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
 
 WebUI.closeBrowser()
 

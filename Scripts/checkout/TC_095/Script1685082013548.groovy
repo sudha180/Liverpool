@@ -25,10 +25,10 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandli
 
 WebUI.callTestCase(findTestCase('CommonMethods/HP_to_veda_GR_detail_page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0GR/GR list page/Event_detail_page_GR/Event_Product1_GR_detail'))
+WebUI.click(findTestObject('GR/GR list page/Event_detail_page_GR/Event_Product1_GR_detail'))
 
 WebUI.delay(3)
 
-WebUI.verifyElementPresent(findTestObject('0GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
+WebUI.verifyElementPresent(findTestObject('GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
     0)
 

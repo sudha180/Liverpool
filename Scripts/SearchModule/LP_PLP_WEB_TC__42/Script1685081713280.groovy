@@ -23,11 +23,11 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-buttonvalue1 = WebUI.getText(findTestObject('0PLPPage/Discount_Button1_PLP'))
+buttonvalue1 = WebUI.getText(findTestObject('PLPPage/Discount_Button1_PLP'))
 
-b1 = (buttonvalue2 = WebUI.getText(findTestObject('0PLPPage/Discount_Button2_PLP')))
+b1 = (buttonvalue2 = WebUI.getText(findTestObject('PLPPage/Discount_Button2_PLP')))
 
-buttonvalue3 = WebUI.getText(findTestObject('0PLPPage/Discount_Button3_PLP)'))
+buttonvalue3 = WebUI.getText(findTestObject('PLPPage/Discount_Button3_PLP)'))
 
 if (buttonvalue1.contains('(')) {
     println('checked1')

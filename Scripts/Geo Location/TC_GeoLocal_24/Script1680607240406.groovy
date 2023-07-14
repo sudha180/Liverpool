@@ -41,9 +41,9 @@ WebUI.click(findTestObject('HomePage/FavStore_hp'))
 
 WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectState_pdp'))
+WebUI.click(findTestObject('PDPPage/SelectState_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectStateFromList_pdp'))
+WebUI.click(findTestObject('PDPPage/SelectStateFromList_pdp'))
 
 WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 

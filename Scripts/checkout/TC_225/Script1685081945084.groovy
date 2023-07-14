@@ -35,31 +35,31 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'))
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/3DotButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/3DotButton_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/SelectStateClickNCollection_Checkout'))
+WebUI.click(findTestObject('OPCPage/SelectStateClickNCollection_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/StateOptionsClickNCollection_Checkout'))
+WebUI.click(findTestObject('OPCPage/StateOptionsClickNCollection_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/StateSelectionClickNCollection_Checkout'))
+WebUI.click(findTestObject('OPCPage/StateSelectionClickNCollection_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/EventSelectionClickNCollection_Checkout'))
+WebUI.click(findTestObject('OPCPage/EventSelectionClickNCollection_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/EventOptionSelection_Checkout'))
+WebUI.click(findTestObject('OPCPage/EventOptionSelection_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressAlertMessage_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressAlertMessage_Checkout'), 0)
 
 WebUI.closeBrowser()
 

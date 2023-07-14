@@ -41,17 +41,17 @@ WebUI.click(findTestObject('HomePage/FavStore_hp'))
 
 WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectState_pdp'))
+WebUI.click(findTestObject('PDPPage/SelectState_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectStateFromList_pdp'))
+WebUI.click(findTestObject('PDPPage/SelectStateFromList_pdp'))
 
 WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ClickNCollect_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EDD_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/EDD_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeBuyButton'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ReceiveAtHomeBuyButton'), 0)
 
 WebUI.closeBrowser()
 

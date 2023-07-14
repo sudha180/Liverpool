@@ -26,19 +26,19 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpWithSingleVariantWith2Gifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gift_popup_submitButton_PDP'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gift_option2_giftdropdown_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gift_option2_giftdropdown_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/giftImageInGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/giftImageInGiftDropdown_pdp'), 0)
 

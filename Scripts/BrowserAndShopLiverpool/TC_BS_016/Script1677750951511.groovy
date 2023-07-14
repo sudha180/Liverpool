@@ -24,33 +24,33 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vase'], FailureHandling.STOP_ON_FAILURE)
 
-String discountpricePLP = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'), FailureHandling.CONTINUE_ON_FAILURE)
+String discountpricePLP = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 def discountpricePLP1 = removeDollar(discountpricePLP)
 
-String cardpricePLP = WebUI.getText(findTestObject('0PLPPage/product2_cardPrice_PLP'), FailureHandling.CONTINUE_ON_FAILURE)
+String cardpricePLP = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 def cardpricePLP1 = removeDollar(cardpricePLP)
 
-WebUI.click(findTestObject('0PLPPage/product2_PLP'))
+WebUI.click(findTestObject('PLPPage/product2_PLP'))
 
-String discountpricePDP = WebUI.getText(findTestObject('0PDPPage/discountPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
+String discountpricePDP = WebUI.getText(findTestObject('PDPPage/discountPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 def discountpricePDP1 = removeDollar(discountpricePDP)
 
-String cardpricePDP = WebUI.getText(findTestObject('0PDPPage/cardPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
+String cardpricePDP = WebUI.getText(findTestObject('PDPPage/cardPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 def cardpricePDP1 = removeDollar(cardpricePDP)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/shopCart_HP'))
+WebUI.click(findTestObject('PDPPage/shopCart_HP'))
 
-String discountpricecart = WebUI.getText(findTestObject('0PDPPage/DiscountPriceInCart_PDP'), FailureHandling.STOP_ON_FAILURE)
+String discountpricecart = WebUI.getText(findTestObject('PDPPage/DiscountPriceInCart_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 def discountpricecart1 = removeDollar(discountpricecart)
 
-String cardpricecart = WebUI.getText(findTestObject('0PDPPage/cardPriceInCart_PDP'), FailureHandling.STOP_ON_FAILURE)
+String cardpricecart = WebUI.getText(findTestObject('PDPPage/cardPriceInCart_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 def cardpricecart1 = removeDollar(cardpricecart)
 

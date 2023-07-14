@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/Left_Current_Page_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/Left_Current_Page_CLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/breadcrumb_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/breadcrumb_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/L1_CLP/category_BannerWithImg_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/L1_CLP/category_BannerWithImg_CLP'), 0)
 

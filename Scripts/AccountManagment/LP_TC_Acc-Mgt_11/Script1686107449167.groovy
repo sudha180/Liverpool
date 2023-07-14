@@ -26,13 +26,13 @@ WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'), FailureHandling.STOP_O
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.mouseOver(findTestObject('CLPPage/AfterLogin_hp'))
 
 WebUI.click(findTestObject('HomePage/myAccount_hp'))
 
 WebUI.click(findTestObject('AccountManagement/DeliveryAddress_Account'))
 
-WebUI.click(findTestObject('0OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
 WebUI.closeBrowser()
 

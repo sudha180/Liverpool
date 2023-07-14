@@ -33,11 +33,11 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLSearchTerm], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/SecondProduct_plp'))
+WebUI.click(findTestObject('PLPPage/SecondProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/Comprar_pdp'))
+WebUI.click(findTestObject('PDPPage/Comprar_pdp'))
 
-not_run: WebUI.click(findTestObject('0CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(4)
 
@@ -48,9 +48,9 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/DemoObjects/OPC/Pag
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/DemoObjects/OPC/Page_/shippingCostLabel_opc'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0OPCPage/Page_/totalPriceLabel_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/OPCPage/Page_/totalPriceLabel_opc'), 0)
 
-actualFont = WebUI.getCSSValue(findTestObject('0OPCPage/Page_/totalPriceLabel_opc'), 'font')
+actualFont = WebUI.getCSSValue(findTestObject('OPCPage/Page_/totalPriceLabel_opc'), 'font')
 
 def expectedFont = '1rem robotoBold'
 
@@ -72,7 +72,7 @@ def DiscountPrice1 = CustomKeywords.'customkeywords.myKeywords.removeDollar'(Dis
 
 KeywordUtil.logInfo(DiscountPrice1)
 
-TotalPrice = WebUI.getText(findTestObject('Object Repository/0OPCPage/Page_/TotalPrice_opc'), FailureHandling.STOP_ON_FAILURE)
+TotalPrice = WebUI.getText(findTestObject('Object Repository/OPCPage/Page_/TotalPrice_opc'), FailureHandling.STOP_ON_FAILURE)
 
 def TotalPrice1 = CustomKeywords.'customkeywords.myKeywords.removeDollar'(TotalPrice)
 

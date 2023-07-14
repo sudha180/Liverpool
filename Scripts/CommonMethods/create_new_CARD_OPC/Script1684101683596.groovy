@@ -17,22 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0OPCPage/Payment_Method_Card_OPC'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('OPCPage/Payment_Method_Card_OPC'), FailureHandling.OPTIONAL)
 
 'to set card as default card\r\n'
-WebUI.click(findTestObject('0OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('0OPCPage/newCardNumber_OPC'), '4343434311111111')
+WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'), '4343434311111111')
 
-WebUI.setText(findTestObject('0OPCPage/EnterCardAlias_OPC'), 'sharma')
+WebUI.setText(findTestObject('OPCPage/EnterCardAlias_OPC'), 'sharma')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardName_OPC'), 'vedant')
+WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'vedant')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardExpire_OPC'), '12/24')
+WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/24')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardCVV_OPC'), '123')
+WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
 
 WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
 

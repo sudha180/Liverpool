@@ -95,187 +95,187 @@ WebUI.click(findTestObject('HomePage/L1Category_HP (1)'))
 
 WebUI.delay(3)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0BLPPage/breadCrumb_blp'))
+not_run: WebUI.verifyElementPresent(findTestObject('BLPPage/breadCrumb_blp'))
 
-WebUI.verifyElementPresent(findTestObject('0BLPPage/breadCrumb_blp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('BLPPage/breadCrumb_blp (1)'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0BLPPage/l2Category_blp'))
+not_run: WebUI.verifyElementPresent(findTestObject('BLPPage/l2Category_blp'))
 
-WebUI.verifyElementPresent(findTestObject('0BLPPage/l2Category_blp (1)'), 0)
-
-WebUI.delay(3)
-
-not_run: CustomKeywords.'customkeywords.myKeywords.scrollWindow'()
-
-not_run: WebUI.click(findTestObject('0BLPPage/l2Category_blp'))
-
-WebUI.click(findTestObject('0BLPPage/l2Category_blp (1)'))
-
-not_run: WebUI.verifyElementPresent(findTestObject('0CLPPage/breadCrumb_clp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0CLPPage/breadCrumb_clp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0CLPPage/a_Ver todo_clp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0CLPPage/a_Ver todo_clp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0CLPPage/l3Category_clp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0CLPPage/l3Category_clp (1)'), 0)
-
-WebUI.click(findTestObject('0CLPPage/l3Category_clp (1)'))
-
-not_run: WebUI.click(findTestObject('0CLPPage/l3Category_clp'))
+WebUI.verifyElementPresent(findTestObject('BLPPage/l2Category_blp (1)'), 0)
 
 WebUI.delay(3)
 
 not_run: CustomKeywords.'customkeywords.myKeywords.scrollWindow'()
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/breadCrumb_plp'), 0)
+not_run: WebUI.click(findTestObject('BLPPage/l2Category_blp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/breadCrumb_plp (1)'), 0)
+WebUI.click(findTestObject('BLPPage/l2Category_blp (1)'))
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Categoras_plp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CLPPage/breadCrumb_clp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Categoras_plp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/breadCrumb_clp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Marcas_plp (1)'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CLPPage/a_Ver todo_clp'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Marcas_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/a_Ver todo_clp (1)'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Precios_plp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CLPPage/l3Category_clp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Precios_plp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/l3Category_clp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Tamao_plp (1)'), 0)
+WebUI.click(findTestObject('CLPPage/l3Category_clp (1)'))
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Tamao_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Vendido por_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/div_Vendido por_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/label_Color_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/label_Color_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/label_Descuentos_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/label_Descuentos_plp'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/productName_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/productName_plp (1)'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/productImage2_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/productImage2_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productPrice_pdp'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/productPrice_plp'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/listView_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/listView_plp (1)'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/gridView_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/gridView_plp'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Relevancia_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Relevancia_plp (1)'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Lo Ms Nuevo_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Lo Ms Nuevo_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Mayor precio_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Mayor precio_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Menor precio_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Menor precio_plp'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Calificaciones_plp (1)'), 0)
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/button_Calificaciones_plp'))
-
-WebUI.click(findTestObject('0PLPPage/a_Color_variants-normalizedColor-Blanco_plp (1)'))
-
-not_run: WebUI.click(findTestObject('0PLPPage/a_Color_variants-normalizedColor-Blanco_plp'))
-
-WebUI.delay(3)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/a_Limpiar Filtros_plp (1)'), 0)
-
-WebUI.click(findTestObject('0PLPPage/a_Limpiar Filtros_plp (1)'))
-
-not_run: WebUI.verifyElementPresent(findTestObject('0PLPPage/a_Limpiar Filtros_plp'))
-
-not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('0PLPPage/carousel_plp'))
-
-WebUI.click(findTestObject('0PLPPage/productImage2_plp (1)'))
-
-not_run: WebUI.click(findTestObject('0PLPPage/productImage2_plp'))
+not_run: WebUI.click(findTestObject('CLPPage/l3Category_clp'))
 
 WebUI.delay(3)
 
 not_run: CustomKeywords.'customkeywords.myKeywords.scrollWindow'()
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PDPPage/breadCrumb_pdp (1)'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/breadCrumb_plp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/breadCrumb_pdp'))
+WebUI.verifyElementPresent(findTestObject('PLPPage/breadCrumb_plp (1)'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PDPPage/alternateImages_pdp (1)'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/div_Categoras_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/alternateImages_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/div_Categoras_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productImage_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/div_Marcas_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productName_pdp (1)'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/div_Marcas_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/quantity_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/div_Precios_plp'), 0)
 
-not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('0PDPPage/regularPrice_pdp'))
+WebUI.verifyElementPresent(findTestObject('PLPPage/div_Precios_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/DiscountPriceprice_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/div_Tamao_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/p_Cdigo de Producto_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/div_Tamao_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/div_Vendido por_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ratingSection_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/div_Vendido por_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/span_Compartir_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/label_Color_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/p_Ver ms promociones_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/label_Color_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/button_Agregar a mi bolsa_pdp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/label_Descuentos_plp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/h3_Ofertas y promociones_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/label_Descuentos_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/h3_Opiniones del artculo_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/productName_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/productName_plp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/productImage2_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/productImage2_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/productPrice_pdp'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/productPrice_plp'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/listView_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/listView_plp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/gridView_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/gridView_plp'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/button_Relevancia_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/button_Relevancia_plp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/button_Lo Ms Nuevo_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/button_Lo Ms Nuevo_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/button_Mayor precio_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/button_Mayor precio_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/button_Menor precio_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/button_Menor precio_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/button_Calificaciones_plp (1)'), 0)
+
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/button_Calificaciones_plp'))
+
+WebUI.click(findTestObject('PLPPage/a_Color_variants-normalizedColor-Blanco_plp (1)'))
+
+not_run: WebUI.click(findTestObject('PLPPage/a_Color_variants-normalizedColor-Blanco_plp'))
 
 WebUI.delay(3)
 
-not_run: WebUI.click(findTestObject('0PDPPage/selectSize1'))
+WebUI.verifyElementPresent(findTestObject('PLPPage/a_Limpiar Filtros_plp (1)'), 0)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/quantity_pdp'), 0)
+WebUI.click(findTestObject('PLPPage/a_Limpiar Filtros_plp (1)'))
 
-WebUI.click(findTestObject('0PDPPage/selectSize1'))
+not_run: WebUI.verifyElementPresent(findTestObject('PLPPage/a_Limpiar Filtros_plp'))
+
+not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('PLPPage/carousel_plp'))
+
+WebUI.click(findTestObject('PLPPage/productImage2_plp (1)'))
+
+not_run: WebUI.click(findTestObject('PLPPage/productImage2_plp'))
 
 WebUI.delay(3)
 
-not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('0PDPPage/carousels_pdp'))
+not_run: CustomKeywords.'customkeywords.myKeywords.scrollWindow'()
 
-not_run: WebUI.click(findTestObject('0PDPPage/button_Agregar a mi bolsa_pdp (1)'))
+not_run: WebUI.verifyElementPresent(findTestObject('PDPPage/breadCrumb_pdp (1)'), 0)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/quantity_pdp'), 0)
+WebUI.click(findTestObject('PDPPage/breadCrumb_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/button_Agregar a mi bolsa_pdp (1)'))
+not_run: WebUI.verifyElementPresent(findTestObject('PDPPage/alternateImages_pdp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/alternateImages_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/productImage_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/productName_pdp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/quantity_pdp'), 0)
+
+not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('PDPPage/regularPrice_pdp'))
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/DiscountPriceprice_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/p_Cdigo de Producto_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/ITRLink_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/ratingSection_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/span_Compartir_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/p_Ver ms promociones_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/button_Agregar a mi bolsa_pdp (1)'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/h3_Ofertas y promociones_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPPage/h3_Opiniones del artculo_pdp'), 0)
+
+WebUI.delay(3)
+
+not_run: WebUI.click(findTestObject('PDPPage/selectSize1'))
+
+WebUI.scrollToElement(findTestObject('PDPPage/quantity_pdp'), 0)
+
+WebUI.click(findTestObject('PDPPage/selectSize1'))
+
+WebUI.delay(3)
+
+not_run: CustomKeywords.'myKeywords.verifyElementPresentKeyword'(findTestObject('PDPPage/carousels_pdp'))
+
+not_run: WebUI.click(findTestObject('PDPPage/button_Agregar a mi bolsa_pdp (1)'))
+
+WebUI.scrollToElement(findTestObject('PDPPage/quantity_pdp'), 0)
+
+WebUI.click(findTestObject('PDPPage/button_Agregar a mi bolsa_pdp (1)'))
 
 WebUI.delay(5)
 
@@ -287,37 +287,37 @@ WebUI.delay(3)
 
 CustomKeywords.'customkeywords.myKeywords.scrollWindow'()
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/span_Mi Bolsa_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/span_Mi Bolsa_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/myBagImageProduct_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/myBagImageProduct_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/productName_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/productName_cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0CartPage/productPrice_cart'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CartPage/productPrice_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_EliminarIcon_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_EliminarIcon_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/totalPrice_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/totalPrice_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_mesaDeRegalos_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_mesaDeRegalos_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Mover a Wishlist_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Mover a Wishlist_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Eliminar_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Eliminar_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Comprarahora_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Comprarahora_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/priceSection_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/priceSection_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Comprar_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Comprar_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/div_Entregaestimada_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/div_Entregaestimada_cart'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0CartPage/div_carouselSection_cart'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('CartPage/div_carouselSection_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_SeguirComprando_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_SeguirComprando_cart'), 0)
 
-WebUI.click(findTestObject('0CartPage/button_Comprar_cart'))
+WebUI.click(findTestObject('CartPage/button_Comprar_cart'))
 
 WebUI.delay(3)
 
@@ -355,15 +355,15 @@ WebUI.verifyElementPresent(findTestObject('checkoutpage/button_Mover a Wishlist_
 
 WebUI.verifyElementPresent(findTestObject('checkoutpage/button_Eliminar_opc'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/button_Cupones_opc (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/button_Cupones_opc (1)'), 0)
 
 WebUI.click(findTestObject('checkoutpage/label_Cambiar_payment_opc'))
 
 WebUI.click(findTestObject('checkoutpage/button_Efectivo y Transferencias_payment_opc'))
 
-not_run: WebUI.click(findTestObject('0OPCPage/button_Continuar_payment_opc (1)'))
+not_run: WebUI.click(findTestObject('OPCPage/button_Continuar_payment_opc (1)'))
 
-WebUI.click(findTestObject('0OPCPage/button_Continuar_payment_opc (1)'))
+WebUI.click(findTestObject('OPCPage/button_Continuar_payment_opc (1)'))
 
 WebUI.delay(4)
 

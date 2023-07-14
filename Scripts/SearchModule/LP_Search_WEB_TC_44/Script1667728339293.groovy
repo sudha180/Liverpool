@@ -27,7 +27,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/assertSearchResults_srp'), [:], F
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-productName_srp = WebUI.getText(findTestObject('1SRP page/productName_srp'))
+productName_srp = WebUI.getText(findTestObject('SRP page/productName_srp'))
 
 'productName_srp' != 'Asas para Vaso Antigoteo Avent Philips'
 

@@ -23,17 +23,17 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/ViewArticles_Button_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/ViewArticles_Button_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product1_selectButton_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product1_selectButton_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product2_Colour1_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product2_Colour1_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product2_size1_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product2_size1_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product2_selectButton_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product2_selectButton_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/GID collection/StickyBar1productQuantity_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPPage/GID collection/StickyBar1productQuantity_PDP'), '1')
 
 WebUI.closeBrowser()
 

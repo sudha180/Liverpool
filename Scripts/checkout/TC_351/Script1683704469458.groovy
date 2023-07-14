@@ -37,9 +37,9 @@ WebUI.callTestCase(findTestCase('CommonMethods/makePaypalAsDefault_myAccount'), 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SL_Product1], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Comprar_pdp'))
+WebUI.click(findTestObject('PDPPage/Comprar_pdp'))
 
-not_run: WebUI.click(findTestObject('0CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(4)
 

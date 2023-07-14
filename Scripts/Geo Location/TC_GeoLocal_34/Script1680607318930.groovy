@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHome_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ReceiveAtHome_pdp'), 0)
 
 WebUI.closeBrowser()
 

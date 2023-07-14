@@ -23,21 +23,21 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-product1price = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+product1price = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-product2price = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+product2price = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-product3price = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+product3price = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/relevance_SortBy_PLP'))
+WebUI.click(findTestObject('PLPPage/relevance_SortBy_PLP'))
 
-productAprice = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+productAprice = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-productBprice = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+productBprice = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-productCprice = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+productCprice = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
 if (product1price == productAprice) {
     println('checked1')

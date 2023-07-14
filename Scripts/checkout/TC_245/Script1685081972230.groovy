@@ -34,24 +34,24 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ChangeAddress_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ChangeAddress_Checkout'), 0)
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'), 0)
 
 WebUI.closeBrowser()
 

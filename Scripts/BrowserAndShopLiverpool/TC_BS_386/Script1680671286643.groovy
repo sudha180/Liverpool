@@ -29,29 +29,29 @@ not_run: WebUI.setText(findTestObject('HomePage/MainSearchbar_hp (1)'), 'MAC')
 
 not_run: WebUI.click(findTestObject('HomePage/SearchButton_hp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Price_6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/Price_6_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Price_1.6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Price_1.6_plp'), 0)
 
 WebUI.closeBrowser()
 

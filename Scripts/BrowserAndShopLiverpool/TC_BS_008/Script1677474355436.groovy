@@ -28,13 +28,13 @@ WebUI.mouseOver(findTestObject('HomePage/L1_Category8_HP'))
 WebUI.enhancedClick(findTestObject('HomePage/L3_category_ninos_NInos(2-4)_HP'))
 
 'L4 category page\r\n'
-L4 = WebUI.getText(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+L4 = WebUI.getText(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), L4)
+WebUI.verifyElementText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), L4)
 
 WebUI.closeBrowser()
 

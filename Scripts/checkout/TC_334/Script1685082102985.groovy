@@ -25,28 +25,28 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.digitalP], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
 'verify no delivery adress is present '
-WebUI.verifyElementNotPresent(findTestObject('0OPCPage/billingAddress_OPC'), 0)
+WebUI.verifyElementNotPresent(findTestObject('OPCPage/billingAddress_OPC'), 0)
 
 'verify no delivery adress is present to change to '
-WebUI.verifyElementNotPresent(findTestObject('0OPCPage/changeADDRESS_OPC'), 0)
+WebUI.verifyElementNotPresent(findTestObject('OPCPage/changeADDRESS_OPC'), 0)
 
 'only show when their is digital download only'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/digitalDownload_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/digitalDownload_OPC'), 0)
 
 WebUI.closeBrowser()
 

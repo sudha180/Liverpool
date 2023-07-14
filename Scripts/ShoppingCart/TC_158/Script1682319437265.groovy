@@ -33,24 +33,24 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WishListButtonChecked = WebUI.getText(findTestObject('0PDPPage/WishListButtonChecked_Pdp'))
+WishListButtonChecked = WebUI.getText(findTestObject('PDPPage/WishListButtonChecked_Pdp'))
 
 if (WishListButtonChecked == 'Guardado en Wishlist de SAMRAJ') {
     println('checked')
 
-    WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+    WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
     WebUI.click(findTestObject('HomePage/Cart_header'))
 
-    WebUI.verifyElementPresent(findTestObject('0CartPage/ItemOnWishList_Cart'), 0)
+    WebUI.verifyElementPresent(findTestObject('CartPage/ItemOnWishList_Cart'), 0)
 } else {
-    WebUI.click(findTestObject('0PDPPage/WishListButtonChecked_Pdp'))
+    WebUI.click(findTestObject('PDPPage/WishListButtonChecked_Pdp'))
 
-    WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+    WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
     WebUI.click(findTestObject('HomePage/Cart_header'))
 
-    WebUI.verifyElementPresent(findTestObject('0CartPage/ItemOnWishList_Cart'), 0)
+    WebUI.verifyElementPresent(findTestObject('CartPage/ItemOnWishList_Cart'), 0)
 }
 
 WebUI.closeBrowser()

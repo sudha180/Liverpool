@@ -31,7 +31,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ClickNCollect_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectStoreLink_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/SelectStoreLink_pdp'), 0)
 

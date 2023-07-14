@@ -27,23 +27,23 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bt'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.enhancedClick(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.delay(3)
 
@@ -55,82 +55,82 @@ WebUI.setText(findTestObject('1vedant/Page_/card_cvv_cardpopup'), '123')
 
 WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/product1_promotionDropDown_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/product1_promotionDropDown_OPC'), 0)
 
-WebUI.click(findTestObject('0OPCPage/product1_promotionDropDown_OPC'))
+WebUI.click(findTestObject('OPCPage/product1_promotionDropDown_OPC'))
 
 int i = 0
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo1_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo1_popup_OPC'))
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo2_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo2_popup_OPC'))
 }
 
 System.out.println('number of promo combo for external card ' + i)
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.delay(3)
 
 'liverpool'
-WebUI.enhancedClick(findTestObject('0OPCPage/card1_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/card1_OPC'))
 
 WebUI.setText(findTestObject('1vedant/Page_/card_cvv_cardpopup'), '123')
 
 WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/product1_promotionDropDown_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/product1_promotionDropDown_OPC'), 0)
 
-WebUI.click(findTestObject('0OPCPage/product1_promotionDropDown_OPC'))
+WebUI.click(findTestObject('OPCPage/product1_promotionDropDown_OPC'))
 
 int j = 0
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     j++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo1_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo1_popup_OPC'))
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     j++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo1_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo1_popup_OPC'))
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     j++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo2_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo2_popup_OPC'))
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo4_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo4_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     j++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo3_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo3_popup_OPC'))
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo5_popup_OPC'), FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo5_popup_OPC'), FailureHandling.OPTIONAL)) {
     j++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo4_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo4_popup_OPC'))
 }
 
 System.out.println('number of promo combo for liverpool card' + j)

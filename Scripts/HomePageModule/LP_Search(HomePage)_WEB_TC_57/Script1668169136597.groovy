@@ -25,5 +25,5 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/HomePage/Levis Live
 
 WebUI.click(findTestObject('Object Repository/HomePage/Page_Liverpool es parte de Mi vida (1)/h1_Levis'))
 
-WebUI.verifyElementNotPresent(findTestObject('Object Repository/0BLPPage/CarouselNotPresent_BLP'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Object Repository/BLPPage/CarouselNotPresent_BLP'), 0)
 

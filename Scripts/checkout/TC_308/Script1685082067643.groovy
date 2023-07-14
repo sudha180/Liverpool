@@ -25,29 +25,29 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_newUser'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bus'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
 'would show if the login user has a default card'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/CardLast4Digit_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/CardLast4Digit_OPC'), 0)
 
 'title of payment method\r\n'
-PaymentTitle = WebUI.getText(findTestObject('0OPCPage/paymentMethod_title_OPC'), FailureHandling.STOP_ON_FAILURE)
+PaymentTitle = WebUI.getText(findTestObject('OPCPage/paymentMethod_title_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-int PaymentTitleCSS = WebUI.getCSSValue(findTestObject('0OPCPage/paymentMethod_title_OPC'), 'font-weight')
+int PaymentTitleCSS = WebUI.getCSSValue(findTestObject('OPCPage/paymentMethod_title_OPC'), 'font-weight')
 
 System.out.println(PaymentTitleCSS)
 

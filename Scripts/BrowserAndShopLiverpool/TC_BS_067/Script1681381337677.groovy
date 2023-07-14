@@ -25,13 +25,13 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/0PLPPage/Select_product_plp'))
+WebUI.click(findTestObject('Object Repository/PLPPage/Select_product_plp'))
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/Select_Product_Cursole_pdp'))
+WebUI.click(findTestObject('Object Repository/PDPPage/Select_Product_Cursole_pdp'))
 
-WebUI.scrollToElement(findTestObject('0PDPPage/Verify_Breadcrum_pdp'), 0)
+WebUI.scrollToElement(findTestObject('PDPPage/Verify_Breadcrum_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Verify_Breadcrum_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/Verify_Breadcrum_pdp'), 0)
 
 WebUI.closeBrowser()
 

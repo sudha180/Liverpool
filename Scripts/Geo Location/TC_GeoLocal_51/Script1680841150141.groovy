@@ -33,13 +33,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/MoreDeliveryLink_cart'))
+WebUI.click(findTestObject('CLPPage/MoreDeliveryLink_cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/MoreDeliveryPoupup_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/MoreDeliveryPoupup_Cart'), 0)
 
 WebUI.closeBrowser()
 

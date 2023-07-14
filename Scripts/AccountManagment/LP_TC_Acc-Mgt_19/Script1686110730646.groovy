@@ -26,7 +26,7 @@ WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'), FailureHandling.STOP_O
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.mouseOver(findTestObject('CLPPage/AfterLogin_hp'))
 
 WebUI.click(findTestObject('AccountManagement/MyCardFromDropdown_Account'))
 

@@ -27,13 +27,13 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/bestSeller_sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/bestSeller_sortby_PLP'))
 
 WebUI.closeBrowser()
 

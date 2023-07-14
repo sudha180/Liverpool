@@ -28,18 +28,18 @@ L1_category = WebUI.getText(findTestObject('HomePage/L1Category_HP (1)'))
 WebUI.click(findTestObject('HomePage/L1Category_HP (1)'))
 
 'this is only name of category we chose'
-FooterName = WebUI.getText(findTestObject('0CLPPage/footer_name_not.com_CLP'), FailureHandling.STOP_ON_FAILURE)
+FooterName = WebUI.getText(findTestObject('CLPPage/footer_name_not.com_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/Left_Current_Page_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/Left_Current_Page_CLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/breadcrumb_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/breadcrumb_plp'), 0)
 
-WebUI.scrollToElement(findTestObject('0CLPPage/footer_.com_CLP(dtqab)'), 0)
+WebUI.scrollToElement(findTestObject('CLPPage/footer_.com_CLP(dtqab)'), 0)
 
 'this is complete text of footer '
-WebUI.verifyElementText(findTestObject('0CLPPage/footer_.com_CLP(dtqab)'), 'MUJER EN LIVERPOOL.COM.MX')
+WebUI.verifyElementText(findTestObject('CLPPage/footer_.com_CLP(dtqab)'), 'MUJER EN LIVERPOOL.COM.MX')
 
 if (L1_category == FooterName) {
     System.out.print('correct page')

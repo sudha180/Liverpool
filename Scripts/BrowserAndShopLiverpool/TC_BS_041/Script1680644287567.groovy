@@ -28,21 +28,21 @@ WebUI.mouseOver(findTestObject('HomePage/L1_Category1_HP'))
 WebUI.enhancedClick(findTestObject('HomePage/L3_categoryMenu_HP'))
 
 'L4 category page\r\n'
-WebUI.getText(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.getText(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'))
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/AddedToCart_alert_message_PDP'), 'Agregaste un producto a tu bolsa')
+WebUI.verifyElementText(findTestObject('PDPPage/AddedToCart_alert_message_PDP'), 'Agregaste un producto a tu bolsa')
 
 WebUI.closeBrowser()
 

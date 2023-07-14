@@ -25,7 +25,7 @@ WebUI.verifyElementPresent(findTestObject('HomePage/Iniciarsesión_hp'), 0)
 
 WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/LoginPage_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/LoginPage_pdp'), 0)
 
 WebUI.closeBrowser()
 

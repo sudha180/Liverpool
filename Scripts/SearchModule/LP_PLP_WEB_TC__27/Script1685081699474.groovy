@@ -25,21 +25,21 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/mostviewed_recommendsection_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mostviewed_recommendsection_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_title_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_title_PLP'), 0)
 
-productName = WebUI.getText(findTestObject('0PLPPage/MostViewed_visible_product1_image_PLP'), FailureHandling.STOP_ON_FAILURE)
+productName = WebUI.getText(findTestObject('PLPPage/MostViewed_visible_product1_image_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/MostViewed_visible_product1_image_PLP'))
+WebUI.click(findTestObject('PLPPage/MostViewed_visible_product1_image_PLP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/ProductName_PDP'), productName)
+WebUI.verifyElementText(findTestObject('PDPPage/ProductName_PDP'), productName)
 
 WebUI.closeBrowser()
 

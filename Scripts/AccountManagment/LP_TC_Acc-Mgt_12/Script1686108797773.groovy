@@ -26,7 +26,7 @@ WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'), FailureHandling.STOP_O
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.mouseOver(findTestObject('CLPPage/AfterLogin_hp'))
 
 WebUI.click(findTestObject('HomePage/myAccount_hp'))
 
@@ -36,11 +36,11 @@ Title1St = WebUI.getText(findTestObject('AccountManagement/AddressTitleSecound_A
 
 WebUI.click(findTestObject('AccountManagement/Select3DotAddress2Nd_Account'))
 
-WebUI.click(findTestObject('0OPCPage/EditAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/EditAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/ShortNameAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ShortNameAddress_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/ShortNameAddress_Checkout'), 'New test')
+WebUI.setText(findTestObject('OPCPage/ShortNameAddress_Checkout'), 'New test')
 
 WebUI.click(findTestObject('AccountManagement/AcceptButton_Account'))
 

@@ -25,25 +25,25 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_newUser'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bus'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPPage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/paymentCard_aliasName_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/paymentCard_aliasName_OPC'), 0)
 
-aliasfontweight = WebUI.getCSSValue(findTestObject('0OPCPage/paymentCard_aliasName_OPC'), 'font-weight')
+aliasfontweight = WebUI.getCSSValue(findTestObject('OPCPage/paymentCard_aliasName_OPC'), 'font-weight')
 
 afw = aliasfontweight.toBigInteger()
 
@@ -52,13 +52,13 @@ if (afw >= 200) {
 }
 
 'paypal\r\n'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/paymentCard_aliasName_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/paymentCard_aliasName_OPC'), 0)
 
 'Efectivo y Transferencias'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/paymentCard_CVV_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/paymentCard_CVV_OPC'), 0)
 
 'verify best promotion'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/BestpromotionScrolldown_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/BestpromotionScrolldown_OPC'), 0)
 
 WebUI.closeBrowser()
 

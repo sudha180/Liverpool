@@ -26,13 +26,13 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpParentSLwithMultipleSLGifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('pdp/gwpGiftPopup_pdp'), 0)
 
@@ -40,5 +40,5 @@ WebUI.click(findTestObject('pdp/secondGiftRadioButton_gwpPopup_pdp'), FailureHan
 
 WebUI.click(findTestObject('pdp/button_Aceptar_gwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/giftImageInGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/giftImageInGiftDropdown_pdp'), 0)
 

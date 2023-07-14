@@ -30,13 +30,13 @@ WebUI.delay(4)
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0PDPPage/BuyNow_pdp'))
+WebUI.click(findTestObject('PDPPage/BuyNow_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/LoginPage_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/LoginPage_pdp'), 0)
 
 WebUI.closeBrowser()
 

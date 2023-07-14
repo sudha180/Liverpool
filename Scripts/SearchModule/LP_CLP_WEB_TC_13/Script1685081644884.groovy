@@ -25,23 +25,23 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 'check for L3 category'
-currentPage1 = WebUI.getText(findTestObject('0CLPPage/L2_CLP/Category_img1_L2_CLP'))
+currentPage1 = WebUI.getText(findTestObject('CLPPage/L2_CLP/Category_img1_L2_CLP'))
 
 currentPage = currentPage1.toLowerCase()
 
 System.out.println(currentPage)
 
 'L2 CLP'
-WebUI.click(findTestObject('0CLPPage/L2_CLP/Category_img1_L2_CLP'))
+WebUI.click(findTestObject('CLPPage/L2_CLP/Category_img1_L2_CLP'))
 
 System.out.println(currentPage)
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-breadcrumb1 = WebUI.getText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'))
+breadcrumb1 = WebUI.getText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'))
 
 breadcrumb = breadcrumb1.toLowerCase()
 

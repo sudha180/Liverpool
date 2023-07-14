@@ -34,27 +34,27 @@ WebUI.navigateToUrl(GlobalVariable.GWPProductLink)
 
 not_run: WebUI.callTestCase(findTestCase('null'), [('searchTerm') : GlobalVariable.CollectionItem], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GiftWithPurchase_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GiftWithPurchase_pdp'), 0)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/AddToCart_pdp (1)'), 0)
+WebUI.scrollToElement(findTestObject('PDPPage/AddToCart_pdp (1)'), 0)
 
-WebUI.click(findTestObject('0PDPPage/GiftWithPurchasePopup_pdp'))
+WebUI.click(findTestObject('PDPPage/GiftWithPurchasePopup_pdp'))
 
-WebUI.scrollToElement(findTestObject('0PDPPage/GiftWithPurchaseButton_pdp'), 0)
+WebUI.scrollToElement(findTestObject('PDPPage/GiftWithPurchaseButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/GiftWithPurchaseButton_pdp'))
+WebUI.click(findTestObject('PDPPage/GiftWithPurchaseButton_pdp'))
 
-not_run: WebUI.scrollToElement(findTestObject('0PDPPage/AddToCart_pdp (1)'), 0)
+not_run: WebUI.scrollToElement(findTestObject('PDPPage/AddToCart_pdp (1)'), 0)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/CheckoutButton_Cart'))
+WebUI.click(findTestObject('CLPPage/CheckoutButton_Cart'))
 
-WebUI.scrollToElement(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.scrollToElement(findTestObject('OPCPage/EDD_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser()
 

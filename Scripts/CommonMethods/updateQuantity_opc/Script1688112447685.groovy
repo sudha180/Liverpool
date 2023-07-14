@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-A = WebUI.getAttribute(findTestObject('0OPCPage/Product1_quantity_OPC2'), 'value')
+A = WebUI.getAttribute(findTestObject('OPCPage/Product1_quantity_OPC2'), 'value')
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/addQuantityPLUS_OPC2'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/addQuantityPLUS_OPC2'), 0)
 
-WebUI.enhancedClick(findTestObject('0OPCPage/addQuantityPLUS_OPC2'), FailureHandling.STOP_ON_FAILURE)
+WebUI.enhancedClick(findTestObject('OPCPage/addQuantityPLUS_OPC2'), FailureHandling.STOP_ON_FAILURE)
 
-B = WebUI.getAttribute(findTestObject('0OPCPage/Product1_quantity_OPC2'), 'value')
+B = WebUI.getAttribute(findTestObject('OPCPage/Product1_quantity_OPC2'), 'value')
 
 System.out.print(A)
 

@@ -30,35 +30,35 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickMyAccountFromHeader'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0OPCPage/deliveryAddressHeading_address_opc'))
+WebUI.click(findTestObject('OPCPage/deliveryAddressHeading_address_opc'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/ClickDelivery_MyAccount'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Comprar_pdp'))
+WebUI.click(findTestObject('PDPPage/Comprar_pdp'))
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('0OPCPage/label_Cambiar_Address_opc'))
+WebUI.click(findTestObject('OPCPage/label_Cambiar_Address_opc'))
 
-WebUI.click(findTestObject('0OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0OPCPage/ClickNCollectionRadioButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/ClickNCollectionRadioButton_Checkout'))
 
-// WebUI.click(findTestObject('0OPCPage/OptionOfSelectEvent_Checkout'))
-WebUI.click(findTestObject('0OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
+// WebUI.click(findTestObject('OPCPage/OptionOfSelectEvent_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/label_Cambiar_Address_opc'))
+WebUI.click(findTestObject('OPCPage/label_Cambiar_Address_opc'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/DefaultAddress_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/DefaultAddress_Checkout'), 0)
 
 WebUI.closeBrowser()
 

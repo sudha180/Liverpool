@@ -28,21 +28,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.verifyElementPresent(findTestObject('pdp/addedProductSuccessMessage_pdp'), 0)
 
 WebUI.click(findTestObject('pdp/miniBagValue_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Comprarahora_cart (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Comprarahora_cart (1)'), 0)
 
 WebUI.back()
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('pdp/gwpGiftItemDisabled_pdp'), 0)
 
@@ -50,7 +50,7 @@ WebUI.verifyElementPresent(findTestObject('pdp/GwppFirstGiftSelected_popup'), 0)
 
 WebUI.click(findTestObject('pdp/button_Aceptar_gwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/button_Agregar a mi bolsa_pdp'))
+WebUI.click(findTestObject('PDPPage/button_Agregar a mi bolsa_pdp'))
 
 WebUI.verifyElementPresent(findTestObject('pdp/addedProductSuccessMessage_pdp'), 0)
 

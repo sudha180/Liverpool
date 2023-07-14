@@ -29,46 +29,46 @@ not_run: WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.Softline], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'))
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
 WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.softline3], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product1_Name_Mybag_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product1_Name_Mybag_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_pricePerProduct_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_pricePerProduct_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_Subtotal_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_Subtotal_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_remove_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_remove_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product2_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product2_quantity1_cart'), 0)
 
-WebUI.verifyElementClickable(findTestObject('0CartPage/product2_Name_Mybag_cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CartPage/product2_Name_Mybag_cart'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_pricePerProduct_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_pricePerProduct_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product2_Subtotal_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product2_Subtotal_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product2_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product2_quantity1_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product2_remove_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product2_remove_cart'), 0)
 
 WebUI.closeBrowser()
 

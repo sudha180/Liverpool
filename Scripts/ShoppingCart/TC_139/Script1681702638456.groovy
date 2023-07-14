@@ -37,17 +37,17 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(3)
 
-WebUI.clearText(findTestObject('0PDPPage/QuantityTotal_pdp'))
+WebUI.clearText(findTestObject('PDPPage/QuantityTotal_pdp'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('0PDPPage/QuantityTotal_pdp'), '999')
+WebUI.setText(findTestObject('PDPPage/QuantityTotal_pdp'), '999')
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
-WebUI.click(findTestObject('0CartPage/CartHeaderLargeCount_CartPage'))
+WebUI.click(findTestObject('CartPage/CartHeaderLargeCount_CartPage'))
 
 not_run: WebUI.navigateToUrl(GlobalVariable.PreOrderProductLink)
 
@@ -58,15 +58,15 @@ not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
 WebUI.delay(3)
 
-WebUI.clearText(findTestObject('0PDPPage/QuantityTotal_pdp'))
+WebUI.clearText(findTestObject('PDPPage/QuantityTotal_pdp'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('0PDPPage/QuantityTotal_pdp'), '20')
+WebUI.setText(findTestObject('PDPPage/QuantityTotal_pdp'), '20')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/AlertMessage_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/AlertMessage_pdp'), 0)
 
 WebUI.closeBrowser()
 

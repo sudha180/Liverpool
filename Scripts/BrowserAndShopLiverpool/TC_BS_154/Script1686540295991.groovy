@@ -32,20 +32,20 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 WebUI.delay(5)
 
 <<<<<<< Updated upstream:Scripts/BrowserAndShopLiverpool/TC_BS_154/Script1686540295991.groovy
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ITRLink_pdp'), 0)
 =======
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/paypal(changepaymentmethod)pay'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'verify selection of paypal\r\n'
 WebUI.verifyElementPresent(findTestObject('Checkout/paypal_image_checkout'), 0)
 
-WebUI.click(findTestObject('0OPCPage/final_confirm_order_button_OPC'))
+WebUI.click(findTestObject('OPCPage/final_confirm_order_button_OPC'))
 
 WebUI.verifyElementPresent(findTestObject('ConfirmationPage/PayPal_img_confirm_page'), 0)
 

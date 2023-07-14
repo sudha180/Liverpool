@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'Lentes'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Verify_Breadcrum_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/Verify_Breadcrum_pdp'), 0)
 

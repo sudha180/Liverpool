@@ -27,7 +27,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/assertSearchResults_srp'), [:], F
 
 WebUI.verifyElementPresent(findTestObject('HomePage/Departamentos'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/departmentosFacet'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/departmentosFacet'), 0)
 
 WebUI.closeBrowser()
 

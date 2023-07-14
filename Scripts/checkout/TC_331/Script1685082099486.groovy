@@ -25,40 +25,40 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bag'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'to set card as default card\r\n'
-WebUI.click(findTestObject('0OPCPage/addnewcard_Popup_OPC'))
+WebUI.click(findTestObject('OPCPage/addnewcard_Popup_OPC'))
 
 'section present to edit is address'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressSection_card_popup_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressSection_card_popup_OPC'), 0)
 
-WebUI.setText(findTestObject('0OPCPage/newCardNumber_OPC'), '4343434311111111')
+WebUI.setText(findTestObject('OPCPage/newCardNumber_OPC'), '4343434311111111')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardName_OPC'), 'sharma')
+WebUI.setText(findTestObject('OPCPage/enterCardName_OPC'), 'sharma')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardExpire_OPC'), '12/24')
+WebUI.setText(findTestObject('OPCPage/enterCardExpire_OPC'), '12/24')
 
-WebUI.setText(findTestObject('0OPCPage/enterCardCVV_OPC'), '123')
+WebUI.setText(findTestObject('OPCPage/enterCardCVV_OPC'), '123')
 
 'check that their is option to select for address for card '
-WebUI.verifyElementPresent(findTestObject('0OPCPage/pre_used_Adress_CardAdd_cardpopup_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/pre_used_Adress_CardAdd_cardpopup_OPC'), 0)
 
 WebUI.closeBrowser()
 

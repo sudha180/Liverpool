@@ -24,13 +24,13 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProductNew], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.WrongUsername, ('password') : GlobalVariable.WrongPassword], 
     FailureHandling.STOP_ON_FAILURE)

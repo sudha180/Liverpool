@@ -35,13 +35,13 @@ not_run: WebUI.navigateToUrl(GlobalVariable.DigitalItem)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.DigitalItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/CheckoutButton_Cart'))
+WebUI.click(findTestObject('CLPPage/CheckoutButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser()
 

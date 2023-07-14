@@ -25,21 +25,21 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'laptop'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/HighToLowPriceSortby_PLP'))
+WebUI.click(findTestObject('PLPPage/HighToLowPriceSortby_PLP'))
 
-productDisprice1 = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+productDisprice1 = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-productDisprice2 = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+productDisprice2 = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-productDisprice3 = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+productDisprice3 = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
-a = WebUI.verifyElementPresent(findTestObject('0PLPPage/product1_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+a = WebUI.verifyElementPresent(findTestObject('PLPPage/product1_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
-b = WebUI.verifyElementPresent(findTestObject('0PLPPage/product2_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+b = WebUI.verifyElementPresent(findTestObject('PLPPage/product2_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
-c = WebUI.verifyElementPresent(findTestObject('0PLPPage/product3_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+c = WebUI.verifyElementPresent(findTestObject('PLPPage/product3_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
 if (productDisprice1 >= productDisprice2) {
     println('checked1')
@@ -54,11 +54,11 @@ if (productDisprice2 >= productDisprice3) {
 }
 
 if (((a == true) && (b == true)) && (c == true)) {
-    productsellprice1 = WebUI.getText(findTestObject('0PLPPage/product1_cardPrice_PLP'), 0)
+    productsellprice1 = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'), 0)
 
-    productsellprice2 = WebUI.getText(findTestObject('0PLPPage/product2_cardPrice_PLP'), 0)
+    productsellprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'), 0)
 
-    productsellprice3 = WebUI.getText(findTestObject('0PLPPage/product3_cardPrice_PLP'), 0)
+    productsellprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'), 0)
 
     if (productsellprice1 >= productsellprice2) {
         println('checked1')

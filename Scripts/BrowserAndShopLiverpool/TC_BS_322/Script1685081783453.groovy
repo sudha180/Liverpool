@@ -23,23 +23,23 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product3_Colour1_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product3_Colour1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product3_size1_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product3_size1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product3_selectButton_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/SoftLine_product3_selectButton_PDP'))
 
-a = WebUI.getText(findTestObject('0PDPPage/GID collection/SoftLine_product1_quantity_PDP'))
+a = WebUI.getText(findTestObject('PDPPage/GID collection/SoftLine_product1_quantity_PDP'))
 
 System.out.println(a)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/AddToCartStickyBar_PDP'))
+WebUI.click(findTestObject('PDPPage/GID collection/AddToCartStickyBar_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementText(findTestObject('0CartPage/product_bought_1'), 'Blusa')
+WebUI.verifyElementText(findTestObject('CartPage/product_bought_1'), 'Blusa')
 
 WebUI.closeBrowser()
 

@@ -25,11 +25,11 @@ WebUI.click(findTestObject('HomePage/Buscar1'))
 
 WebUI.setText(findTestObject('HomePage/Buscar1'), 'vaso')
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/6Products_typeAhead'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/6Products_typeAhead'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/categoryNameInTypeahead'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/categoryNameInTypeahead'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/searchTerm2_TypeAhead'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/searchTerm2_TypeAhead'), 0)
 
 WebUI.click(findTestObject('HomePage/searchButtton_HP'))
 

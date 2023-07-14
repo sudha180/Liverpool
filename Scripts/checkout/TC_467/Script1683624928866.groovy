@@ -27,15 +27,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'sofa'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product4_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product4_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
 WebUI.refresh()
 
@@ -43,30 +43,30 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-boolean a = WebUI.verifyElementClickable(findTestObject('0CartPage/SaveForLater_product1_CART(BAG)'))
+boolean a = WebUI.verifyElementClickable(findTestObject('CartPage/SaveForLater_product1_CART(BAG)'))
 
 if (a == true) {
-    WebUI.click(findTestObject('0CartPage/SaveForLater_product1_CART(BAG)'))
+    WebUI.click(findTestObject('CartPage/SaveForLater_product1_CART(BAG)'))
 
-    WebUI.click(findTestObject('0OPCPage/add_to_wishlist1_OPC1'))
+    WebUI.click(findTestObject('OPCPage/add_to_wishlist1_OPC1'))
 
     System.out.println('can be added to whishlist')
 } else {
     System.out.println('save for later product 1 not present')
 }
 
-boolean b = WebUI.verifyElementClickable(findTestObject('0CartPage/SaveForLater_product2_CART(BAG)'))
+boolean b = WebUI.verifyElementClickable(findTestObject('CartPage/SaveForLater_product2_CART(BAG)'))
 
 if (b == true) {
-    WebUI.click(findTestObject('0CartPage/SaveForLater_product2_CART(BAG)'))
+    WebUI.click(findTestObject('CartPage/SaveForLater_product2_CART(BAG)'))
 
-    WebUI.click(findTestObject('0OPCPage/add_to_wishlist1_OPC1'))
+    WebUI.click(findTestObject('OPCPage/add_to_wishlist1_OPC1'))
 
     System.out.println('can be added to whishlist')
 } else {

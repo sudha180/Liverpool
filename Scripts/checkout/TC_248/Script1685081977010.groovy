@@ -35,44 +35,44 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyGiftTable_Cart'))
+WebUI.click(findTestObject('CartPage/BuyGiftTable_Cart'))
 
-WebUI.click(findTestObject('0CartPage/EnterEventNumber_Cart'))
+WebUI.click(findTestObject('CartPage/EnterEventNumber_Cart'))
 
-WebUI.setText(findTestObject('0CartPage/EnterEventNumber_Cart'), '56075997')
+WebUI.setText(findTestObject('CartPage/EnterEventNumber_Cart'), '56075997')
 
-WebUI.click(findTestObject('0CartPage/FindTableButton_Cart'))
+WebUI.click(findTestObject('CartPage/FindTableButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ResultGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/ResultGiftTable_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/SelectPartyRadioButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/SelectPartyRadioButton_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/InputTextAreaGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/InputTextAreaGiftTable_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/InputTextAreaGiftTable_Checkout'), 'Testing')
+WebUI.setText(findTestObject('OPCPage/InputTextAreaGiftTable_Checkout'), 'Testing')
 
-WebUI.click(findTestObject('0OPCPage/sendMessageToCelebratedGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/sendMessageToCelebratedGiftTable_Checkout'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.MKPProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ChangeAddress_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ChangeAddress_Checkout'), 0)
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'), 0)
 
 WebUI.closeBrowser()
 

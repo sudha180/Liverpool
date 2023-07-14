@@ -23,18 +23,18 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
 'check for every available sort by\r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/relevance_SortBy_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/relevance_SortBy_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Newest_SortBy_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Newest_SortBy_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/LowPricetoHighSortBy_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/LowPricetoHighSortBy_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/HighToLowPriceSortby_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/HighToLowPriceSortby_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Rating_SortBy_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Rating_SortBy_PLP'), 0)
 
 WebUI.closeBrowser()
 

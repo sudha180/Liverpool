@@ -34,17 +34,17 @@ WebUI.navigateToUrl(GlobalVariable.collectionItemLink)
 
 not_run: WebUI.callTestCase(findTestCase('null'), [('searchTerm') : GlobalVariable.CollectionItem], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/SeeArticles_pdp'))
+WebUI.click(findTestObject('PDPPage/SeeArticles_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/CollectionSelection_pdp'))
+WebUI.click(findTestObject('PDPPage/CollectionSelection_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToMyBagSticky_pdp'))
+WebUI.click(findTestObject('PDPPage/AddToMyBagSticky_pdp'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-not_run: WebUI.scrollToElement(findTestObject('0OPCPage/EDD_Checkout'), 0)
+not_run: WebUI.scrollToElement(findTestObject('OPCPage/EDD_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser()
 

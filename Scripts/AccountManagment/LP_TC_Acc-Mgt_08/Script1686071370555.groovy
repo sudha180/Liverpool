@@ -26,13 +26,13 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-not_run: WebUI.click(findTestObject('0CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('CartPage/LoginButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AccountManagement/CreateAccount_Account'), FailureHandling.STOP_ON_FAILURE)
 

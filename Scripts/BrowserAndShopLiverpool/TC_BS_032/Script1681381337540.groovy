@@ -27,16 +27,16 @@ WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'vestidos'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'))
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'))
 
 'this object is only for a perticular product because it use src'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/imagePresent'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/imagePresent'), 0)
 
-WebUI.click(findTestObject('0PDPPage/Colour2_PDP'))
+WebUI.click(findTestObject('PDPPage/Colour2_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/imagePresent'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/imagePresent'), 0)
 
 WebUI.closeBrowser()
 

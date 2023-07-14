@@ -23,13 +23,13 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-buttonvalue1 = WebUI.getText(findTestObject('0PLPPage/Discount_Button1_PLP'))
+buttonvalue1 = WebUI.getText(findTestObject('PLPPage/Discount_Button1_PLP'))
 
 button1 = buttonvalue1.substring(0, 2)
 
 System.out.println(button1)
 
-buttonvalue2 = WebUI.getText(findTestObject('0PLPPage/Discount_Button2_PLP'))
+buttonvalue2 = WebUI.getText(findTestObject('PLPPage/Discount_Button2_PLP'))
 
 button2 = buttonvalue2.substring(0, 2)
 

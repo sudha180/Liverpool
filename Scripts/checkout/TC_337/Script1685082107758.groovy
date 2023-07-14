@@ -25,39 +25,39 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product2_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/create_new_CARD_OPC'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.getText(findTestObject('0OPCPage/card3Name_OPC'))
+WebUI.getText(findTestObject('OPCPage/card3Name_OPC'))
 
-WebUI.enhancedClick(findTestObject('0OPCPage/card3_Option_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/card3_Option_OPC'))
 
 'to delete card \r\n'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/option3DropDown_eliminor_card_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/option3DropDown_eliminor_card_OPC'), 0)
 
 'to set card as default card\r\n'
-WebUI.click(findTestObject('0OPCPage/option1DropDown_setDefault_card_OPC'))
+WebUI.click(findTestObject('OPCPage/option1DropDown_setDefault_card_OPC'))
 
-WebUI.verifyElementClickable(findTestObject('0OPCPage/accept_deletion_card_OPC'))
+WebUI.verifyElementClickable(findTestObject('OPCPage/accept_deletion_card_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

@@ -25,21 +25,21 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'laptop'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/firstProductImage_srp'))
+WebUI.click(findTestObject('SRP page/firstProductImage_srp'))
 
 WebUI.scrollToPosition(0, 400)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/quantity_value_PDP'), 0)
 
-A = WebUI.getAttribute(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 'value')
+A = WebUI.getAttribute(findTestObject('Object Repository/PDPPage/quantity_value_PDP'), 'value')
 
-WebUI.verifyElementNotClickable(findTestObject('0PDPPage/qunaityMinua_stickBar_pdp'))
+WebUI.verifyElementNotClickable(findTestObject('PDPPage/qunaityMinua_stickBar_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/quantityPlus_stickbar_pdp'), 0)
 
-WebUI.enhancedClick(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.enhancedClick(findTestObject('PDPPage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-B = WebUI.getAttribute(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 'value')
+B = WebUI.getAttribute(findTestObject('Object Repository/PDPPage/quantity_value_PDP'), 'value')
 System.out.print(A)
 System.out.print(B)
 

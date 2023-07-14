@@ -25,36 +25,36 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '1024277440'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/product1_promotionDropDown_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/product1_promotionDropDown_OPC'), 0)
 
-WebUI.click(findTestObject('0OPCPage/product1_promotionDropDown_OPC'))
+WebUI.click(findTestObject('OPCPage/product1_promotionDropDown_OPC'))
 
 int i
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL)) {
     i++
 }
 
-if (WebUI.verifyElementClickable(findTestObject('0OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementClickable(findTestObject('OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL)) {
     i++
 }
 

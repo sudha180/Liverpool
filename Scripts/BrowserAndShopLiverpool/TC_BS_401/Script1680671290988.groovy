@@ -26,23 +26,23 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'Pantallas'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
 WebUI.delay(5)
 
 WebUI.scrollToPosition(0, 400)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/stickyBar_img_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/stickyBar_img_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductName_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/StickyProductName_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPrice_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/StickyProductPrice_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductColour_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/StickyProductColour_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPieces_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/StickyProductPieces_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductQuantity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/StickyProductQuantity_pdp'), 0)
 
 WebUI.closeBrowser()
 

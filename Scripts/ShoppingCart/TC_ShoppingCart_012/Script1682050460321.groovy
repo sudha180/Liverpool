@@ -29,31 +29,31 @@ WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], Failur
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.Softline], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-total1 = WebUI.getText(findTestObject('0CartPage/product1_Subtotal_cart'), FailureHandling.STOP_ON_FAILURE)
+total1 = WebUI.getText(findTestObject('CartPage/product1_Subtotal_cart'), FailureHandling.STOP_ON_FAILURE)
 
 totala = total1.replace('$', '')
 
-grandtotal1 = WebUI.getText(findTestObject('0CartPage/Cart_total_cart'), FailureHandling.STOP_ON_FAILURE)
+grandtotal1 = WebUI.getText(findTestObject('CartPage/Cart_total_cart'), FailureHandling.STOP_ON_FAILURE)
 
 grandtotala = grandtotal1.replace('$', '')
 
-WebUI.click(findTestObject('0CartPage/product1_quantity_Add_cart'))
+WebUI.click(findTestObject('CartPage/product1_quantity_Add_cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity2_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity2_cart'), 0)
 
-total2 = WebUI.getText(findTestObject('0CartPage/product1_Subtotal_cart'), FailureHandling.STOP_ON_FAILURE)
+total2 = WebUI.getText(findTestObject('CartPage/product1_Subtotal_cart'), FailureHandling.STOP_ON_FAILURE)
 
 totalb = total2.replace('$', '')
 
-grandtotal2 = WebUI.getText(findTestObject('0CartPage/Cart_total_cart'), FailureHandling.STOP_ON_FAILURE)
+grandtotal2 = WebUI.getText(findTestObject('CartPage/Cart_total_cart'), FailureHandling.STOP_ON_FAILURE)
 
 grandtotalb = grandtotal2.replace('$', '')
 

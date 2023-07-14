@@ -46,6 +46,6 @@ WebUI.setText(findTestObject('Object Repository/DemoObjects/checkoutpage/phone_a
 not_run: WebUI.selectOptionByValue(findTestObject('Object Repository/DemoObjects/checkoutpage/select_SeleccionarOTRA COLONIABARRIO DE LA _f31717'), 
     '0000000000082', true)
 
-WebUI.click(findTestObject('0OPCPage/CheckBoxAddAddressPopup_Checkout'))
+WebUI.click(findTestObject('OPCPage/CheckBoxAddAddressPopup_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/ContinueButtonAddAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))

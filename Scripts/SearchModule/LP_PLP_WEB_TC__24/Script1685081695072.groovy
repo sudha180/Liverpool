@@ -25,25 +25,25 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/mostviewed_recommendsection_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mostviewed_recommendsection_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_title_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_title_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_rightArrow'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_rightArrow'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_LeftArrow'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_LeftArrow'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_Product_1_Title'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_Product_1_Title'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_Product_1_SellPrice'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_Product_1_SellPrice'), 0)
 
 WebUI.closeBrowser()
 

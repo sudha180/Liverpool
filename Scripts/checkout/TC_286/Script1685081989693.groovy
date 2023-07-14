@@ -37,17 +37,17 @@ WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
 StoreValue = CustomKeywords.'com.katalon.sudha.GenerateRandomEmail.getRandomText'('Test')
 
 WebUI.callTestCase(findTestCase('CommonMethods/addAddress_fillform_opc'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/DigitalItemDevlieryAlert_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/DigitalItemDevlieryAlert_Checkout'), 0)
 
 WebUI.closeBrowser()
 

@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 WebUI.scrollToPosition(0, 500)
 
 'next page (2)'
-WebUI.click(findTestObject('0PLPPage/pagenationClickable1_PLP'))
+WebUI.click(findTestObject('PLPPage/pagenationClickable1_PLP'))
 
 WebUI.delay(5)
 

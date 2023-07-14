@@ -23,11 +23,11 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'set sala'], FailureHandling.STOP_ON_FAILURE)
 
-PLPName = WebUI.getText(findTestObject('0PLPPage/product1_name_PLP'), FailureHandling.STOP_ON_FAILURE)
+PLPName = WebUI.getText(findTestObject('PLPPage/product1_name_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-PDPName = WebUI.getText(findTestObject('0PDPPage/GID collection/titleName_PDP'), FailureHandling.STOP_ON_FAILURE)
+PDPName = WebUI.getText(findTestObject('PDPPage/GID collection/titleName_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 PLPName1 = PLPName.toLowerCase()
 
@@ -37,11 +37,11 @@ if (PDPName == PLPName) {
     System.out.println('checked')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/informationGIDcollection_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/informationGIDcollection_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product1Code_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/SoftLine_product1Code_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/InformationCode_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/GID collection/InformationCode_PDP'), 0)
 
 WebUI.closeBrowser()
 

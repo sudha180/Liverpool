@@ -28,19 +28,19 @@ WebUI.delay(5)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.softline3], 
     FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+not_run: WebUI.click(findTestObject('PDPPage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPPage/Bag_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_img_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_img_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/Product1_quantity1_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/Product1_quantity1_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_Name_Mybag_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_Name_Mybag_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_pricePerProduct_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_pricePerProduct_cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/product1_Subtotal_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/product1_Subtotal_cart'), 0)
 
 WebUI.closeBrowser()
 

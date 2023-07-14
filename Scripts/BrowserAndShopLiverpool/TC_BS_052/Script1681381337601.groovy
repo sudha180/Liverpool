@@ -27,23 +27,23 @@ not_run: WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 not_run: WebUI.click(findTestObject('HomePage/L1_hp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/Product_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/Product_plp'))
 
 WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.click(findTestObject('0PDPPage/Share_pdp'))
+WebUI.click(findTestObject('PDPPage/Share_pdp'))
 
-WebUI.click(findTestObject('0PLPPage/Link_1'))
+WebUI.click(findTestObject('PLPPage/Link_1'))
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/Social_Media_pdp'))
+WebUI.click(findTestObject('Object Repository/PDPPage/Social_Media_pdp'))
 
 WebUI.switchToWindowTitle('Facebook')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Social_Link_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPPage/Social_Link_pdp'), 0)
 
 WebUI.switchToWindowTitle('')
 

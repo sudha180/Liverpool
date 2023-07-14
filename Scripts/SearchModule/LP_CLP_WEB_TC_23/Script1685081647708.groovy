@@ -25,12 +25,12 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category5_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 WebUI.scrollToPosition(0, 500)
 
 'most viewed(lo msa visto)'
-WebUI.verifyElementPresent(findTestObject('0CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
 
 WebUI.closeBrowser()
 

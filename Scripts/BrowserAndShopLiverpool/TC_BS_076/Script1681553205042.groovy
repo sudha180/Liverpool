@@ -26,17 +26,17 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpSLwithSingleGift], 
     FailureHandling.STOP_ON_FAILURE)
 
-cartCount = WebUI.getText(findTestObject('0PDPPage/Bag_PDP'), FailureHandling.STOP_ON_FAILURE)
+cartCount = WebUI.getText(findTestObject('PDPPage/Bag_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 int cartCount = Integer.parseInt(cartCount)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
-cartCountAfterGWP = WebUI.getText(findTestObject('0PDPPage/Bag_PDP'), FailureHandling.STOP_ON_FAILURE)
+cartCountAfterGWP = WebUI.getText(findTestObject('PDPPage/Bag_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 int cartCountAfterGWP = Integer.parseInt(cartCountAfterGWP)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/AddedToCart_alert_message_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/AddedToCart_alert_message_PDP'), 0)
 
 if ((cartCount + 2) == cartCountAfterGWP) {
     System.out.println('gwp product is added')

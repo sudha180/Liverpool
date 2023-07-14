@@ -35,15 +35,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ShipFreeTo_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ShipFreeTo_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/ChangeDirection_pdp'))
+WebUI.click(findTestObject('PDPPage/ChangeDirection_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectStoreRadioButton_pdp'))
+WebUI.click(findTestObject('PDPPage/SelectStoreRadioButton_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeFlag_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/ReceiveAtHomeFlag_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EDD_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/EDD_pdp'), 0)
 
 WebUI.closeBrowser()
 

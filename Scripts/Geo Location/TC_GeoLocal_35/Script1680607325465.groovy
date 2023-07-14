@@ -35,21 +35,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-if (WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0) == true) {
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'))
+if (WebUI.verifyElementPresent(findTestObject('PDPPage/EnterZipCode_pdp'), 0) == true) {
+    WebUI.click(findTestObject('PDPPage/EnterZipCode_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPPage/EnterZipCodePopup_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
 } else {
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'))
+    WebUI.click(findTestObject('PDPPage/EnterZipCode_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPPage/EnterZipCodePopup_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
 }
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/MyAddressEnterZipCode_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/MyAddressEnterZipCode_pdp'), 0)
 
 WebUI.closeBrowser()
 

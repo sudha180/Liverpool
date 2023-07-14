@@ -23,18 +23,18 @@ WebUI.navigateToUrl(GlobalVariable.URL2)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'mac'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP (1)'))
+WebUI.click(findTestObject('PLPPage/product3_PLP (1)'))
 
 'complete detail at more information'
-String detail = WebUI.getText(findTestObject('0PDPPage/Detail_PDP'))
+String detail = WebUI.getText(findTestObject('PDPPage/Detail_PDP'))
 
 if (detail.length() <= 250) {
-    WebUI.verifyElementNotPresent(findTestObject('0PDPPage/mas detalis(more detail)'), 0)
+    WebUI.verifyElementNotPresent(findTestObject('PDPPage/mas detalis(more detail)'), 0)
 
     System.out.print(a)
 } else if (detail.length() >= 250) {
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/mas detalis(more detail)'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPPage/mas detalis(more detail)'), 0)
 
-    WebUI.click(findTestObject('0PDPPage/mas detalis(more detail)'))
+    WebUI.click(findTestObject('PDPPage/mas detalis(more detail)'))
 }
 

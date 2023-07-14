@@ -34,15 +34,15 @@ WebUI.navigateToUrl(GlobalVariable.BTItemsLink)
 
 not_run: WebUI.callTestCase(findTestCase('null'), [('searchTerm') : GlobalVariable.CollectionItem], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/CheckoutButton_Cart'))
+WebUI.click(findTestObject('CLPPage/CheckoutButton_Cart'))
 
-WebUI.scrollToElement(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.scrollToElement(findTestObject('OPCPage/EDD_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser()
 

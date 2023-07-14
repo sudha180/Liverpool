@@ -26,15 +26,15 @@ WebUI.maximizeWindow()
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpWithSingleVariantWith2Gifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPPage/AddToCart_pdp (1)'))
 
-WebUI.click(findTestObject('0PDPPage/giftAddProduct_PDP'))
+WebUI.click(findTestObject('PDPPage/giftAddProduct_PDP'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/AddedToCart_alert_message_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/AddedToCart_alert_message_PDP'), 0)
 

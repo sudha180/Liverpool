@@ -25,28 +25,28 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.PreorderItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/ITRLink_pdp'), 0)
 
 'TC_BS_191,To verify the display of “Pre-order”  flag for  Pre order products'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/preOrderFlag_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/preOrderFlag_pdp'), 0)
 
 'TC_BS_187,To verify the  Real time inventory check link is not displayed for the Online Exclusive products in PDP'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.exclusiveProductId], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/ITRLink_pdp'), 0)
 
 'TC_BS_188,To verify the display of “Exclusivo” product flag for Online Exclusive products'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/exclusiveProductFlag'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPPage/exclusiveProductFlag'), 0)
 
 <<<<<<<< Updated upstream:Scripts/BrowserAndShopLiverpool/TC_BS_190,191,187,188,189/Script1686710886418.groovy
 'TC_BS_189,To verify the  Real time inventory check link is not displayed for the Bundle products in PDP'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.bundleItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPPage/ITRLink_pdp'), 0)
 ========
-WebUI.click(findTestObject('0OPCPage/final_confirm_order_button_OPC'))
+WebUI.click(findTestObject('OPCPage/final_confirm_order_button_OPC'))
 
 WebUI.closeBrowser()
 >>>>>>>> Stashed changes:Scripts/payment paypal and card/payment_card_end_to_end/Script1686327594271.groovy
