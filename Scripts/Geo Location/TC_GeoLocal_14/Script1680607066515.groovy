@@ -47,7 +47,7 @@ WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('0PLPPage/Flash_plp'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/Flash_plp'), 0)
 
 WebUI.closeBrowser()
 

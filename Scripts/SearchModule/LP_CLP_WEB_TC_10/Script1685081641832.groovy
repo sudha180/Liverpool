@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,20 +28,20 @@ WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
 'check for L3 category'
-currentPage1 = WebUI.getText(findTestObject('0CLPPage/banner_1CLP'))
+currentPage1 = WebUI.getText(findTestObject('CLPPage/banner_1CLP'))
 
 currentPage = currentPage1.toLowerCase()
 
 System.out.println(currentPage)
 
 'L2 CLP'
-WebUI.click(findTestObject('0CLPPage/banner_1CLP'))
+WebUI.click(findTestObject('CLPPage/banner_1CLP'))
 
 System.out.println(currentPage)
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-breadcrumb1 = WebUI.getText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'))
+breadcrumb1 = WebUI.getText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'))
 
 breadcrumb = breadcrumb1.toLowerCase()
 

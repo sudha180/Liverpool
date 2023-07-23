@@ -29,13 +29,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProductNew], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('0PLPPage/Flash_plp'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/Flash_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Flash_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Flash_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/PickupExpress_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/PickupExpress_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/ExpressDelivery_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/ExpressDelivery_plp'), 0)
 
 WebUI.closeBrowser()
 

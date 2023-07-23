@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -31,21 +31,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLSearchTerm], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/SecondProduct_plp'))
+WebUI.click(findTestObject('PLPPage/SecondProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(4)
 
-ActualTextAlign = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'text-align')
+ActualTextAlign = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc (1)'), 'text-align')
 
-ActualJustifyContent = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'justify-content')
+ActualJustifyContent = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc (1)'), 'justify-content')
 
-Actualposition = WebUI.getCSSValue(findTestObject('0OPCPage/purchaseSummary_opc'), 'position')
+Actualposition = WebUI.getCSSValue(findTestObject('OPCPage/purchaseSummary_opc (1)'), 'position')
 
 def textalign = 'left'
 

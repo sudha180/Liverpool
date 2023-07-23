@@ -33,41 +33,41 @@ not_run: WebUI.sendKeys(findTestObject('HomePage/MainSearchbar_hp (1)'), Keys.ch
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour6_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.6_plp'), 0)
 
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.1_plp'))
+WebUI.click(findTestObject('PLPPage/Swatche_Colour_1.1_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Img_1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Img_1_plp'), 0)
 
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.2_plp'))
+WebUI.click(findTestObject('PLPPage/Swatche_Colour_1.2_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Img_2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Img_2_plp'), 0)
 
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.3_plp'))
+WebUI.click(findTestObject('PLPPage/Swatche_Colour_1.3_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Img_3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Img_3_plp'), 0)
 
 WebUI.closeBrowser()
 

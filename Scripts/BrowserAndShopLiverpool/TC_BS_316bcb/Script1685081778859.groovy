@@ -19,18 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product1_selectButton_PDP'))
+WebUI.click(findTestObject('PDPpage/GID collection/SoftLine_product1_selectButton_PDP'))
 
-stickyBarProduct1 = WebUI.getText(findTestObject('0PDPPage/GID collection/stickyBarProduct1_GID_PDP'), FailureHandling.STOP_ON_FAILURE)
+stickyBarProduct1 = WebUI.getText(findTestObject('PDPpage/GID collection/stickyBarProduct1_GID_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-if (WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/stickyBarProduct1_GID_PDP'), 0) == true) {
-    stickyBarProduct2 = WebUI.getText(findTestObject('0PDPPage/GID collection/stickyBarProduct1_GID_PDP'), FailureHandling.STOP_ON_FAILURE)
+if (WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/stickyBarProduct1_GID_PDP'), 0) == true) {
+    stickyBarProduct2 = WebUI.getText(findTestObject('PDPpage/GID collection/stickyBarProduct1_GID_PDP'), FailureHandling.STOP_ON_FAILURE)
 
     if (stickyBarProduct1 != stickyBarProduct2) {
         System.out.println('checked stickybar')
@@ -39,9 +39,9 @@ if (WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/stickyBar
     System.out.println('checked stickybar')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/StickyBarProduct1title_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/StickyBarProduct1title_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/StickyBarProduct1colour_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/StickyBarProduct1colour_PDP'), 0)
 
 WebUI.closeBrowser()
 

@@ -39,21 +39,21 @@ not_run: WebUI.navigateToUrl(GlobalVariable.BTItemsLink)
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-not_run: WebUI.click(findTestObject('0PDPPage/QuantityTotal_pdp'))
+not_run: WebUI.click(findTestObject('PDPpage/QuantityTotal_pdp'))
 
 WebUI.delay(5)
 
-WebUI.setText(findTestObject('0PDPPage/QuantityTotal_pdp'), '999')
+WebUI.setText(findTestObject('PDPpage/QuantityTotal_pdp'), '999')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-not_run: WebUI.click(findTestObject('0CartPage/CartHeaderLargeCount_CartPage'))
+not_run: WebUI.click(findTestObject('CartPage/CartHeaderLargeCount_CartPage'))
 
-WebUI.click(findTestObject('0CartPage/LatestLineBuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/LatestLineBuyButton_Cart'))
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/AlertMessage_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/AlertMessage_pdp'), 0)
 
 WebUI.closeBrowser()
 

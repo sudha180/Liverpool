@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
@@ -29,13 +29,13 @@ not_run: WebUI.setText(findTestObject('HomePage/MainSearchbar_hp (1)'), 'MAC')
 
 not_run: WebUI.click(findTestObject('HomePage/SearchButton_hp'))
 
-WebUI.click(findTestObject('0PLPPage/Select_Filter_plp'))
+WebUI.click(findTestObject('PLPPage/Select_Filter_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Filter_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Filter_plp'), 0)
 
-WebUI.click(findTestObject('0PLPPage/Remove_Filter_plp'))
+WebUI.click(findTestObject('PLPPage/Remove_Filter_plp'))
 
-WebUI.verifyElementNotPresent(findTestObject('0PLPPage/Verify_Filter_plp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PLPPage/Verify_Filter_plp'), 0)
 
 WebUI.closeBrowser()
 

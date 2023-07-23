@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 not_run: WebUI.click(findTestObject('HomePage/MainSearchbar_hp (1)'))
 
@@ -31,41 +31,31 @@ not_run: WebUI.sendKeys(findTestObject('HomePage/MainSearchbar_hp (1)'), Keys.ch
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_Colour_1.3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.2_plp'), 0)
+WebUI.click(findTestObject('PLPPage/Swatche_Colour_1.1_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Img_1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.4_plp'), 0)
+WebUI.enhancedClick(findTestObject('PLPPage/Swatche_Colour_1.2_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.5_plp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PLPPage/Verify_Img_1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_Colour_1.6_plp'), 0)
+WebUI.click(findTestObject('PLPPage/Swatche_Colour_1.3_plp'))
 
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.1_plp'))
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Img_1_plp'), 0)
-
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.2_plp'))
-
-WebUI.verifyElementNotPresent(findTestObject('0PLPPage/Verify_Img_1_plp'), 0)
-
-WebUI.click(findTestObject('0PLPPage/Swatche_Colour_1.3_plp'))
-
-WebUI.verifyElementNotPresent(findTestObject('0PLPPage/Verify_Img_1_plp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PLPPage/Verify_Img_1_plp'), 0)
 
 WebUI.closeBrowser()
 

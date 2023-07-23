@@ -31,13 +31,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.minimumPurchaseProdut], 
     FailureHandling.STOP_ON_FAILURE)
 
-ExpectedDeliveryDate_pdp = WebUI.getText(findTestObject('0PDPPage/ExpectedDeliveryDate_pdp'))
+ExpectedDeliveryDate_pdp = WebUI.getText(findTestObject('PDPpage/ExpectedDeliveryDate_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-EastimateDeliveryDate_Cart = WebUI.getText(findTestObject('0CartPage/EastimateDeliveryDate_Cart'))
+EastimateDeliveryDate_Cart = WebUI.getText(findTestObject('CartPage/EastimateDeliveryDate_Cart'))
 
 if (ExpectedDeliveryDate_pdp == EastimateDeliveryDate_Cart) {
     println('Checkin')

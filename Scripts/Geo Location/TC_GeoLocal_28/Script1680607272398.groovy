@@ -45,27 +45,27 @@ WebUI.click(findTestObject('HomePage/FavStore_hp'))
 
 WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectState_pdp'))
+WebUI.click(findTestObject('PDPpage/SelectState_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectStateFromList_pdp'))
+WebUI.click(findTestObject('PDPpage/SelectStateFromList_pdp'))
 
 WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 
 WebUI.verifyElementPresent(findTestObject('HomePage/FavStore_hp'), 0)
 
-not_run: WebUI.click(findTestObject('0PDPPage/SelectStoreLink_pdp'))
+not_run: WebUI.click(findTestObject('PDPpage/SelectStoreLink_pdp'))
 
 not_run: WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 
-not_run: WebUI.click(findTestObject('0PDPPage/SelectState_pdp'))
+not_run: WebUI.click(findTestObject('PDPpage/SelectState_pdp'))
 
-not_run: WebUI.click(findTestObject('0PDPPage/SelectStateFromList_pdp'))
+not_run: WebUI.click(findTestObject('PDPpage/SelectStateFromList_pdp'))
 
 not_run: WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/ClickNCollect_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EDD_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/EDD_pdp'), 0)
 
 WebUI.closeBrowser()
 

@@ -31,15 +31,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.minimumPurchaseProdut], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/MinimumPurchase_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/MinimumPurchase_Cart'), 0)
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/MinimumPurchaseFlag_checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/MinimumPurchaseFlag_checkout'), 0)
 
 WebUI.closeBrowser()
 

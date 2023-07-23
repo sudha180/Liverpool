@@ -19,27 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 not_run: WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 not_run: WebUI.click(findTestObject('HomePage/L1_hp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/Product_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/Product_plp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/BrowseAndNavigate_plp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0PLPPage/Discount_Filter_plp'))
+WebUI.click(findTestObject('PLPPage/Discount_Filter_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Filter_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Filter_plp'), 0)
 
-WebUI.click(findTestObject('0PLPPage/Close_Icon_Filter_plp'))
+WebUI.click(findTestObject('PLPPage/Close_Icon_Filter_plp'))
 
-WebUI.verifyElementNotPresent(findTestObject('0PLPPage/Filter_plp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PLPPage/Filter_plp'), 0)
 
 WebUI.closeBrowser()
 

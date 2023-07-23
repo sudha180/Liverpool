@@ -27,13 +27,13 @@ prodName_typeAhead = WebUI.getText(findTestObject('HomePage/prodName_typeAhead')
 
 'prodName_typeAhead'.contains(searchTerm)
 
-productName_srp = WebUI.getText(findTestObject('1SRP page/searchTermInCategory_typeahead'))
+productName_srp = WebUI.getText(findTestObject('SRP page/searchTermInCategory_typeahead'))
 
 'duplicate'.contains(searchTerm)
 
-WebUI.mouseOver(findTestObject('1SRP page/searchTerm2_TypeAhead'))
+WebUI.mouseOver(findTestObject('SRP page/searchTerm2_TypeAhead'))
 
-productName_srp = WebUI.getText(findTestObject('1SRP page/typeAheadProdOnMouseHover_typeAhe ad'))
+productName_srp = WebUI.getText(findTestObject('SRP page/typeAheadProdOnMouseHover_typeAhe ad'))
 
 'productName_srp'.contains(searchTerm)
 

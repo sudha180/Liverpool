@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 not_run: WebUI.navigateToUrl('https://www.liverpool.com.mx/tienda/home')
 
@@ -35,17 +35,17 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ShippingAddress2_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ShippingAddress2_Checkout (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ShippingAddress1_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ShippingAddress1_Checkout (1)'), 0)
 
 WebUI.closeBrowser()
 

@@ -19,18 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.search2price], 
     FailureHandling.STOP_ON_FAILURE)
 
-discountpriceRange = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'), FailureHandling.STOP_ON_FAILURE)
+discountpriceRange = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 if (discountpriceRange.contains('-')) {
     println('show price range product')
 } else {
     println('not a price range product')
 }
-
-WebUI.closeBrowser()
 

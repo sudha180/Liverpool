@@ -31,13 +31,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.minimumPurchaseProdut], 
     FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ExpectedDeliveryDate_pdp'), 0)
+not_run: WebUI.verifyElementNotPresent(findTestObject('PDPpage/ExpectedDeliveryDate_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/EastimateDeliveryDate_Cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/EastimateDeliveryDate_Cart'), 0)
 
 WebUI.closeBrowser()
 

@@ -19,18 +19,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.softline2], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '2')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '2')
 
 WebUI.closeBrowser()
 

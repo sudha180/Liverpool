@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To verify the display of PLP upon clicking the category in the content page from the L4 category landing page.</description>
+   <name>TC_BS_010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c47f41bc-4599-46fc-b7d1-5efd50f9f499</testCaseGuid>
+</TestCaseEntity>

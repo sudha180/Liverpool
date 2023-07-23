@@ -21,7 +21,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickIniciarSession_Header'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -31,74 +31,76 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.BigTicketWord], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/ITRLink_pdp'), 0)
 
 'TC_BS_119,"To verify the user is able to click “Ver Disponsibilidad en tienda” link for the  Big ticket item on the PDP\r\n"\r\r\n'
-WebUI.click(findTestObject('0PDPPage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ItrPopup_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/ItrPopup_pdp'), 0)
 
 'TC_BS_120,To verify the display of state pop-up  on clicking “Ver Disponsibilidad en tienda” link for bigticket item'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productName_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/productName_itrPopup'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productId_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/productId_itrPopup'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productImage_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/productImage_itrPopup'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/productPrice__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/productPrice__itrPopup'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/listOfStates_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/listOfStates_itrPopup'), 0)
 
 'TC_BS_122,To verify the display of list of States in the drop down on selection\r\n'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/listOfStates_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/listOfStates_itrPopup'), 0)
 
 'TC_BS_121,To verify the  user is able to select state from the drop down on the pop up on clicking on “Ver Disponsibilidad en tienda” link for bigticket item\r\r\n'
-WebUI.click(findTestObject('0PDPPage/selectState9_itrPopup'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/selectState9_itrPopup'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/selectedStateDisplay__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/selectedStateDisplay__itrPopup'), 0)
 
 'TC_BS_123,To verify the display of stores available in the state pop-up'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/listOfStores__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/listOfStores__itrPopup'), 0)
 
 'TC_BS_124,To verify the display of 2 radio buttons to select options - Todas las Tiendas(All stores) and Solo tiendas con disponibilidad(Availability shops only) in the state pop-up'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/conDisponsibilidad__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/conDisponsibilidad__itrPopup'), 0)
 
 'TC_BS_125,To verify the display of  Todas las Tiendas(All stores)  radio button selected by default in state pop up\r\n'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/listOfStores__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/listOfStores__itrPopup'), 0)
 
-WebUI.click(findTestObject('0PDPPage/close__itrPopup'))
+WebUI.click(findTestObject('PDPpage/close__itrPopup'))
 
-WebUI.click(findTestObject('0PDPPage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/selectState1_itrPopup'))
+WebUI.click(findTestObject('PDPpage/selectState1_itrPopup'))
 
 'TC_BS_126,To verify the display of out-of-stock label-“No Disponsible”   for  bigticket item in the state pop-up\r\n'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/storesNotAvailable_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/storesNotAvailable_itrPopup'), 0)
 
 'TC_BS_145,To verify the display of notification message when the Big ticket inventory record is not available in the stores\r\n'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/InventoryNotAvailableinAllStoresMessage_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/InventoryNotAvailableinAllStoresMessage_itrPopup'), 0)
 
-WebUI.click(findTestObject('0PDPPage/close__itrPopup'))
+WebUI.click(findTestObject('PDPpage/close__itrPopup'))
 
-WebUI.click(findTestObject('0PDPPage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/ITRLink_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/selectState9_itrPopup'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/selectState9_itrPopup'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/listOfStores__itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/listOfStores__itrPopup'), 0)
+
+WebUI.delay(5)
 
 'TC_BS_127,To verify the display of in-stock label -“En Exhibicion”Big Ticket item in the state pop-up, no of pieces'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/NoOfPiecesInStore_itrPopup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/NoOfPiecesInStore_itrPopup'), 0)
 
 'TC_BS_129,To verify the display of store names in alphabetical order for bigticket items-no of pieces for first store should be greater than the second store\r\n'
-NoOfPiecesInStore1 = WebUI.getText(findTestObject('0PDPPage/NoOfPiecesInStore1_itrPopup'))
+NoOfPiecesInStore1 = WebUI.getText(findTestObject('PDPpage/NoOfPiecesInStore1_itrPopup'))
 
 int noOfPieces1 = NoOfPiecesInStore1.replaceAll(' piezas', '')
 
-NoOfPiecesInStore2 = WebUI.getText(findTestObject('0PDPPage/NoOfPiecesInStore2_itrPopup'))
+NoOfPiecesInStore2 = WebUI.getText(findTestObject('PDPpage/NoOfPiecesInStore2_itrPopup'))
 
 int noOfPieces2 = NoOfPiecesInStore1.replaceAll(' piezas', '')
 
@@ -107,4 +109,6 @@ if (noOfPieces1 >= noOfPieces2) {
 } else {
     KeywordUtil.markFailed('count is not in descending order')
 }
+
+WebUI.closeBrowser()
 

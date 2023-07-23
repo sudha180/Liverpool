@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'Campana'], FailureHandling.STOP_ON_FAILURE)
 
 'item must have politicas'
-WebUI.click(findTestObject('0PLPPage/product1_PLP (1)'))
+WebUI.click(findTestObject('PLPPage/product1_PLP (1)'))
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/Polticas_PDP'))
+WebUI.click(findTestObject('Object Repository/PDPpage/Polticas_PDP'))
 
 'check for user manual(politicas) present'
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/politicas_detail_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/politicas_detail_PDP'), 0)
 
 WebUI.closeBrowser()
 

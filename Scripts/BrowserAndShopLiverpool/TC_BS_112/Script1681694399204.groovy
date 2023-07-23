@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -28,29 +28,37 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
-WebUI.verifyElementPresent(findTestObject('pdp/addedProductSuccessMessage_pdp'), 0)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('pdp/miniBagValue_pdp'))
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp - Copy'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/button_Comprarahora_cart (1)'), 0)
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
+
+WebUI.verifyElementPresent(findTestObject('CartPage/button_Comprarahora_cart (1)'), 0)
+
+WebUI.delay(5)
 
 WebUI.back()
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('pdp/gwpGiftItemDisabled_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpGiftItemDisabled_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('pdp/GwppFirstGiftSelected_popup'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GwppFirstGiftSelected_popup'), 0)
 
-WebUI.click(findTestObject('pdp/button_Aceptar_gwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('0PDPPage/button_Agregar a mi bolsa_pdp'))
+WebUI.click(findTestObject('PDPpage/button_Aceptar_gwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('pdp/addedProductSuccessMessage_pdp'), 0)
+WebUI.click(findTestObject('PDPpage/button_Agregar a mi bolsa_pdp'))
+
+WebUI.verifyElementPresent(findTestObject('PDPpage/addedProductSuccessMessage_pdp'), 0)
+
+WebUI.closeBrowser()
 

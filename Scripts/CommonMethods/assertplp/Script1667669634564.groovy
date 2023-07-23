@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/sortingOptions_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/sortingOptions_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/listOfProducts_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/listOfProducts_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/breadcrumb_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/breadcrumb_plp'), 0)
 

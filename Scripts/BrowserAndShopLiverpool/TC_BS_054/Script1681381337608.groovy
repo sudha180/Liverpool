@@ -30,23 +30,23 @@ not_run: WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 not_run: WebUI.click(findTestObject('HomePage/L1_hp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/Product_plp'))
+not_run: WebUI.click(findTestObject('PLPPage/Product_plp'))
 
 WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Descuentos_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Descuentos_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Marcas_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Marcas_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Color_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Color_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Tamao_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Tamao_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Precios_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Precios_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Calificacin_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Calificacin_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Vendido por_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Vendido por_plp'), 0)
 
 WebUI.closeBrowser()
 

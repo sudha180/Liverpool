@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/ReceiveAtHomeBuyButton'))
+WebUI.click(findTestObject('PDPpage/ReceiveAtHomeBuyButton'))
 
 LinkURL = WebUI.getUrl(FailureHandling.STOP_ON_FAILURE)
 

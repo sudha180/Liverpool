@@ -30,27 +30,27 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/firstProductImage_srp'))
+WebUI.click(findTestObject('SRP page/firstProductImage_srp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/secondProductImage_srp'))
+WebUI.click(findTestObject('SRP page/secondProductImage_srp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/thirdProductImage_srp'))
+WebUI.click(findTestObject('SRP page/thirdProductImage_srp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/fourthProductImage_srp'))
+WebUI.click(findTestObject('SRP page/fourthProductImage_srp'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-productName_plp = WebUI.getText(findTestObject('1SRP page/fifthproductName'))
+productName_plp = WebUI.getText(findTestObject('SRP page/fifthproductName'))
 
-WebUI.click(findTestObject('1SRP page/fifthProductImage_srp'))
+WebUI.click(findTestObject('SRP page/fifthProductImage_srp'))
 
-productNameActual_pdp = WebUI.getText(findTestObject('0PDPPage/productName_pdp (2)'))
+productNameActual_pdp = WebUI.getText(findTestObject('PDPpage/productName_pdp (2)'))
 
 productNameActual_pdp == productName_plp
 

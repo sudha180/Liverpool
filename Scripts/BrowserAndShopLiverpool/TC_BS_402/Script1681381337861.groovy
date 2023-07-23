@@ -28,7 +28,7 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
 JavascriptExecutor js = ((DriverFactory.getWebDriver()) as JavascriptExecutor)
 
@@ -36,17 +36,17 @@ for (int i = 0; i < 1000; i += 7) {
     js.executeScript(('window.scrollTo(0, ' + i) + ')')
 }
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductImg_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductImg_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductName_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductName_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPrice_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPrice_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductColour_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductColour_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPieces_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPieces_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductQuantity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductQuantity_pdp'), 0)
 
 WebUI.closeBrowser()
 

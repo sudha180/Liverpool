@@ -22,13 +22,13 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.click(findTestObject('HomePage/Categoras_hp'))
+WebUI.mouseOver(findTestObject('HomePage/Categoras_hp'))
 
-WebUI.click(findTestObject('HomePage/L1_hp'))
+WebUI.enhancedClick(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/mainBanner_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mainBanner_plp'), 0)
 
 WebUI.closeBrowser()
 

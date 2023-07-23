@@ -17,17 +17,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('0PDPPage/ratingButton_PDP'))
+WebUI.click(findTestObject('PDPpage/ratingButton_PDP'))
 
-WebUI.mouseOver(findTestObject('0PDPPage/mouseover3star_PDP'))
+WebUI.mouseOver(findTestObject('PDPpage/mouseover3star_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/mouseover3star_PDP'))
+WebUI.click(findTestObject('PDPpage/mouseover3star_PDP'))
 
-WebUI.setText(findTestObject('0PDPPage/ratingView_PDP'), 'good product')
+WebUI.setText(findTestObject('PDPpage/ratingView_PDP'), 'good product')
 
-WebUI.setText(findTestObject('0PDPPage/ratingTextArea_PDP'), 'like the product money worth')
+WebUI.setText(findTestObject('PDPpage/ratingTextArea_PDP'), 'like the product money worth')
 
-WebUI.click(findTestObject('0PDPPage/SubmitReview_PDP'))
+WebUI.click(findTestObject('PDPpage/SubmitReview_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/reviewSubmitedText_PDP'), 'Gracias por compartir tu opinión.')
+WebUI.verifyElementText(findTestObject('PDPpage/reviewSubmitedText_PDP'), 'Gracias por compartir tu opinión.')
 

@@ -35,21 +35,21 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/SeeStoreAvailable_pdp'))
+WebUI.click(findTestObject('PDPpage/SeeStoreAvailable_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectStore_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/SelectStore_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/SelectStore_pdp'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/SelectStore_pdp'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectProductStore_pdp'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('PDPpage/SelectProductStore_pdp'), 0)
 
-if (WebUI.getText(findTestObject('0PDPPage/SelectProductStore_pdp'), FailureHandling.OPTIONAL) == true) {
-    WebUI.click(findTestObject('0PDPPage/SelectProductStore_pdp'))
+if (WebUI.getText(findTestObject('PDPpage/SelectProductStore_pdp'), FailureHandling.OPTIONAL) == true) {
+    WebUI.click(findTestObject('PDPpage/SelectProductStore_pdp'))
 } else {
-    WebUI.click(findTestObject('0PDPPage/BackButtonSelectStore_pdp'))
+    WebUI.click(findTestObject('PDPpage/BackButtonSelectStore_pdp'))
 
-    WebUI.click(findTestObject('0PDPPage/SelectStore2_pdp'))
+    WebUI.click(findTestObject('PDPpage/SelectStore2_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectProductStore_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/SelectProductStore_pdp'), 0)
 }
 

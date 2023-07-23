@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
@@ -27,7 +27,7 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/assert_L1_CLP'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/ver_mas2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/ver_mas2_CLP'), 0)
 
 WebUI.closeBrowser()
 

@@ -22,33 +22,35 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 WebUI.click(findTestObject('HomePage/L1_hp'))
 
-not_run: WebUI.click(findTestObject('0PLPPage/Product_plp'))
+WebUI.delay(3)
 
-not_run: WebUI.callTestCase(findTestCase('CommonMethods/BrowseAndNavigate_plp'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.delay(3)
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Descuentos_plp'), 0)
+WebUI.delay(3)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Marcas_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Descuentos_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Color_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Marcas_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Tamao_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Color_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Precios_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Tamao_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Calificacin_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Precios_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Vendido por_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Calificacin_plp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PLPPage/Vendido por_plp'), 0)
 
 WebUI.closeBrowser()
 

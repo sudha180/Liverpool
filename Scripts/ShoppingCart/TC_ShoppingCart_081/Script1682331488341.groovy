@@ -30,29 +30,29 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.delay(5)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/Colour1_PDP'), 0)
+WebUI.scrollToElement(findTestObject('PDPpage/Colour1_PDP'), 0)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'))
+WebUI.click(findTestObject('PDPpage/Colour1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/giftWrapper_product1_cart'))
+WebUI.click(findTestObject('CartPage/giftWrapper_product1_cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftWrapper_popUP'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftWrapper_popUP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_ribbonColour1'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_ribbonColour1'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_ribbonColour2'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_ribbonColour2'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_ribbonColour3'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_ribbonColour3'), 0)
 
-WebUI.click(findTestObject('0CartPage/giftWrapper_ribbonColour1'))
+WebUI.click(findTestObject('CartPage/giftWrapper_ribbonColour1'))
 
-WebUI.click(findTestObject('0CartPage/GiftWrapper_submit'))
+WebUI.click(findTestObject('CartPage/GiftWrapper_submit'))
 
 WebUI.closeBrowser()
 

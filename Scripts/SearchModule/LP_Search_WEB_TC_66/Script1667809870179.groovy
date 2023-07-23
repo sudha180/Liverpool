@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nino'], FailureHandling.STOP_ON_FAILURE)
 
-productName_srp = WebUI.getText(findTestObject('1SRP page/productName_srp'))
+productName_srp = WebUI.getText(findTestObject('SRP page/productName_srp'))
 
 'productName_srp'.contains('Niño')
 

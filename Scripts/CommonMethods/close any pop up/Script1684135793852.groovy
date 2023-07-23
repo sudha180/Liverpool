@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('0OPCPage/close_popup_OPC'))
+WebUI.click(findTestObject('OPCPage/close_popup_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/close_popup_OPC'))
+WebUI.click(findTestObject('OPCPage/close_popup_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/close_popup_OPC'))
+WebUI.click(findTestObject('OPCPage/close_popup_OPC'))
 

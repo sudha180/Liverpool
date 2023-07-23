@@ -25,13 +25,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertSearchResults_srp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/variants.sellernames-liverpool'))
+WebUI.click(findTestObject('SRP page/variants.sellernames-liverpool'))
 
-WebUI.click(findTestObject('1SRP page/ratingInfo.productAvgRating-3.81'))
+WebUI.click(findTestObject('SRP page/ratingInfo.productAvgRating-3.81'))
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/filter1_srp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/filter1_srp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/filter2_srp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/filter2_srp'), 0)
 
 WebUI.closeBrowser()
 

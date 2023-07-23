@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : '1031144511'], FailureHandling.STOP_ON_FAILURE)
 
@@ -33,11 +33,11 @@ WebUI.delay(5, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/SaveForLater_product1_CART(BAG)'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/SaveForLater_product1_CART(BAG)'), 0)
 
 WebUI.closeBrowser()
 

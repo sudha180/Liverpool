@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-A = WebUI.getAttribute(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 'value')
+A = WebUI.getAttribute(findTestObject('Object Repository/PDPpage/quantity_value_PDP'), 'value')
 
-WebUI.verifyElementNotClickable(findTestObject('0PDPPage/qunaityMinua_stickBar_pdp'))
+WebUI.verifyElementNotClickable(findTestObject('PDPpage/qunaityMinua_stickBar_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/quantityPlus_stickbar_pdp'), 0)
 
-WebUI.enhancedClick(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.enhancedClick(findTestObject('PDPpage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-B = WebUI.getAttribute(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 'value')
+B = WebUI.getAttribute(findTestObject('Object Repository/PDPpage/quantity_value_PDP'), 'value')
 
 System.out.print(A)
 

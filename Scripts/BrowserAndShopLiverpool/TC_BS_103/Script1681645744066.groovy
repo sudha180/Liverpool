@@ -19,16 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpParentSLgiftBTbothInstock], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('pdp/addedProductSuccessMessage_pdp'), 0)
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
+
+WebUI.verifyElementPresent(findTestObject('PDPpage/addedProductSuccessMessage_pdp'), 0)
+
+WebUI.closeBrowser()
 

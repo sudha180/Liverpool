@@ -19,52 +19,60 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpWithMultiVariantWith2Gifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/colorSelectedOnLoad_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/colorSelectedOnLoad_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Size2_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/Size2_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Quantity(plus)_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp - Copy'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('PDPpage/Quantity(plus)_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/QuantityUpdatedTo2_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/QuantityUpdatedTo2_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size2_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp - Copy'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/Size2_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/closeGwpPopup_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('PDPpage/SelectGiftPurchaseRadioButton_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp - Copy'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/SelectGiftPurchaseRadioButton_pdp'), 0)
+WebUI.click(findTestObject('PDPpage/Size1_PDP'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('PDPpage/SelectGiftPurchaseRadioButton_pdp'), 0)
+
+WebUI.closeBrowser()
 

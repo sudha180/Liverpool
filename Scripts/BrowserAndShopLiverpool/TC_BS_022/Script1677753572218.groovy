@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vase'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/LowPricetoHighSortBy_PLP'))
+WebUI.click(findTestObject('PLPPage/LowPricetoHighSortBy_PLP'))
 
-product1price = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+product1price = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-product2price = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+product2price = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-product3price = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+product3price = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
 if (product1price <= product2price) {
     println('checked1')

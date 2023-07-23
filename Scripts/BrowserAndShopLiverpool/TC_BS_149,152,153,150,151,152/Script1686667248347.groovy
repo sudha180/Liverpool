@@ -19,29 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 'TC_BS_152,To verify the  Real time inventory check link is not displayed for the Pre order products in PDP'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.PreorderItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/ITRLink_pdp'), 0)
 
 'TC_BS_153,To verify the display of “preorder” product flag for preorder products'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/preOrderFlag_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/preOrderFlag_pdp'), 0)
 
 'TC_BS_149,To verify the  Real time inventory check link is not displayed for the Online Exclusive products in PDP'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.exclusiveProductId], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/ITRLink_pdp'), 0)
 
 'TC_BS_150,To verify the display of “Exclusivo” product flag for Online Exclusive products'
-WebUI.verifyElementPresent(findTestObject('0PDPPage/exclusiveProductFlag'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/exclusiveProductFlag'), 0)
 
 'TC_BS_151,To verify the  Real time inventory check link is not displayed for the Bundle products in PDP'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.bundleItem], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ITRLink_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/ITRLink_pdp'), 0)
+
+WebUI.closeBrowser()
 

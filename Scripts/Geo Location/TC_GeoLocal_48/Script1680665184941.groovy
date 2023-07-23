@@ -32,15 +32,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.navigateToUrl('https://odtaqab.liverpool.com.mx/tienda/pdp/JeansslimGAPlavadoobscuroparania/1031371976?hs=true')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/EstimatedDelivery_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/EstimatedDelivery_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/GiftFlag_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/GiftFlag_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/GiftDeliveryDate_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/GiftDeliveryDate_Cart'), 0)
 
 WebUI.closeBrowser()
 

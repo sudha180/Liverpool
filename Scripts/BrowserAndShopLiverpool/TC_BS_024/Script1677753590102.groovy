@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
-WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bag'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/HighToLowPriceSortby_PLP'))
+WebUI.click(findTestObject('PLPPage/HighToLowPriceSortby_PLP'))
 
-productDisprice1 = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+productDisprice1 = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-productDisprice2 = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+productDisprice2 = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-productDisprice3 = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+productDisprice3 = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
-boolean a = WebUI.verifyElementPresent(findTestObject('0PLPPage/product1_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+boolean a = WebUI.verifyElementPresent(findTestObject('PLPPage/product1_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
-boolean b = WebUI.verifyElementPresent(findTestObject('0PLPPage/product2_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+boolean b = WebUI.verifyElementPresent(findTestObject('PLPPage/product2_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
-boolean c = WebUI.verifyElementPresent(findTestObject('0PLPPage/product3_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
+boolean c = WebUI.verifyElementPresent(findTestObject('PLPPage/product3_cardPrice_PLP'), 0, FailureHandling.OPTIONAL)
 
 if (productDisprice1 >= productDisprice2) {
     println('checked1')
@@ -52,11 +52,11 @@ if (productDisprice2 >= productDisprice3) {
 }
 
 if (((a = true) && (b = true)) && (c = true)) {
-    productsellprice1 = WebUI.getText(findTestObject('0PLPPage/product1_cardPrice_PLP'))
+    productsellprice1 = WebUI.getText(findTestObject('PLPPage/product1_cardPrice_PLP'))
 
-    productsellprice2 = WebUI.getText(findTestObject('0PLPPage/product2_cardPrice_PLP'))
+    productsellprice2 = WebUI.getText(findTestObject('PLPPage/product2_cardPrice_PLP'))
 
-    productsellprice3 = WebUI.getText(findTestObject('0PLPPage/product3_cardPrice_PLP'))
+    productsellprice3 = WebUI.getText(findTestObject('PLPPage/product3_cardPrice_PLP'))
 
     if (productsellprice1 >= productsellprice2) {
         println('checked1')

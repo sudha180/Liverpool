@@ -19,23 +19,23 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/SoftLine_product1_selectButton_PDP'))
+WebUI.verifyElementText(findTestObject('PDPpage/GID collection/SoftLine_product1_quantity_PDP'), '0')
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/stickyBarProduct1_GID_PDP'), 0)
+WebUI.click(findTestObject('PDPpage/GID collection/SoftLine_product1_selectButton_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/GID collection/SoftLine_product1_quantity_PDP'), '0')
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/stickyBarProduct1_GID_PDP'), 0)
 
-WebUI.click(findTestObject('0PDPPage/GID collection/StickyBar_product1_close_PDP'))
+WebUI.click(findTestObject('PDPpage/GID collection/StickyBar_product1_close_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/footer_.com_CLP(odtqab)'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/footer_.com_CLP(odtqab)'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/GID collection/stickyBarProduct1_GID_PDP'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/GID collection/stickyBarProduct1_GID_PDP'), 0)
 
 WebUI.closeBrowser()
 

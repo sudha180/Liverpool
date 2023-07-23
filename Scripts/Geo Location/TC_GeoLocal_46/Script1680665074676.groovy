@@ -32,15 +32,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.navigateToUrl(GlobalVariable.collectionItemLink)
 
-WebUI.click(findTestObject('0PDPPage/SeeArticles_pdp'))
+WebUI.click(findTestObject('PDPpage/SeeArticles_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/CollectionSelection_pdp'))
+WebUI.click(findTestObject('PDPpage/CollectionSelection_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToMyBagSticky_pdp'))
+WebUI.click(findTestObject('PDPpage/AddToMyBagSticky_pdp'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/EstimatedDelivery_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/EstimatedDelivery_Cart'), 0)
 
 WebUI.closeBrowser()
 

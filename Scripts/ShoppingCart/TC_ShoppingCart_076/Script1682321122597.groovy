@@ -25,35 +25,35 @@ WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.Softline], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'))
+WebUI.click(findTestObject('PDPpage/Colour1_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-not_run: WebUI.click(findTestObject('0CartPage/ClosePopupButton_Cart'))
+not_run: WebUI.click(findTestObject('CartPage/ClosePopupButton_Cart'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/giftWrapper_product1_cart'))
+WebUI.click(findTestObject('CartPage/giftWrapper_product1_cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftWrapper_popUP'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftWrapper_popUP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/giftWrapper_ribbonColour1'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/giftWrapper_ribbonColour1'), 0)
 
-WebUI.click(findTestObject('0CartPage/giftWrapper_ribbonColour1'))
+WebUI.click(findTestObject('CartPage/giftWrapper_ribbonColour1'))
 
-WebUI.click(findTestObject('0CartPage/GiftWrapper_GiftType'))
+WebUI.click(findTestObject('CartPage/GiftWrapper_GiftType'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftWrapper_GiftType'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftWrapper_GiftType'), 0)
 
-WebUI.click(findTestObject('0CartPage/GiftWrapper_GiftType_option1'))
+WebUI.click(findTestObject('CartPage/GiftWrapper_GiftType_option1'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftWrapper_submit'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftWrapper_submit'), 0)
 
-WebUI.setText(findTestObject('0CartPage/GiftWrapper_textarea'), 'gift')
+WebUI.setText(findTestObject('CartPage/GiftWrapper_textarea'), 'gift')
 
-WebUI.click(findTestObject('0CartPage/GiftWrapper_submit'))
+WebUI.click(findTestObject('CartPage/GiftWrapper_submit'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftWrapper_selected_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftWrapper_selected_cart'), 0)
 
 WebUI.closeBrowser()
 

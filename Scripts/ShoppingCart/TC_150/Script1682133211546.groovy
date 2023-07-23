@@ -31,17 +31,17 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GWPProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/AddQuntity_Cart'))
+WebUI.click(findTestObject('CartPage/AddQuntity_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/CheckQuntity_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/CheckQuntity_Cart'), 0)
 
 ProductPrice = WebUI.getText(findTestObject('CartPage/ProductPrice_Cart'))
 
-SubTotalPrice = WebUI.getText(findTestObject('0CartPage/SubTotalPrice_Cart'))
+SubTotalPrice = WebUI.getText(findTestObject('CartPage/SubTotalPrice_Cart'))
 
 if (ProductPrice != SubTotalPrice) {
     println('checked')

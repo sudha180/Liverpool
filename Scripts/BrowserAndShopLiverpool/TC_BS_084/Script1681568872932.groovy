@@ -19,26 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpWithSingleVariantWith2Gifts], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.OPTIONAL)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gift_popup_submitButton_PDP'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gift_option2_giftdropdown_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gift_option2_giftdropdown_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/giftImageInGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/giftImageInGiftDropdown_pdp'), 0)
+
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
+
+WebUI.closeBrowser()
 

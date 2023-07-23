@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>To verify the offers/Promotions drop down for Individual products on GID page</description>
    <name>TC_BS_325</name>
    <tag></tag>
    <comment></comment>

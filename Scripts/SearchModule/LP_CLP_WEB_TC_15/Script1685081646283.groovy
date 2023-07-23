@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -30,7 +30,7 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 WebUI.scrollToPosition(0, 500)
 
 'most viewed(lo msa visto)'
-WebUI.verifyElementPresent(findTestObject('0CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/L2_CLP/mostviewed_title_L2_CLP'), 0)
 
 WebUI.closeBrowser()
 

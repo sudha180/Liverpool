@@ -23,21 +23,21 @@ WebUI.navigateToUrl('https://www.liverpool.com.mx/tienda/home')
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'laptop'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('1SRP page/firstProductImage_srp'))
+WebUI.click(findTestObject('SRP page/firstProductImage_srp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/quantity_value_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/quantity_value_PDP'), 0)
 
 WebUI.scrollToPosition(0, 900)
 
-WebUI.verifyElementNotClickable(findTestObject('0PDPPage/qunaityMinua_stickBar_pdp'))
+WebUI.verifyElementNotClickable(findTestObject('PDPpage/qunaityMinua_stickBar_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/quantityPlus_stickbar_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/quantityPlus_stickbar_pdp'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToPosition(0, 400)
 
-WebUI.verifyElementAttributeValue(findTestObject('0PDPPage/StickyQuntity_pdp'), 'value', '2', 0)
+WebUI.verifyElementAttributeValue(findTestObject('PDPpage/StickyQuntity_pdp'), 'value', '2', 0)
 
 WebUI.closeBrowser()
 

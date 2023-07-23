@@ -29,18 +29,18 @@ L1 = WebUI.getText(findTestObject('HomePage/L1_Category2_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category2_HP'))
 
-subCategory = WebUI.getText(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+subCategory = WebUI.getText(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 'Product listing page\r\n'
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.verifyElementClickable(findTestObject('0CLPPage/Left_Current_Page_CLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('CLPPage/Left_Current_Page_CLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0CLPPage/L1_leftmenu_CLP'), L1)
+WebUI.verifyElementText(findTestObject('CLPPage/L1_leftmenu_CLP'), L1)
 
 WebUI.verifyElementText(findTestObject('HomePage/L2_leftmenu_HP'), subCategory)
 

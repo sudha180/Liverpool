@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 not_run: WebUI.click(findTestObject('HomePage/MainSearchbar_hp (1)'))
 
@@ -29,17 +29,17 @@ not_run: WebUI.setText(findTestObject('HomePage/MainSearchbar_hp (1)'), 'MAC')
 
 not_run: WebUI.click(findTestObject('HomePage/SearchButton_hp'))
 
-WebUI.click(findTestObject('0PLPPage/Price_Filter_min_plp'))
+WebUI.click(findTestObject('PLPPage/Price_Filter_min_plp'))
 
-WebUI.setText(findTestObject('0PLPPage/Price_Filter_min_plp'), '200')
+WebUI.setText(findTestObject('PLPPage/Price_Filter_min_plp'), '200')
 
-WebUI.click(findTestObject('0PLPPage/Price_Filter_max_plp'))
+WebUI.click(findTestObject('PLPPage/Price_Filter_max_plp'))
 
-WebUI.setText(findTestObject('0PLPPage/Price_Filter_max_plp'), '500')
+WebUI.setText(findTestObject('PLPPage/Price_Filter_max_plp'), '500')
 
-WebUI.click(findTestObject('0PLPPage/FilterButton_plp'))
+WebUI.click(findTestObject('PLPPage/FilterButton_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Verify_Price_Filter_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Verify_Price_Filter_plp'), 0)
 
 WebUI.closeBrowser()
 

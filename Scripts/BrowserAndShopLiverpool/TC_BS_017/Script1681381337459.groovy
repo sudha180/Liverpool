@@ -25,7 +25,7 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'bed'], FailureHandling.STOP_ON_FAILURE)
 
-discountpriceRange = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'), FailureHandling.STOP_ON_FAILURE)
+discountpriceRange = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 if (discountpriceRange.contains('-')) {
     println('show price range product')

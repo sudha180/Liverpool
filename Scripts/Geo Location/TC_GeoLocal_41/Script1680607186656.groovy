@@ -35,9 +35,9 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementNotPresent(findTestObject('0PDPPage/ClickNCollectLabel_pdp'), 0)
+WebUI.verifyElementNotPresent(findTestObject('PDPpage/ClickNCollectLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/EDD_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/EDD_pdp'), 0)
 
 WebUI.closeBrowser()
 

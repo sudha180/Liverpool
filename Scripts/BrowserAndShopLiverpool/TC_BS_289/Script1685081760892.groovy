@@ -19,17 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/InformationCode_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/InformationCode_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/ViewArticles_Button_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/ViewArticles_Button_PDP'), 0)
 
-discountprice = WebUI.getText(findTestObject('0PDPPage/GID collection/Discountprice_PDP'), FailureHandling.STOP_ON_FAILURE)
+discountprice = WebUI.getText(findTestObject('PDPpage/GID collection/Discountprice_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-sellingprice = WebUI.getText(findTestObject('0PDPPage/GID collection/sellingprice_PDP'), FailureHandling.STOP_ON_FAILURE)
+sellingprice = WebUI.getText(findTestObject('PDPpage/GID collection/sellingprice_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 if (discountprice.contains('-')) {
     System.out.println('CHECKED discountprice')
@@ -39,17 +39,17 @@ if (sellingprice.contains('-')) {
     System.out.println('CHECKED sellingprice')
 }
 
-WebUI.click(findTestObject('0PDPPage/GID collection/ViewArticles_Button_PDP'))
+WebUI.click(findTestObject('PDPpage/GID collection/ViewArticles_Button_PDP'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product1_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/SoftLine_product1_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product2_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/SoftLine_product2_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product3_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/SoftLine_product3_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product2_size1_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/SoftLine_product2_size1_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/SoftLine_product2_Colour1_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/SoftLine_product2_Colour1_PDP'), 0)
 
 WebUI.closeBrowser()
 

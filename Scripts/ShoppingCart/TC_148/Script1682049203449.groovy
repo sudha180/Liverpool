@@ -33,13 +33,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftProduct_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftProduct_Cart'), 0)
 
-WebUI.verifyElementNotPresent(findTestObject('0CartPage/GiftProductQuntity_Cart'), 0)
+WebUI.verifyElementNotPresent(findTestObject('CartPage/GiftProductQuntity_Cart'), 0)
 
 WebUI.closeBrowser()
 

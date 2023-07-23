@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -35,27 +35,27 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
 
-opcAddress = WebUI.getText(findTestObject('0OPCPage/FirstAddress_Checkout'))
+opcAddress = WebUI.getText(findTestObject('OPCPage/FirstAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/3DotButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/3DotButton_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/DeleteAddressPopup_Checkout'))
+WebUI.click(findTestObject('OPCPage/DeleteAddressPopup_Checkout'))
 
 WebUI.navigateToUrl(GlobalVariable.liverPoolOdtaqab)
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickMyAccountFromHeader'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0OPCPage/deliveryAddressHeading_address_opc'))
+WebUI.click(findTestObject('OPCPage/deliveryAddressHeading_address_opc'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/ClickDelivery_MyAccount'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -19,15 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'sofa'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
+WebUI.delay(4)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Alternate_Img_pdp'), 0)
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Alternate_Img_pdp_1'), 0)
+WebUI.click(findTestObject('PLPPage/relevance_SortBy_PLP'))
+
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
+
+WebUI.verifyElementPresent(findTestObject('PDPpage/Alternate_Img_pdp'), 0)
+
+WebUI.verifyElementPresent(findTestObject('PDPpage/Alternate_Img_pdp_1'), 0)
 
 WebUI.closeBrowser()
 

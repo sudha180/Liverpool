@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/paymentMethod_title_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/paymentMethod_title_OPC'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/Final_comparar_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/Final_comparar_OPC'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/Articulos(title)_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/Articulos(title)_OPC'), 0)
 

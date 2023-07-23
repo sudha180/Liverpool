@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -35,15 +35,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-DefaultAddress = WebUI.getText(findTestObject('0OPCPage/DefaultAddress_Checkout (1)'))
+DefaultAddress = WebUI.getText(findTestObject('OPCPage/DefaultAddress_Checkout (1)'))
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickMyAccountFromHeader'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -51,7 +51,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/ClickDelivery_MyAccount'), [:], F
 
 WebUI.click(findTestObject('AccountManagement/ClickAndCollectStores_accounts'))
 
-WebUI.click(findTestObject('0OPCPage/3DotButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/3DotButton_Checkout'))
 
 WebUI.click(findTestObject('AccountManagement/ClickNCollectionDefault_Account'))
 

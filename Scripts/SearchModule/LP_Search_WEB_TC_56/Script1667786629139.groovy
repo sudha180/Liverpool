@@ -28,7 +28,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertSearchTypeahead'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/Buscar en Marcas'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/Buscar en Marcas'), 0)
 
 WebUI.verifyElementPresent(findTestObject('HomePage/brandInTypeahead_hp'), 0)
 

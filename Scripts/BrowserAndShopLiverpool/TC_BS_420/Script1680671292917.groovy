@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP (1)'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PLPPage/product1_PLP (1)'), FailureHandling.OPTIONAL)
 
-String detail = WebUI.getText(findTestObject('Object Repository/0PDPPage/Detail_PDP'))
+String detail = WebUI.getText(findTestObject('Object Repository/PDPpage/Detail_PDP'))
 
 if (detail.length() >= 250) {
     WebUI.verifyElementPresent(findTestObject('Object Repository/1vedant/Page_Eau de parfum MAC Club De Nuit para mu_15d548/a_Ms informacin'), 

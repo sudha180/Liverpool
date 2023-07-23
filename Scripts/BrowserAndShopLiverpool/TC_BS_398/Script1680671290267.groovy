@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductRating_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/ProductRating_pdp'), 0)
 
-WebUI.mouseOver(findTestObject('0PDPPage/ProductRating_pdp'))
+WebUI.mouseOver(findTestObject('PDPpage/ProductRating_pdp'))
 
 WebUI.closeBrowser()
 

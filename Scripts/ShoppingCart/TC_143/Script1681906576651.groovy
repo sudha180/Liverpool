@@ -31,13 +31,13 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.exclusiveProductId], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/LatestLineBuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/LatestLineBuyButton_Cart'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/AlertMessage_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/AlertMessage_Cart'), 0)
 
 WebUI.closeBrowser()
 

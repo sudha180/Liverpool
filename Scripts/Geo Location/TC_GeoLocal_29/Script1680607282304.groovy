@@ -41,16 +41,16 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeFlag_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHomeFlag_pdp'), 0)
 
-if (WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0) == false) {
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'))
+if (WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0) == false) {
+    WebUI.click(findTestObject('PDPpage/EnterZipCode_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCodePopup_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ChangesDirectionZipCodeInput_pdp'), 0)
 } else {
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0)
 }
 
 WebUI.closeBrowser()

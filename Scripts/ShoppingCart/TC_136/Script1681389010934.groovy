@@ -35,23 +35,23 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0PDPPage/BuyNow_pdp'))
+WebUI.click(findTestObject('PDPpage/BuyNow_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ShippingDetails_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ShippingDetails_Checkout (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/deliveryAddressHeading_address_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/deliveryAddressHeading_address_opc'), 0)
 
-not_run: WebUI.verifyElementPresent(findTestObject('0OPCPage/label_Cambiar_Address_opc'), 0)
+not_run: WebUI.verifyElementPresent(findTestObject('OPCPage/label_Cambiar_Address_opc'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/Forma de Pago_payment_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/Forma de Pago_payment_opc'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/paymentSection_payment_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/paymentSection_payment_opc'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/label_Cambiar_payment_opc'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/label_Cambiar_payment_opc'), 0)
 
 WebUI.closeBrowser()
 

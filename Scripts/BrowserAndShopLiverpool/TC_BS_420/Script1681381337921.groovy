@@ -25,9 +25,9 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP (1)'))
+WebUI.click(findTestObject('PLPPage/product1_PLP (1)'))
 
-String detail = WebUI.getText(findTestObject('Object Repository/0PDPPage/Detail_PDP'))
+String detail = WebUI.getText(findTestObject('Object Repository/PDPpage/Detail_PDP'))
 
 if (detail.length() >= 250) {
     WebUI.verifyElementPresent(findTestObject('Object Repository/1vedant/Page_Eau de parfum MAC Club De Nuit para mu_15d548/a_Ms informacin'), 

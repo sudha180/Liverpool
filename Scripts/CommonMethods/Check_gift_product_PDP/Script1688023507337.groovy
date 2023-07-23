@@ -17,19 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpGiftDropdown_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gwpGiftDropdown_pdp'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/gwpGiftDropdown_pdp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/gift_option2_giftdropdown_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/gift_option2_giftdropdown_PDP'), FailureHandling.OPTIONAL)
 
 WebUI.scrollToPosition(0, 400)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gift_popup_submitButton_PDP'), 0)
 
-WebUI.click(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/gift_popup_submitButton_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/giftImageInGiftDropdown_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/giftImageInGiftDropdown_pdp'), 0)
 

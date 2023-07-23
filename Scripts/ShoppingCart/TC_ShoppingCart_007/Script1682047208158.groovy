@@ -33,19 +33,19 @@ WebUI.callTestCase(findTestCase('CommonMethods/logout'), [:], FailureHandling.ST
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.Softline], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '1')
 
-productName = WebUI.getText(findTestObject('0PDPPage/ProductName_PDP'), FailureHandling.STOP_ON_FAILURE)
+productName = WebUI.getText(findTestObject('PDPpage/ProductName_PDP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0CartPage/product1_name_cart'), productName)
+WebUI.verifyElementText(findTestObject('CartPage/product1_name_cart'), productName)
 
 WebUI.closeBrowser()
 

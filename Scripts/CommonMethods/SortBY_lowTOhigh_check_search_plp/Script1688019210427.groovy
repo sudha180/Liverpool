@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/LowPricetoHighSortBy_PLP'))
+WebUI.click(findTestObject('PLPPage/LowPricetoHighSortBy_PLP'))
 
-productDisprice1 = WebUI.getText(findTestObject('0PLPPage/product-1-DiscountPrice_PLP'))
+productDisprice1 = WebUI.getText(findTestObject('PLPPage/product-1-DiscountPrice_PLP'))
 
-productDisprice2 = WebUI.getText(findTestObject('0PLPPage/product-2-DiscountPrice_PLP'))
+productDisprice2 = WebUI.getText(findTestObject('PLPPage/product-2-DiscountPrice_PLP'))
 
-productDisprice3 = WebUI.getText(findTestObject('0PLPPage/product-3-DiscountPrice_PLP'))
+productDisprice3 = WebUI.getText(findTestObject('PLPPage/product-3-DiscountPrice_PLP'))
 
 if (productDisprice1 <= productDisprice2) {
     println('checked1')

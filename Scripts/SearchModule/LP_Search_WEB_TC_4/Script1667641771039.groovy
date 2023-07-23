@@ -23,17 +23,17 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/HighToLowPriceSortby_PLP'))
+WebUI.click(findTestObject('PLPPage/HighToLowPriceSortby_PLP'))
 
-firstProductPrice = WebUI.getText(findTestObject('1SRP page/firstProductPrice_srp'))
+firstProductPrice = WebUI.getText(findTestObject('SRP page/firstProductPrice_srp'))
 
 firstProductPriceNew = firstProductPrice.replace('$', '').replace(',', '').replace('0', '').toInteger()
 
 println('This is the output after price replacement = ' + firstProductPriceNew)
 
-secondProductPrice = WebUI.getText(findTestObject('1SRP page/secondProductPrice_srp'))
+secondProductPrice = WebUI.getText(findTestObject('SRP page/secondProductPrice_srp'))
 
 secondProductPriceNew = secondProductPrice.replace('$', '').replace(',', '').replace('0', '').toInteger()
 
@@ -41,7 +41,7 @@ not_run: Integer a = firstProductPrice.substring(0, 4)
 
 not_run: Integer b = secondProductPrice.valueOf(secondProductPrice.substring(1, 4))
 
-not_run: secondProductPrice = WebUI.getText(findTestObject('1SRP page/secondProductPrice_srp'))
+not_run: secondProductPrice = WebUI.getText(findTestObject('SRP page/secondProductPrice_srp'))
 
 not_run: secondProductPrice = secondProductPrice.substring(1, 4)
 

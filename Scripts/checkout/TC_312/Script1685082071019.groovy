@@ -19,48 +19,48 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
-
-'predefined payment method\r\n'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/BestpromotionScrolldown_OPC'), 0)
+WebUI.click(findTestObject('CartPage/comprar'))
 
 'predefined payment method\r\n'
-WebUI.click(findTestObject('0OPCPage/BestpromotionScrolldown_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('OPCPage/BestpromotionScrolldown_OPC'), 0)
 
 'predefined payment method\r\n'
-WebUI.verifyElementClickable(findTestObject('0OPCPage/BestpromotionScrolldown_option1_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/BestpromotionScrolldown_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'predefined payment method\r\n'
-WebUI.verifyElementClickable(findTestObject('0OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/BestpromotionScrolldown_option1_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'predefined payment method\r\n'
-selectOption = WebUI.getText(findTestObject('0OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'predefined payment method\r\n'
-WebUI.click(findTestObject('0OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
+selectOption = WebUI.getText(findTestObject('OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'predefined payment method\r\n'
-selectedOption = WebUI.getText(findTestObject('0OPCPage/BestpromotionScrolldown_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/BestpromotionScrolldown_option2_OPC'), FailureHandling.STOP_ON_FAILURE)
+
+'predefined payment method\r\n'
+selectedOption = WebUI.getText(findTestObject('OPCPage/BestpromotionScrolldown_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 if (selectOption == selectedOption) {
     System.out.println('checked option selected')

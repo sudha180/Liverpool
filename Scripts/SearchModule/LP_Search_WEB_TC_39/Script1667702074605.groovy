@@ -23,7 +23,7 @@ WebUI.navigateToUrl(GlobalVariable.URL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/searchresultados_srp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/searchresultados_srp'), 0)
 
 WebUI.closeBrowser()
 

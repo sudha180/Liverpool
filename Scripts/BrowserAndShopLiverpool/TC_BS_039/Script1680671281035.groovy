@@ -22,7 +22,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,17 +38,17 @@ for (int i = 0; i < 3500; i += 7) {
     js.executeScript(('window.scrollTo(0, ' + i) + ')')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour1_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour1_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour2_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour2_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour3_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour3_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour4_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour4_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour5_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour5_plp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/Swatche_colour6_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/Swatche_colour6_plp'), 0)
 
 WebUI.closeBrowser()
 

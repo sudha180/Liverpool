@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('HomePage/CategorasDropDown_HP'))
 
-WebUI.click(findTestObject('HomePage/L1Category_HP (1)'))
+WebUI.click(findTestObject('HomePage/l1Category_hp'))
 
 'this is category chosen from left menu'
-SubCategory = WebUI.getText(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+SubCategory = WebUI.getText(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 'this is current page bread crumb that is not clickable'
-BreadCrumb = WebUI.getText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), FailureHandling.STOP_ON_FAILURE)
+BreadCrumb = WebUI.getText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), FailureHandling.STOP_ON_FAILURE)
 
 if (SubCategory == BreadCrumb) {
     System.out.print('correct ')

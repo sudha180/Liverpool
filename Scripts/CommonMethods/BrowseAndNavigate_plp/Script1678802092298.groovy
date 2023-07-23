@@ -21,5 +21,5 @@ WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 WebUI.click(findTestObject('HomePage/L1_hp'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory3_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory3_leftmenu_CLP'))
 

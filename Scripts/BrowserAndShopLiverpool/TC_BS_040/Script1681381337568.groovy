@@ -40,7 +40,7 @@ for (int i = 0; i < 3500; i += 7) {
     js.executeScript(('window.scrollTo(0, ' + i) + ')')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/icon-sum_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/icon-sum_plp'), 0)
 
 WebUI.closeBrowser()
 

@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/SeeAvailableStore_pdp'))
+WebUI.click(findTestObject('PDPpage/SeeAvailableStore_pdp'))
 
 WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 

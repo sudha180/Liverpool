@@ -33,11 +33,11 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/DeliveryFlag_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/DeliveryFlag_cart'), 0)
 
 WebUI.closeBrowser()
 

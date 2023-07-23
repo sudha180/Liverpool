@@ -25,21 +25,21 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'lentes'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Quntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Quntity_pdp'), 0)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/Quntity_pdp'), 0)
+WebUI.scrollToElement(findTestObject('PDPpage/Quntity_pdp'), 0)
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/QuntityPlusButton_pdp'))
+WebUI.click(findTestObject('Object Repository/PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.doubleClick(findTestObject('Object Repository/0PDPPage/QuntityPlusButton_pdp'))
+WebUI.doubleClick(findTestObject('Object Repository/PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/QuntityPlusButton_pdp'))
+WebUI.click(findTestObject('PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Quntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Quntity_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyQuntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyQuntity_pdp'), 0)
 
 WebUI.closeBrowser()
 

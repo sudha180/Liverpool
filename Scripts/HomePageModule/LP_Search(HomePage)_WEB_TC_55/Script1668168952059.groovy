@@ -20,7 +20,7 @@ import com.katalon.sudha.GenerateRandomEmail as GenerateRandomEmail
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('Object Repository/AccountManagement/Iniciar sesin_hp'), FailureHandling.STOP_ON_FAILURE)
 

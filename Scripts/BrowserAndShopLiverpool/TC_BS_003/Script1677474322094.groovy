@@ -19,36 +19,36 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
 'cart/bag present at top right corner'
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '0')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '0')
 
 'first present colour of radio button'
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
 'first present size of box'
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
 'cart/bag present at top right cornern after order 1 item'
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '1')
 
 'second present colour of radio button'
-WebUI.click(findTestObject('0PDPPage/Colour2_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Colour2_PDP'), FailureHandling.OPTIONAL)
 
 'second present size of box'
-WebUI.click(findTestObject('0PDPPage/Size2_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Size2_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
 'cart/bag present at top right corner after order 2 items'
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '2')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '2')
 
 WebUI.closeBrowser()
 

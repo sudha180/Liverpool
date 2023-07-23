@@ -30,10 +30,10 @@ L1_category = WebUI.getText(findTestObject('HomePage/L1Category_HP (1)'))
 WebUI.click(findTestObject('HomePage/L1Category_HP (1)'))
 
 'this is only name of category we chose'
-FooterName = WebUI.getText(findTestObject('0CLPPage/footer_name_not.com_CLP'), FailureHandling.STOP_ON_FAILURE)
+FooterName = WebUI.getText(findTestObject('CLPPage/footer_name_not.com_CLP'), FailureHandling.STOP_ON_FAILURE)
 
 'this is complete text of footer '
-WebUI.verifyElementText(findTestObject('0CLPPage/footer_.com_CLP(odtqab)'), 'MUJER EN LIVERPOOL.COM.MX')
+WebUI.verifyElementText(findTestObject('CLPPage/footer_.com_CLP(odtqab)'), 'MUJER EN LIVERPOOL.COM.MX')
 
 if (L1_category == FooterName) {
     System.out.print('correct page')

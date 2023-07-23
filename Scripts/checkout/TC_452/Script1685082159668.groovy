@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -27,23 +27,23 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bt'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Colour1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Colour1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.enhancedClick(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.delay(3)
 
@@ -55,19 +55,19 @@ WebUI.setText(findTestObject('1vedant/Page_/card_cvv_cardpopup'), '123')
 
 WebUI.click(findTestObject('1vedant/Page_/continueButton_cardPOPup_CO1'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/product1_promotionDropDown_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/product1_promotionDropDown_OPC'), 0)
 
-WebUI.click(findTestObject('0OPCPage/product1_promotionDropDown_OPC'))
+WebUI.click(findTestObject('OPCPage/product1_promotionDropDown_OPC'))
 
 int i = 0
 
 def notchanged
 
-if (WebUI.verifyElementPresent(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementPresent(findTestObject('OPCPage/promoCombo1_popup_OPC (1)'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 
-    notchanged = WebUI.getText(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL)
+    notchanged = WebUI.getText(findTestObject('OPCPage/promoCombo1_popup_OPC (1)'), FailureHandling.OPTIONAL)
 
     def a = notchanged.replaceAll('[^0-9]', '')
 
@@ -76,11 +76,11 @@ true) {
     System.out.println('number of promo combo for external card ' + a1)
 }
 
-if (WebUI.verifyElementPresent(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementPresent(findTestObject('OPCPage/promoCombo2_popup_OPC (1)'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 } else {
-    notchanged = WebUI.getText(findTestObject('0OPCPage/promoCombo1_popup_OPC'), FailureHandling.OPTIONAL)
+    notchanged = WebUI.getText(findTestObject('OPCPage/promoCombo1_popup_OPC (1)'), FailureHandling.OPTIONAL)
 
     def a = notchanged.replaceAll('[^0-9]', '')
 
@@ -89,13 +89,13 @@ true) {
     System.out.println('number of promo combo for external card ' + a1)
 }
 
-if (WebUI.verifyElementPresent(findTestObject('0OPCPage/promoCombo3_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementPresent(findTestObject('OPCPage/promoCombo3_popup_OPC (1)'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo2_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo2_popup_OPC (1)'))
 
-    notchanged = WebUI.getText(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL)
+    notchanged = WebUI.getText(findTestObject('OPCPage/promoCombo2_popup_OPC (1)'), FailureHandling.OPTIONAL)
 
     def a = notchanged.replaceAll('[^0-9]', '')
 
@@ -104,13 +104,13 @@ true) {
     System.out.println('number of promo combo for external card ' + a2)
 }
 
-if (WebUI.verifyElementPresent(findTestObject('0OPCPage/promoCombo4_popup_OPC'), FailureHandling.OPTIONAL) == 
+if (WebUI.verifyElementPresent(findTestObject('OPCPage/promoCombo4_popup_OPC (1)'), FailureHandling.OPTIONAL) == 
 true) {
     i++
 } else {
-    WebUI.enhancedClick(findTestObject('0OPCPage/promoCombo3_popup_OPC'))
+    WebUI.enhancedClick(findTestObject('OPCPage/promoCombo3_popup_OPC (1)'))
 
-    notchanged = WebUI.getText(findTestObject('0OPCPage/promoCombo2_popup_OPC'), FailureHandling.OPTIONAL)
+    notchanged = WebUI.getText(findTestObject('OPCPage/promoCombo2_popup_OPC (1)'), FailureHandling.OPTIONAL)
 
     def a = notchanged.replaceAll('[^0-9]', '')
 
@@ -121,12 +121,12 @@ true) {
 
 System.out.println('number of promo combo for external card ' + i)
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'))
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'))
 
 WebUI.delay(3)
 
 'liverpool'
-WebUI.enhancedClick(findTestObject('0OPCPage/card1_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/card1_OPC'))
 
 WebUI.setText(findTestObject('1vedant/Page_/card_cvv_cardpopup'), '123')
 

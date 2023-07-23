@@ -19,29 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/CategoríasTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/CategoríasTitleFacet_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/ColorTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/DescontousTitleFacet_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/DescontousTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/MarcasTitleFacet_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/MarcasTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/PreciosTitleFacet_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/PreciosTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/TamanoTitleFacet_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/TamanoTitleFacet_PLP'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PLPPage/facetes/VendidoTitleFacet_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/facetes/VendidoTitleFacet_PLP'), 0)
 
 WebUI.closeBrowser()
 

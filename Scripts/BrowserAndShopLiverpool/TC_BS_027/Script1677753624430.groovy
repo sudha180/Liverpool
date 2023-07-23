@@ -19,20 +19,20 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'blusa'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/Size1_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Size1_PDP'), FailureHandling.OPTIONAL)
 
-priceSize1 = WebUI.getText(findTestObject('0PDPPage/Product_discountPrice_PDP'), FailureHandling.STOP_ON_FAILURE)
+priceSize1 = WebUI.getText(findTestObject('PDPpage/Product_discountPrice_PDP'), FailureHandling.STOP_ON_FAILURE)
 
 'use size 3 because size2 was out of stock\r\n'
-WebUI.click(findTestObject('0PDPPage/Size2_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/Size2_PDP'), FailureHandling.OPTIONAL)
 
-priceSize2 = WebUI.getText(findTestObject('0PDPPage/Product_discountPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
+priceSize2 = WebUI.getText(findTestObject('PDPpage/Product_discountPrice_PDP'), FailureHandling.CONTINUE_ON_FAILURE)
 
 'compare the price chage after size change'
 if (priceSize1 != priceSize2) {

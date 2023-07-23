@@ -26,7 +26,7 @@ WebUI.click(findTestObject('HomePage/Iniciarsesión_hp'))
 WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username') : GlobalVariable.Username, ('password') : GlobalVariable.Password], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/AfterLogin_hp'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/AfterLogin_hp'), 0)
 
 WebUI.closeBrowser()
 

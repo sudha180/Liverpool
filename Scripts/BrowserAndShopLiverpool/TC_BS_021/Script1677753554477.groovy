@@ -19,30 +19,33 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory2_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory3_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
+
+WebUI.delay(5)
 
 'facet to check clicked\r\n'
-FacetClicked = WebUI.getText(findTestObject('0PLPPage/facetes/Facet_liverpool_PLP'))
+FacetClicked = WebUI.getText(findTestObject('PLPPage/facetes/Facet_liverpool_PLP'))
 
-WebUI.enhancedClick(findTestObject('0PLPPage/facetes/Facet_liverpool_PLP'))
+WebUI.enhancedClick(findTestObject('PLPPage/facetes/Facet_liverpool_PLP'))
 
 WebUI.delay(5)
 
 'clicked facet showing above'
-FacetClicked2 = WebUI.getText(findTestObject('0PLPPage/facetes/facet_selectedname_liverpool'), FailureHandling.STOP_ON_FAILURE)
+FacetClicked2 = WebUI.getText(findTestObject('PLPPage/facetes/facet_selectedname_liverpool'), FailureHandling.STOP_ON_FAILURE)
 
 if (FacetClicked == FacetClicked2) {
     System.out.print('facet clicked is facet selected')
 }
 
-WebUI.click(findTestObject('0PLPPage/facetes/close_facet_liverpool_PLP'))
+WebUI.click(findTestObject('PLPPage/facetes/close_facet_liverpool_PLP'))
 
 WebUI.closeBrowser()
+

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -27,37 +27,37 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_odtaqab'), [:], FailureHand
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'nat'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product3_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
-WebUI.click(findTestObject('0OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/paymentMethod_change_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.enhancedClick(findTestObject('0OPCPage/card3_Option_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/card3_Option_OPC'))
 
 'to set card as default card\r\n'
-WebUI.enhancedClick(findTestObject('0OPCPage/option2DropDown_editos_card_OPC'))
+WebUI.enhancedClick(findTestObject('OPCPage/option2DropDown_editos_card_OPC'))
 
 'section present to edit is address'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressSection_card_popup_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressSection_card_popup_OPC'), 0)
 
 'section present to edit is address'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/AddressSection_card_popup_enterPINCODE_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/AddressSection_card_popup_enterPINCODE_OPC'), 0)
 
 'section present to edit is address'
-WebUI.setText(findTestObject('0OPCPage/AddressSection_card_popup_enterPINCODE_OPC'), '33454')
+WebUI.setText(findTestObject('OPCPage/AddressSection_card_popup_enterPINCODE_OPC'), '33454')
 
 WebUI.closeBrowser()
 

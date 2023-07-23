@@ -20,7 +20,7 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 if (true) {
     WebUI.verifyElementPresent(findTestObject('Object Repository/HomePage/i_Ms informacin_icon-close close'), 0)

@@ -22,27 +22,27 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'Pantallas'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
 WebUI.delay(5)
 
 WebUI.scrollToPosition(0, 400)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/stickyBar_img_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/stickyBar_img_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductName_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductName_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPrice_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPrice_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductColour_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductColour_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPieces_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPieces_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductQuantity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductQuantity_pdp'), 0)
 
 WebUI.closeBrowser()
 

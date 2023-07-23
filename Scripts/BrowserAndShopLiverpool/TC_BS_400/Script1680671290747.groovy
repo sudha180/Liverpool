@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'tenis'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
 WebUI.scrollToPosition(0, 350)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/StickyProductColour_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/StickyProductColour_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductName_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductName_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPrice_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPrice_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductColour_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductColour_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductPieces_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductPieces_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyProductQuantity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyProductQuantity_pdp'), 0)
 
 WebUI.closeBrowser()
 

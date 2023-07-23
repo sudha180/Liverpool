@@ -35,15 +35,15 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-PDPQuntity = WebUI.getText(findTestObject('0PDPPage/MinimumQuntity_Pdp'), FailureHandling.STOP_ON_FAILURE)
+PDPQuntity = WebUI.getText(findTestObject('PDPpage/MinimumQuntity_Pdp'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0PDPPage/BuyNow_pdp'))
+WebUI.click(findTestObject('PDPpage/BuyNow_pdp'))
 
-CheckoutQuntity = WebUI.getText(findTestObject('0CartPage/MinimumQuntity_Cart'), FailureHandling.STOP_ON_FAILURE)
+CheckoutQuntity = WebUI.getText(findTestObject('CartPage/MinimumQuntity_Cart'), FailureHandling.STOP_ON_FAILURE)
 
 if (PDPQuntity == CheckoutQuntity) {
     println('checked')

@@ -33,11 +33,11 @@ WebUI.click(findTestObject('Object Repository/HomePage/LogoutButton_hp'))
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductRating_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/ProductRating_pdp'), 0)
 
-WebUI.mouseOver(findTestObject('0PDPPage/ProductRating_pdp'))
+WebUI.mouseOver(findTestObject('PDPpage/ProductRating_pdp'))
 
 WebUI.closeBrowser()
 

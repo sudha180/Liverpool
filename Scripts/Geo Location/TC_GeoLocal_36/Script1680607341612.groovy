@@ -35,7 +35,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-if (WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0) == false) 
+if (WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0) == false) 
 {
     not_run: WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -47,50 +47,50 @@ if (WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0) =
 
     WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('PDPpage/EnterZipCode_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCodePopup_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ChangesDirectionZipCodeInput_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0)
 
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'))
+    WebUI.click(findTestObject('PDPpage/EnterZipCode_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/AddressList_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/AddressList_pdp'), 0)
 
-    WebUI.click(findTestObject('0PDPPage/SelectAddressButton_pdp'))
+    WebUI.click(findTestObject('PDPpage/SelectAddressButton_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHome_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHome_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeFlag_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHomeFlag_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeBuyButton'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHomeBuyButton'), 0)
 } 
 else {
-    WebUI.click(findTestObject('0PDPPage/EnterZipCode_pdp'), FailureHandling.STOP_ON_FAILURE)
+    WebUI.click(findTestObject('PDPpage/EnterZipCode_pdp'), FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCodePopup_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCodePopup_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ChangesDirectionZipCodeInput_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ChangesDirectionZipCodeInput_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ZipCodeInputField_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ZipCodeInputField_pdp'), 0)
 
-    WebUI.click(findTestObject('0PDPPage/ZipCodeInputField_pdp'))
+    WebUI.click(findTestObject('PDPpage/ZipCodeInputField_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/AddressList_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/AddressList_pdp'), 0)
 
-    WebUI.click(findTestObject('0PDPPage/SelectAddressButton_pdp'))
+    WebUI.click(findTestObject('PDPpage/SelectAddressButton_pdp'))
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHome_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHome_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeFlag_pdp'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHomeFlag_pdp'), 0)
 
-    not_run: WebUI.verifyElementPresent(findTestObject('0PDPPage/EnterZipCode_pdp'), 0)
+    not_run: WebUI.verifyElementPresent(findTestObject('PDPpage/EnterZipCode_pdp'), 0)
 
-    WebUI.verifyElementPresent(findTestObject('0PDPPage/ReceiveAtHomeBuyButton'), 0)
+    WebUI.verifyElementPresent(findTestObject('PDPpage/ReceiveAtHomeBuyButton'), 0)
 }
 
 WebUI.closeBrowser()

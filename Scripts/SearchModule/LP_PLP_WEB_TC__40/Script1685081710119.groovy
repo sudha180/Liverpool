@@ -19,14 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'jeans'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToPosition(0, 500)
 
 'next page (2)'
-WebUI.click(findTestObject('0PLPPage/pagenationClickable1_PLP'))
+WebUI.click(findTestObject('PLPPage/pagenationClickable1_PLP'))
 
 WebUI.delay(5)
 

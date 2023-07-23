@@ -26,15 +26,15 @@ WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'laptop'], FailureHandling.STOP_ON_FAILURE)
 
 'product without size or colour variant\r\n'
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PLPPage/product1_PLP'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/shopCart_HP'), '2')
+WebUI.verifyElementText(findTestObject('PDPpage/shopCart_HP'), '2')
 
 WebUI.closeBrowser()
 

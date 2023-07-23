@@ -39,15 +39,15 @@ WebUI.click(findTestObject('HomePage/FavStore_hp'))
 
 WebUI.click(findTestObject('HomePage/SelectStateLocationPoup_hp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectState_pdp'))
+WebUI.click(findTestObject('PDPpage/SelectState_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/SelectStateFromList_pdp'))
+WebUI.click(findTestObject('PDPpage/SelectStateFromList_pdp'))
 
 WebUI.click(findTestObject('HomePage/SelectStoreByState_hp_'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/ClickNCollect_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/ClickNCollect_pdp'), 0)
 
-WebUI.click(findTestObject('0PDPPage/SelectStoreLink_pdp'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PDPpage/SelectStoreLink_pdp'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('HomePage/SelectStorePopup_hp'), 0)
 

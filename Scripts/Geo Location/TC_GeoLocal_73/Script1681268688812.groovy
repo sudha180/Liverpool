@@ -36,47 +36,47 @@ WebUI.click(findTestObject('HomePage/L2_hp'))
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CLPPage/CheckoutButton_Cart'))
+WebUI.click(findTestObject('CLPPage/CheckoutButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressAliase_checkout'))
+WebUI.click(findTestObject('OPCPage/AddressAliase_checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/AddressAliase_checkout'), 'SHiv')
+WebUI.setText(findTestObject('OPCPage/AddressAliase_checkout'), 'SHiv')
 
-WebUI.click(findTestObject('0OPCPage/PostalCode_Checkout'))
+WebUI.click(findTestObject('OPCPage/PostalCode_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/PostalCode_Checkout'), '09090')
+WebUI.setText(findTestObject('OPCPage/PostalCode_Checkout'), '09090')
 
-WebUI.click(findTestObject('0OPCPage/SetCity_Checkout'))
+WebUI.click(findTestObject('OPCPage/SetCity_Checkout (1)'))
 
-WebUI.setText(findTestObject('0OPCPage/SetCity_Checkout'), 'Maxico')
+WebUI.setText(findTestObject('OPCPage/SetCity_Checkout (1)'), 'Maxico')
 
-WebUI.click(findTestObject('0OPCPage/StreetAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/StreetAddress_Checkout (1)'))
 
-WebUI.setText(findTestObject('0OPCPage/StreetAddress_Checkout'), 'SanFransisco')
+WebUI.setText(findTestObject('OPCPage/StreetAddress_Checkout (1)'), 'SanFransisco')
 
-WebUI.click(findTestObject('0OPCPage/ExtNumber_Checkout'))
+WebUI.click(findTestObject('OPCPage/ExtNumber_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/ExtNumber_Checkout'), '982395823')
+WebUI.setText(findTestObject('OPCPage/ExtNumber_Checkout'), '982395823')
 
-WebUI.click(findTestObject('0OPCPage/CellPhone_Checkout'))
+WebUI.click(findTestObject('OPCPage/CellPhone_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/CellPhone_Checkout'), '892395823')
+WebUI.setText(findTestObject('OPCPage/CellPhone_Checkout'), '892395823')
 
-WebUI.click(findTestObject('0OPCPage/ContinueButtonAddAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonAddAddress_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/VerifyAddressOPC_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/VerifyAddressOPC_Checkout (1)'), 0)
 
-WebUI.scrollToElement(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.scrollToElement(findTestObject('OPCPage/EDD_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/EDD_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/EDD_Checkout'), 0)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

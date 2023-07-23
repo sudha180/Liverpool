@@ -27,19 +27,19 @@ WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'polos'], FailureHand
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Breadcrum_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Breadcrum_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductImage_pdp (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/ProductImage_pdp (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/AlternateImg_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/AlternateImg_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/AlternateImg_1_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/AlternateImg_1_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductName_pdp (1) (1)'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/ProductName_pdp (1) (1)'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/ProductID_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/ProductID_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Rating_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Rating_pdp'), 0)
 
 WebUI.closeBrowser()
 

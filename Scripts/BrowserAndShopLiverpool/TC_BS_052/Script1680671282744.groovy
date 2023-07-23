@@ -19,27 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.click(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.enhancedClick(findTestObject('0PDPPage/Share_pdp'))
+WebUI.enhancedClick(findTestObject('PDPpage/Share_pdp'))
 
-WebUI.click(findTestObject('0PLPPage/Link_1'))
+WebUI.click(findTestObject('PLPPage/Link_1'))
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/Social_Media_pdp'))
+WebUI.click(findTestObject('Object Repository/PDPpage/Social_Media_pdp'))
 
 WebUI.switchToWindowTitle('Facebook')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Social_Link_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Social_Link_pdp'), 0)
 
 WebUI.closeBrowser()
 

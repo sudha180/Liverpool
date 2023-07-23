@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -35,29 +35,29 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-WebUI.click(findTestObject('0OPCPage/ChangeAddress_Checkout'))
+WebUI.click(findTestObject('OPCPage/ChangeAddress_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'))
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/DefaultAddress_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/DefaultAddress_Checkout'), 0)
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'))
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/ClickNCollectionRadioButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/ClickNCollectionRadioButton_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/ClickNCollectionSelectEvent_Checkout'))
+WebUI.click(findTestObject('OPCPage/ClickNCollectionSelectEvent_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/OptionOfSelectEvent_Checkout'))
+WebUI.click(findTestObject('OPCPage/OptionOfSelectEvent_Checkout'))
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/DefaultAddress_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/DefaultAddress_Checkout'), 0)
 
-WebUI.click(findTestObject('0OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
+WebUI.click(findTestObject('OPCPage/ContinueButtonClickNCollectPopup_Checkout'))
 
 WebUI.closeBrowser()
 

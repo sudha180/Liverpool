@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.click(findTestObject('HomePage/Gift_table_button_HP (1)'))
 
-WebUI.click(findTestObject('0GR/GR list page/Find_gift_table_GR'))
+WebUI.click(findTestObject('GR/Find_gift_table_GR'))
 
-WebUI.setText(findTestObject('0GR/GR list page/GR_SearchPage/Event_search_by_number_textArea_GR'), '56076579')
+WebUI.setText(findTestObject('GR/Event_search_by_number_textArea_GR'), '56076579')
 
-WebUI.click(findTestObject('0GR/GR list page/GR_SearchPage/Search_event_button_GR'))
+WebUI.click(findTestObject('GR/Search_event_button_GR'))
 

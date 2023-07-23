@@ -35,33 +35,33 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0OPCPage/GiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/GiftTable_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/SearchEventField_GRPopup'), '56075997')
+WebUI.setText(findTestObject('OPCPage/SearchEventField_GRPopup (1)'), '56075997')
 
-WebUI.click(findTestObject('0OPCPage/FindGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/FindGiftTable_Checkout'))
 
-WebUI.click(findTestObject('0OPCPage/EventSelection_GRPopup'))
+WebUI.click(findTestObject('OPCPage/EventSelection_GRPopup'))
 
-WebUI.click(findTestObject('0OPCPage/SelectPartyRadioButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/SelectPartyRadioButton_Checkout (1)'))
 
-WebUI.click(findTestObject('0OPCPage/InputTextAreaGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/InputTextAreaGiftTable_Checkout'))
 
-WebUI.setText(findTestObject('0OPCPage/InputTextAreaGiftTable_Checkout'), 'Test')
+WebUI.setText(findTestObject('OPCPage/InputTextAreaGiftTable_Checkout'), 'Test')
 
-WebUI.click(findTestObject('0OPCPage/sendMessageToCelebratedGiftTable_Checkout'))
+WebUI.click(findTestObject('OPCPage/sendMessageToCelebratedGiftTable_Checkout (1)'))
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftTableDetails_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftTableDetails_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftTableName_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftTableName_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CartPage/GiftTableMessage_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CartPage/GiftTableMessage_Cart'), 0)
 
-EventID = WebUI.getText(findTestObject('0CartPage/EventID_Cart'))
+EventID = WebUI.getText(findTestObject('CartPage/EventID_Cart'))
 
 if (EventID == '56075997') {
     println('Checked')

@@ -30,7 +30,7 @@ WebUI.click(findTestObject('HomePage/Categoras_hp'))
 
 WebUI.click(findTestObject('HomePage/L1_hp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/mainBanner_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/mainBanner_plp'), 0)
 
 WebUI.closeBrowser()
 

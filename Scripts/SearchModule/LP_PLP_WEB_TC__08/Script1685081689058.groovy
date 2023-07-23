@@ -19,21 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'vaso'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/Sortby_PLP'))
+WebUI.click(findTestObject('PLPPage/Sortby_PLP'))
 
-WebUI.click(findTestObject('0PLPPage/Rating_SortBy_PLP'))
+WebUI.click(findTestObject('PLPPage/Rating_SortBy_PLP'))
 
 'verify of presence of 5 star checked\r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/5starPoduct1_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/5starPoduct1_PLP'), 0)
 
 'verify of presence of 4 star checked only \r\n\r\n'
-WebUI.verifyElementPresent(findTestObject('0PLPPage/4starPoduct_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/4starPoduct_PLP'), 0)
 
 WebUI.closeBrowser()
 

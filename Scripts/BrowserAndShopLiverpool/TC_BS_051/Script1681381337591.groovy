@@ -33,9 +33,9 @@ WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Alternate_Img_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/Alternate_Img_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/Alternate_Img_pdp_1'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/Alternate_Img_pdp_1'), 0)
 
 WebUI.closeBrowser()
 

@@ -19,24 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.gwpBTParentSLGifts2], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/gwpRegaloLabel_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/gwpRegaloLabel_pdp'), 0)
 
-WebUI.clearText(findTestObject('0PDPPage/quantityBox_pdp'))
+WebUI.clearText(findTestObject('PDPpage/quantityBox_pdp'))
 
-WebUI.sendKeys(findTestObject('0PDPPage/quantityBox_pdp'), '1', FailureHandling.OPTIONAL)
+WebUI.sendKeys(findTestObject('PDPpage/quantityBox_pdp'), '1', FailureHandling.OPTIONAL)
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickAddToCart'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/gift_popup_submitButton_PDP'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('PDPpage/gift_popup_submitButton_PDP'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('PDPpage/closeGwpPopup_pdp - Copy'), FailureHandling.OPTIONAL)
 
 WebUI.delay(7)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/inventoryMessageforGWP_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/inventoryMessageforGWP_pdp'), 0)
+
+WebUI.closeBrowser()
 

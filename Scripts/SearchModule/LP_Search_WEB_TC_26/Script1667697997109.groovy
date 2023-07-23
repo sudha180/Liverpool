@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('se
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertSearchResults_srp'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('1SRP page/sortingOptions_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('SRP page/sortingOptions_plp'), 0)
 
 WebUI.closeBrowser()
 

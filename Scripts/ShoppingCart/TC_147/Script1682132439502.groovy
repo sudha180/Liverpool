@@ -35,7 +35,7 @@ not_run: WebUI.click(findTestObject('HomePage/FirstProduct_plp'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 

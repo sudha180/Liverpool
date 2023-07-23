@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'VASO'], FailureHandling.STOP_ON_FAILURE)
 
@@ -27,7 +27,7 @@ not_run: WebUI.click(findTestObject('HomePage/MainSearchbar_hp (1)'))
 
 not_run: WebUI.setText(findTestObject('HomePage/MainSearchbar_hp (1)'), 'vaso')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PLPPage/Page_vaso  Liverpool.com.mx/span_Compra mnima 2 piezas'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PLPPage/span_Compra mnima 2 piezas'), 0)
 
 WebUI.closeBrowser()
 

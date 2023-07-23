@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-a = WebUI.getText(findTestObject('0OPCPage/Product1_name_OPC2'))
+a = WebUI.getText(findTestObject('OPCPage/Product1_name_OPC2'))
 
-WebUI.enhancedClick(findTestObject('0OPCPage/product1_remove_OPC2'), FailureHandling.STOP_ON_FAILURE)
+WebUI.enhancedClick(findTestObject('OPCPage/product1_remove_OPC2'), FailureHandling.STOP_ON_FAILURE)
 
-b = WebUI.getText(findTestObject('0OPCPage/Product1_name_OPC2'))
+b = WebUI.getText(findTestObject('OPCPage/Product1_name_OPC2'))
 
 assert a == b
 

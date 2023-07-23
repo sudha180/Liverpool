@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
@@ -30,7 +30,7 @@ L3 = WebUI.getText(findTestObject('HomePage/L3_category_2_HP'))
 WebUI.enhancedClick(findTestObject('HomePage/L3_category_2_HP'))
 
 'Check that landed to L3 from flyout menu\r\n'
-WebUI.verifyElementText(findTestObject('0PLPPage/BreadCrumbCurrentPage_PLP'), L3)
+WebUI.verifyElementText(findTestObject('PLPPage/BreadCrumbCurrentPage_PLP'), L3)
 
 WebUI.callTestCase(findTestCase('CommonMethods/assertplp'), [:], FailureHandling.STOP_ON_FAILURE)
 

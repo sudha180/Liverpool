@@ -19,19 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/HP_to_veda_GR_detail_page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0GR/GR list page/Event_detail_page_GR/Event_Product1_GR_detail'))
+WebUI.click(findTestObject('GR/Event_Product1_GR_detail'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('0GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
+WebUI.verifyElementPresent(findTestObject('GR/product_button_comprar_ahora_POPup_GR_detail'), 
     0)
 
-not_run: WebUI.click(findTestObject('0GR/GR list page/Event_detail_page_GR/product_button_comprar_ahora_POPup_GR_detail'), 
+not_run: WebUI.click(findTestObject('GR/product_button_comprar_ahora_POPup_GR_detail'), 
     FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser()
 

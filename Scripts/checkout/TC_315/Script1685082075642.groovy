@@ -19,44 +19,44 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/login_newUser'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.callTestCase(findTestCase('CommonMethods/EmptyCart_RunAt_HP'), [:], FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'bus'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('PLPPage/product1_PLP'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '0')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '0')
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_PDP'))
+WebUI.click(findTestObject('PDPpage/AddToCart_PDP'))
 
-WebUI.verifyElementText(findTestObject('0PDPPage/Bag_PDP'), '1')
+WebUI.verifyElementText(findTestObject('PDPpage/Bag_PDP'), '1')
 
-WebUI.click(findTestObject('0PDPPage/Bag_PDP'))
+WebUI.click(findTestObject('PDPpage/Bag_PDP'))
 
-WebUI.click(findTestObject('0CartPage/comprar'))
+WebUI.click(findTestObject('CartPage/comprar'))
 
 'would show if the login user has a default card'
-WebUI.verifyElementPresent(findTestObject('0OPCPage/CardLast4Digit_OPC'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/CardLast4Digit_OPC'), 0)
 
 'payment method button1'
-WebUI.verifyElementClickable(findTestObject('0OPCPage/paymentMethod_button1_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/paymentMethod_button1_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'payment method button2'
-WebUI.verifyElementClickable(findTestObject('0OPCPage/paymentMethod_button2_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/paymentMethod_button2_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'payment method button3'
-WebUI.verifyElementClickable(findTestObject('0OPCPage/paymentMethod_button3_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/paymentMethod_button3_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 'payment method button1'
-WebUI.click(findTestObject('0OPCPage/paymentMethod_button1_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/paymentMethod_button1_OPC'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementClickable(findTestObject('0OPCPage/add_A_Cart_payment_metod_OPC'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementClickable(findTestObject('OPCPage/add_A_Cart_payment_metod_OPC'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

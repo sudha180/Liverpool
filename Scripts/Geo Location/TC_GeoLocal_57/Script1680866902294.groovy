@@ -32,11 +32,11 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.navigateToUrl('https://odtaqab.liverpool.com.mx/tienda/pdp/JeansslimGAPlavadoobscuroparania/1031371976?hs=true')
 
-WebUI.click(findTestObject('0PDPPage/WishListButton_pdp'))
+WebUI.click(findTestObject('PDPpage/WishListButton_pdp'))
 
-WebUI.click(findTestObject('0CLPPage/AfterLogin_hp'))
+WebUI.click(findTestObject('CLPPage/AfterLogin_hp'))
 
-WebUI.click(findTestObject('0PDPPage/WishListHeaderButton_pdp'))
+WebUI.click(findTestObject('PDPpage/WishListHeaderButton_pdp'))
 
 WebUI.click(findTestObject('Wishlist/WishListShowAll_Wishlist'))
 
@@ -44,9 +44,9 @@ WebUI.click(findTestObject('Wishlist/MoveToCart_Wishlist'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/EstimatedDelivery_Cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/EstimatedDelivery_Cart'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0CLPPage/MoreDeliveryLink_cart'), 0)
+WebUI.verifyElementPresent(findTestObject('CLPPage/MoreDeliveryLink_cart'), 0)
 
 WebUI.closeBrowser()
 

@@ -19,19 +19,17 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.GID], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product1_PLP'))
+WebUI.click(findTestObject('PDPpage/GID collection/Softline_product1_offeres_PDP'))
 
-WebUI.click(findTestObject('0PDPPage/GID collection/Softline_product1_offeres_PDP'))
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/offer_popUP_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/offer_popUP_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/liverpool_offer_PDP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/liverpool_offer_PDP'), 0)
-
-WebUI.verifyElementPresent(findTestObject('0PDPPage/GID collection/external_offer_PDP'), 0)
+WebUI.verifyElementPresent(findTestObject('PDPpage/GID collection/external_offer_PDP'), 0)
 
 WebUI.closeBrowser()
 

@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.maximizeWindow()
 
@@ -30,46 +30,46 @@ WebUI.callTestCase(findTestCase('CommonMethods/loginFromHomePage'), [('username'
 
 WebUI.callTestCase(findTestCase('CommonMethods/clickMyAccountFromHeader'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0OPCPage/deliveryAddressHeading_address_opc'))
+WebUI.click(findTestObject('OPCPage/deliveryAddressHeading_address_opc'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/ClickDelivery_MyAccount'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('AccountManagement/ClickAndCollectStores_accounts'))
 
-WebUI.click(findTestObject('0OPCPage/3DotButton_Checkout'))
+WebUI.click(findTestObject('OPCPage/3DotButton_Checkout'))
 
 WebUI.click(findTestObject('AccountManagement/ClickNCollectionDefault_Account'))
 
 TitleAddress = WebUI.getText(findTestObject('AccountManagement/ClickNCollectionAddressTitle_Account'))
 
-WebUI.click(findTestObject('0CartPage/home_button_(header_liverpool)'))
+WebUI.click(findTestObject('CartPage/home_button_(header_liverpool)'))
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : GlobalVariable.SLProduct], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('HomePage/FirstProduct_plp'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('0PDPPage/AddToCart_pdp (1)'))
+WebUI.click(findTestObject('PDPpage/AddToCart_pdp (1)'))
 
 WebUI.click(findTestObject('HomePage/Cart_header'))
 
-WebUI.click(findTestObject('0CartPage/BuyButton_Cart'))
+WebUI.click(findTestObject('CartPage/BuyButton_Cart'))
 
-DefaultAddress = WebUI.getText(findTestObject('0OPCPage/DefaultAddress_Checkout (1)'))
+DefaultAddress = WebUI.getText(findTestObject('OPCPage/DefaultAddress_Checkout (1)'))
 
 if (TitleAddress == DefaultAddress) {
     Println('Checked')
 }
 
-WebUI.click(findTestObject('0OPCPage/changeADDRESS_OPC'))
+WebUI.click(findTestObject('OPCPage/changeADDRESS_OPC'))
 
-WebUI.click(findTestObject('0OPCPage/AddAddressButtonPopup_checkout'))
+WebUI.click(findTestObject('OPCPage/AddAddressButtonPopup_checkout'))
 
-WebUI.click(findTestObject('0OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('OPCPage/AddressPopupCLickNCollect_Checkout'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/CheckAddressDefault_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/CheckAddressDefault_Checkout'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0OPCPage/ClickNCollectionRadioButton_Checkout'), 0)
+WebUI.verifyElementPresent(findTestObject('OPCPage/ClickNCollectionRadioButton_Checkout'), 0)
 
 WebUI.closeBrowser()
 

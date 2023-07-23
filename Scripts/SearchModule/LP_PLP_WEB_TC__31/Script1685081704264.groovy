@@ -19,47 +19,47 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
 WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('0CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
 'need to go to footer to load most viewed\r\n'
-WebUI.scrollToElement(findTestObject('0PLPPage/footer_PLP'), 0)
+WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 
 'load time\r\n'
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/mostviewed_recommendsection_PLP'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/mostviewed_recommendsection_PLP'), 0)
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/MostViewed_title_PLP'), 0)
-
-'visible tags \r\n'
-a1 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_1_Title'))
+WebUI.verifyElementPresent(findTestObject('PLPPage/MostViewed_title_PLP'), 0)
 
 'visible tags \r\n'
-b1 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_2_Title'))
+a1 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_1_Title'))
 
 'visible tags \r\n'
-c1 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_3_Title'))
-
-WebUI.click(findTestObject('0PLPPage/MostViewed_rightArrow'))
-
-WebUI.click(findTestObject('0PLPPage/MostViewed_rightArrow'))
+b1 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_2_Title'))
 
 'visible tags \r\n'
-a2 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_1_Title'))
+c1 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_3_Title'))
+
+WebUI.click(findTestObject('PLPPage/MostViewed_rightArrow'))
+
+WebUI.click(findTestObject('PLPPage/MostViewed_rightArrow'))
 
 'visible tags \r\n'
-b2 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_2_Title'))
+a2 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_1_Title'))
 
 'visible tags \r\n'
-c2 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_3_Title'))
+b2 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_2_Title'))
+
+'visible tags \r\n'
+c2 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_3_Title'))
 
 if (a1 != a2) {
     System.out.print('checked not same')
@@ -73,16 +73,16 @@ if (c1 != c2) {
     System.out.print('checked not same')
 }
 
-WebUI.click(findTestObject('0PLPPage/MostViewed_LeftArrow'))
+WebUI.click(findTestObject('PLPPage/MostViewed_LeftArrow'))
 
 'visible tags \r\n'
-a3 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_1_Title'))
+a3 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_1_Title'))
 
 'visible tags \r\n'
-b3 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_2_Title'))
+b3 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_2_Title'))
 
 'visible tags \r\n'
-c3 = WebUI.getText(findTestObject('0PLPPage/MostViewed_Product_3_Title'))
+c3 = WebUI.getText(findTestObject('PLPPage/MostViewed_Product_3_Title'))
 
 if (a2 != a3) {
     System.out.print('checked not same')

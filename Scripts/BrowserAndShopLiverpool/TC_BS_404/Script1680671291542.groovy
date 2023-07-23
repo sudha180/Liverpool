@@ -19,25 +19,25 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'lentes'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('0PLPPage/product_Link_plp'))
+WebUI.click(findTestObject('PLPPage/product_Link_plp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Quntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Quntity_pdp'), 0)
 
-WebUI.scrollToElement(findTestObject('0PDPPage/Quntity_pdp'), 0)
+WebUI.scrollToElement(findTestObject('PDPpage/Quntity_pdp'), 0)
 
-WebUI.click(findTestObject('Object Repository/0PDPPage/QuntityPlusButton_pdp'))
+WebUI.click(findTestObject('Object Repository/PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.doubleClick(findTestObject('Object Repository/0PDPPage/QuntityPlusButton_pdp'))
+WebUI.doubleClick(findTestObject('Object Repository/PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.click(findTestObject('0PDPPage/QuntityPlusButton_pdp'))
+WebUI.click(findTestObject('PDPpage/QuntityPlusButton_pdp'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/Quntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/Quntity_pdp'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/0PDPPage/StickyQuntity_pdp'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/PDPpage/StickyQuntity_pdp'), 0)
 
 WebUI.closeBrowser()
 

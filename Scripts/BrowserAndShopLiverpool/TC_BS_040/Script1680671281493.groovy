@@ -22,7 +22,7 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.URL2)
+WebUI.navigateToUrl(GlobalVariable.url)
 
 WebUI.callTestCase(findTestCase('CommonMethods/SearchForAProduct_search'), [('searchTerm') : 'MAC'], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,7 +38,7 @@ for (int i = 0; i < 3500; i += 7) {
     js.executeScript(('window.scrollTo(0, ' + i) + ')')
 }
 
-WebUI.verifyElementPresent(findTestObject('0PLPPage/icon-sum_plp'), 0)
+WebUI.verifyElementPresent(findTestObject('PLPPage/icon-sum_plp'), 0)
 
 WebUI.closeBrowser()
 
