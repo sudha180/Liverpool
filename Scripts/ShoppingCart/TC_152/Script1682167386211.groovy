@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 not_run: WebUI.navigateToUrl('https://odtaqab.liverpool.com.mx/tienda/pdp/JeansslimGAPlavadoobscuroparania/1031371976?hs=true')
 

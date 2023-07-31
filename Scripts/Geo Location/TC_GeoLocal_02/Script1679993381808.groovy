@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 not_run: WebUI.openBrowser('')
 
-not_run: WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+not_run: WebUI.navigateToUrl(GlobalVariable.url)
 
 not_run: WebUI.click(findTestObject('Object Repository/HomePage/Page_Liverpool es parte de Mi vida (1)/span_Selecciona tu tienda'))
 

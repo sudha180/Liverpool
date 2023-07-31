@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/HomePage/SelectStore_hp'), 0)
 

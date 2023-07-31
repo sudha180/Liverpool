@@ -29,7 +29,7 @@ WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
 
 WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
 
-WebUI.click(findTestObject('CLPPage/SubCategory1_leftmenu_CLP'))
+WebUI.click(findTestObject('CLPPage/SubCategory2_leftmenu_CLP'))
 
 WebUI.scrollToElement(findTestObject('PLPPage/footer_PLP'), 0)
 

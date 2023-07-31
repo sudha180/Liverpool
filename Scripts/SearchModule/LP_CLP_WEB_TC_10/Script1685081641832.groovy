@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('CommonMethods/login_dtaqa'), [:], FailureHandli
 
 WebUI.mouseOver(findTestObject('HomePage/CategorasDropDown_HP'))
 
-WebUI.click(findTestObject('HomePage/L1_Category1_HP'))
+WebUI.enhancedClick(findTestObject('HomePage/L1_Category1_HP'))
 
 'check for L3 category'
 currentPage1 = WebUI.getText(findTestObject('CLPPage/banner_1CLP'))

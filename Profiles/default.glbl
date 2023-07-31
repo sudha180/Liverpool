@@ -444,4 +444,9 @@
       <initValue>'test12345'</initValue>
       <name>GRpassword</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://odtaqab.liverpool.com.mx/tienda/pdp/telefono-fijo/1007253555'</initValue>
+      <name>Url</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

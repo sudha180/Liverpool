@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 not_run: WebUI.navigateToUrl('https://www.liverpool.com.mx/tienda/home')
 
-WebUI.navigateToUrl(GlobalVariable.LiverPoolURL)
+WebUI.navigateToUrl(GlobalVariable.Url)
 
 WebUI.callTestCase(findTestCase('null'), [('searchTerm') : 'laptop'], FailureHandling.STOP_ON_FAILURE)
 
